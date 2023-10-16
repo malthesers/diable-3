@@ -1,6 +1,6 @@
 export interface Item {
   name: string,
-  quality: 'base' | 'magic' | 'rare' | 'legendary' | 'set',
-  slot: 'Unknown' | 'Head' | 'Shoulders' | 'Torso' | 'Wrists' | 'Hands' | 'Waist' | 'Legs' | 'Feet' | 'Neck' | 'Finger' | 'Off-Hand' | '1-Hand' | '2-Hand',
-  type: 'Something' | 'Crossbow'
+  quality: 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set',
+  slot: 'unknown' | 'head' | 'shoulders' | 'torso' | 'wrists' | 'hands' | 'waist' | 'legs' | 'feet' | 'neck' | 'finger' | 'off-hand' | '1-hand' | '2-hand',
+  type: 'something' | 'crossbow'
 }

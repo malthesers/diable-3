@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function KnownInfo() {
   let [known, setKnown] = useState<Item>({
-    name: 'Unidentified',
-    quality: 'legendary',
-    slot: 'Unknown',
-    type: 'Something'
+    name: 'unidentified',
+    quality: 'undefined',
+    slot: '1-hand',
+    type: 'something'
   })
   
   return (

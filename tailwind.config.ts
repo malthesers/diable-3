@@ -10,14 +10,16 @@ const config: Config = {
     extend: {
       colors: {
         grey: '#2E2921',
-        base: '#FFFFFF',
+        undefined: '#FFFFFF',
+        common: '#FFFFFF',
         magic: '#6969FF',
         rare: '#FFFF00',
         legendary: '#BF642F',
         set: '#00FF00'
       },
       backgroundImage: {
-        base: "url('/images/nameplates/base.jpg')",
+        undefined: "url('/images/nameplates/base.jpg')",
+        common: "url('/images/nameplates/common.jpg')",
         magic: "url('/images/nameplates/magic.jpg')",
         rare: "url('/images/nameplates/rare.jpg')",
         legendary: "url('/images/nameplates/legendary.jpg')",
@@ -26,12 +28,14 @@ const config: Config = {
     },
   },
   safelist: [
-    'text-base',
+    'text-undefined',
+    'text-common',
     'text-rare',
     'text-magic',
     'text-legendary',
     'text-set',
-    'bg-base',
+    'bg-undefined',
+    'bg-common',
     'bg-rare',
     'bg-magic',
     'bg-legendary',
