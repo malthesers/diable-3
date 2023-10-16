@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        grey: '#2E2921'
+      },
       backgroundImage: {
         'base': "url('/images/nameplates/base.jpg')",
         'rare': "url('/images/nameplates/rare.jpg')",
