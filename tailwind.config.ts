@@ -9,9 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'base': "url('/images/nameplates/base.jpg')",
+        'rare': "url('/images/nameplates/rare.jpg')",
+        'magic': "url('/images/nameplates/magic.jpg')",
+        'legendary': "url('/images/nameplates/legendary.jpg')",
+        'set': "url('/images/nameplates/set.jpg')",
       },
     },
   },

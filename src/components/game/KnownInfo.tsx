@@ -7,7 +7,7 @@ export default function KnownInfo() {
 
   return (
     <div className="bg-black border-white border-2 p-2">
-      <div className="grid place-content-center border-amber-900 border-2 p-2">
+      <div className='w-[350px] bg-base bg-no-repeat p-2'>
         <p className="uppercase">{known.name}</p>
       </div>
     </div>
