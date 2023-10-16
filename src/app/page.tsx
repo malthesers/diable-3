@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react"
 import { Item } from "../interfaces/item"
 import ItemRow from "../components/game/ItemRow"
+import PastGuesses from "../components/game/PastGuesses"
+import KnownInfo from "../components/game/KnownInfo"
 
 export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
@@ -22,12 +24,10 @@ export default function Home() {
   return (
     <main>
       <h1 className="text-2xl">Main</h1>
-      <p>Answer</p>
-      { answer && <ItemRow item={answer}/>}
-      <p>Guesses</p>
-      { items.map((item) =>
-        <ItemRow key={item.name} item={item}/>
-      )}
+      <section className="sm:grid grid-cols-[1fr_2fr]">
+        <KnownInfo/>
+        <PastGuesses items={items}/>
+      </section>
     </main>
   )
 }
