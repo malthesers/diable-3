@@ -1,9 +1,12 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Spectral } from 'next/font/google'
 import Header from '../components/layout/Header'
 
-const inter = Inter({ subsets: ['latin'] })
+const spectral = Spectral({
+  weight: '400',
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: 'Diable',
@@ -17,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spectral.className}>
         <Header/>
         {children}
       </body>
