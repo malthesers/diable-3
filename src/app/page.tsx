@@ -12,12 +12,14 @@ export default function Home() {
     {
       name: 'Dawn',
       quality: 'legendary',
-      slot: '2-Hand'
+      slot: '1-Hand',
+      type: 'Crossbow'
     },
     {
       name: 'Valla\'s Bequest',
       quality: 'legendary',
-      slot: '2-Hand'
+      slot: '1-Hand',
+      type: 'Crossbow'
     }
   ])
 

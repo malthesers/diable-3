@@ -6,7 +6,8 @@ export default function KnownInfo() {
   let [known, setKnown] = useState<Item>({
     name: 'Unidentified',
     quality: 'legendary',
-    slot: 'Unknown'
+    slot: 'Unknown',
+    type: 'Something'
   })
   
   return (
@@ -21,7 +22,7 @@ export default function KnownInfo() {
         <div className="font-sans capitalize">
           <p className={ `text-${known.quality}` + ' flex gap-1'}>
             <span className="">{known.quality}</span>
-            <span>Gloves</span>
+            <span>{known.type}</span>
             <span className="ml-auto text-neutral-500">{known.slot}</span>
           </p>
         </div>
