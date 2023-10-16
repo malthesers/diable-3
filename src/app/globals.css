@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-900 text-white min-h-[100dvh];
+    @apply bg-zinc-700 text-white min-h-[100dvh];
   }
 
   header {

@@ -17,6 +17,13 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    'bg-base',
+    'bg-rare',
+    'bg-magic',
+    'bg-legendary',
+    'bg-set',
+  ],
   plugins: [],
 }
 export default config
