@@ -1,3 +1,26 @@
+const slotTypes: { [key:string]: string[] } = {
+  head: ['helm', 'spirit stone', 'voodoo mask', 'wizard hat']
+}
+
+type head = 'helm' | 'spirit stone' | 'voodoo mask' | 'wizard hat'
+
+type slots = {
+  'unknown': string,
+  'head': head,
+  'shoulders': string,
+  'torso': string,
+  'wrists': string,
+  'hands': string,
+  'waist': string,
+  'legs': string,
+  'feet': string,
+  'neck': string,
+  'finger': string,
+  'off-hand': string,
+  '1-hand': string,
+  '2-hand': string
+}
+
 export interface Item {
   name: string,
   quality: 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set',
