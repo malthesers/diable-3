@@ -10,10 +10,12 @@ export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
   const [items, setItems] = useState<Array<Item>>([
     {
-      name: 'Dawn'
+      name: 'Dawn',
+      quality: 'legendary'
     },
     {
-      name: 'Valla\'s Bequest'
+      name: 'Valla\'s Bequest',
+      quality: 'legendary'
     }
   ])
 
