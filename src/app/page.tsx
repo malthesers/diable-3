@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <main>
       <h1 className="text-2xl">Main</h1>
-      <section className="sm:grid grid-cols-[1fr_2fr]">
+      <section className="sm:grid grid-cols-[1fr_2fr] gap-4">
         <KnownInfo/>
         <PastGuesses items={items}/>
       </section>
