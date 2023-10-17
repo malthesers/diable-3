@@ -23,6 +23,7 @@ type slots = {
 
 export interface Item {
   name: string,
+  class?: 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard',
   quality: 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set',
   slot: 'unknown' | 'head' | 'shoulders' | 'torso' | 'wrists' | 'hands' | 'waist' | 'legs' | 'feet' | 'neck' | 'finger' | 'off-hand' | '1-hand' | '2-hand',
   type: 'something' | 'crossbow'
