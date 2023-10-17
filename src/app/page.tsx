@@ -11,12 +11,14 @@ export default function Home() {
   const [items, setItems] = useState<Array<Item>>([
     {
       name: 'Dawn',
+      class: 'demon hunter',
       quality: 'legendary',
       slot: '1-hand',
       type: 'crossbow'
     },
     {
       name: 'Valla\'s Bequest',
+      class: 'demon hunter',
       quality: 'legendary',
       slot: '1-hand',
       type: 'crossbow'
