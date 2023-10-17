@@ -11,7 +11,7 @@ export default function Home() {
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
     quality: 'undefined',
-    slot: 'unknown',
+    slot: 'head',
     type: 'something'
   })
 
@@ -21,14 +21,14 @@ export default function Home() {
       class: 'demon hunter',
       quality: 'legendary',
       slot: '1-hand',
-      type: 'crossbow'
+      type: 'hand crossbow'
     },
     {
       name: 'Valla\'s Bequest',
       class: 'demon hunter',
       quality: 'legendary',
       slot: '1-hand',
-      type: 'crossbow'
+      type: 'hand crossbow'
     }
   ])
 

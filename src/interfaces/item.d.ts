@@ -1,30 +1,15 @@
-const slotTypes: { [key:string]: string[] } = {
-  head: ['helm', 'spirit stone', 'voodoo mask', 'wizard hat']
-}
-
-type head = 'helm' | 'spirit stone' | 'voodoo mask' | 'wizard hat'
-
-type slots = {
-  'unknown': string,
-  'head': head,
-  'shoulders': string,
-  'torso': string,
-  'wrists': string,
-  'hands': string,
-  'waist': string,
-  'legs': string,
-  'feet': string,
-  'neck': string,
-  'finger': string,
-  'off-hand': string,
-  '1-hand': string,
-  '2-hand': string
-}
+type classes = 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
+type qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
+type slots = 'unknown' | 'head' | 'shoulders' | 'torso' | 'wrists' | 'hands' | 'waist' | 'legs' | 'feet' | 'neck' | 'finger' | 'off-hand' | '1-hand' | '2-hand'
+type types = 'something' | 'helm' | 'spirit stone' | 'voodoo mask' | 'wizard hat' | 'shoulders' | 'chest armor' | 'cloak' | 'bracers' | 'gloves' |
+'belt' | 'mighty belt' | 'pants' | 'boots' | 'amulet' | 'ring' | 'shield' | 'crusader shield' | 'mojo' | 'source' | 'quiver' | 'phylactery' |
+'axe' | 'dagger' | 'mace' | 'spear' | 'sword' | 'ceremonial knife' | 'fist weapon' | 'flail' | 'mighty weapon' | 'scythe' | 'polearm' | 'staff' | 'daibo' |
+'bow' | 'crossbow' | 'hand crossbow' | 'wand'
 
 export interface Item {
   name: string,
-  class?: 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard',
-  quality: 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set',
-  slot: 'unknown' | 'head' | 'shoulders' | 'torso' | 'wrists' | 'hands' | 'waist' | 'legs' | 'feet' | 'neck' | 'finger' | 'off-hand' | '1-hand' | '2-hand',
-  type: 'something' | 'crossbow'
+  class?: classes,
+  quality: qualities,
+  slot: slots,
+  type: types
 }
