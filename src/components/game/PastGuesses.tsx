@@ -4,7 +4,7 @@ import ItemBox from "./ItemBox"
 export default function PastGuesses({ items }: { items:Array<Item>}) {
   return (
     <div>
-      <p>Guesses</p>
+      <p className="text-2xl text-center mb-4">Guesses</p>
       <div className="grid gap-2">
         { items.map((item) =>
           <ItemBox key={item.name} item={item}/>

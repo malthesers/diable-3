@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-700 text-white min-h-[100dvh];
+    @apply bg-[url('/images/background.jpg')] backdrop-brightness-50 bg-no-repeat bg-cover bg-center text-white min-h-[100dvh];
   }
 
   header {
