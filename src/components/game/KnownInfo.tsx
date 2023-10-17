@@ -11,7 +11,7 @@ export default function KnownInfo() {
   })
   
   return (
-    <div className="w-[330px] sm:w-[400px] mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
+    <div className="w-[330px] sm:w-[400px] h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
       <div className={`bg-${known.quality}-name` + ' w-full aspect-[350/40] bg-no-repeat bg-cover grid p-1'}>
         <p className="text-red-800 pt-1 text-lg sm:text-xl leading-none tracking-wider uppercase place-self-center">{known.name}</p>
       </div>
