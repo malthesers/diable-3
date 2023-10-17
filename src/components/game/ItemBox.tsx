@@ -18,7 +18,7 @@ export default function ItemRow({ item }: { item: Item}) {
             <span>{item.type}</span>
             <span className="ml-auto text-neutral-500">{item.slot}</span>
           </p>
-          <p className="ml-auto">{item.class}</p>
+          <p className="text-right">{item.class}</p>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import { Item } from "../interfaces/item"
 import ItemBox from "../components/game/ItemBox"
 import PastGuesses from "../components/game/PastGuesses"
-import KnownInfo from "../components/game/KnownInfo"
 
 export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
