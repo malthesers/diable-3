@@ -34,6 +34,12 @@ const config: Config = {
     },
   },
   safelist: [
+    'border-undefined',
+    'border-common',
+    'border-rare',
+    'border-magic',
+    'border-legendary',
+    'border-set',
     'text-undefined',
     'text-common',
     'text-rare',
