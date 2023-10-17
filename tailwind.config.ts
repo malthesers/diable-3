@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       colors: {
         'grey': '#2E2921',
-        'undefined': '#FFFFFF',
+        'undefined': '#9B221B',
         'common': '#FFFFFF',
         'magic': '#6969FF',
         'rare': '#FFFF00',
