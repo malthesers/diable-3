@@ -29,7 +29,35 @@ export default function Home() {
       quality: 'legendary',
       slot: '1-hand',
       type: 'hand crossbow'
-    }
+    },
+    {
+      name: 'Natalya\'s Slayer',
+      class: 'demon hunter',
+      quality: 'set',
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    {
+      name: 'Penetrator',
+      class: 'demon hunter',
+      quality: 'rare',
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    {
+      name: 'Hand Crossbow',
+      class: 'demon hunter',
+      quality: 'magic',
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    {
+      name: 'Initiate\'s Hand Crossbow',
+      class: 'demon hunter',
+      quality: 'set',
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
   ])
 
   useEffect(() => {
