@@ -15,7 +15,7 @@ export default function Home() {
     type: 'something'
   })
 
-  const [items, setItems] = useState<Array<Item>>([
+  const [items, setItems] = useState<Item[]>([
     {
       name: 'Dawn',
       class: 'demon hunter',
