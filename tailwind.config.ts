@@ -9,13 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        grey: '#2E2921',
-        undefined: '#FFFFFF',
-        common: '#FFFFFF',
-        magic: '#6969FF',
-        rare: '#FFFF00',
-        legendary: '#BF642F',
-        set: '#00FF00'
+        'grey': '#2E2921',
+        'undefined': '#FFFFFF',
+        'common': '#FFFFFF',
+        'magic': '#6969FF',
+        'rare': '#FFFF00',
+        'legendary': '#BF642F',
+        'set': '#00FF00',
+        'undefined-accent': '#FFFFFF',
+        'common-accent': '#FFFFFF',
+        'magic-accent': '#6969FF',
+        'rare-accent': '#FFFF00',
+        'legendary-accent': '#BF642F',
+        'set-accent': '#00FF00'
       },
       backgroundImage: {
         "undefined-name": "url('/images/nameplates/base.jpg')",
