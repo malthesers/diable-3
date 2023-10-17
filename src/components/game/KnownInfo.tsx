@@ -23,10 +23,11 @@ export default function KnownInfo() {
         </div>
         <div className="font-sans capitalize">
           <p className={`text-${known.quality}` + ' flex gap-1'}>
-            <span className="">{known.quality}</span>
+            <span>{known.quality}</span>
             <span>{known.type}</span>
             <span className="ml-auto text-neutral-500">{known.slot}</span>
           </p>
+          <p className="ml-auto">{known.class}</p>
         </div>
       </div>
     </div>

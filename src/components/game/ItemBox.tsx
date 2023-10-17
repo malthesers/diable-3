@@ -2,7 +2,7 @@ import { Item } from "@/src/interfaces/item"
 
 export default function ItemRow({ item }: { item: Item}) {
   return (
-    <div className="w-[330px] sm:w-[400px] mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
+    <div className="w-[330px] sm:w-[400px] h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
       <div className={`bg-${item.quality}-name` + ' w-full aspect-[350/40] bg-no-repeat bg-cover grid p-1'}>
         <p className="text-red-800 pt-1 text-lg sm:text-xl leading-none tracking-wider uppercase place-self-center">{item.name}</p>
       </div>
@@ -14,10 +14,11 @@ export default function ItemRow({ item }: { item: Item}) {
         </div>
         <div className="font-sans capitalize">
           <p className={`text-${item.quality}` + ' flex gap-1'}>
-            <span className="">{item.quality}</span>
+            <span>{item.quality}</span>
             <span>{item.type}</span>
             <span className="ml-auto text-neutral-500">{item.slot}</span>
           </p>
+          <p className="ml-auto">{item.class}</p>
         </div>
       </div>
     </div>

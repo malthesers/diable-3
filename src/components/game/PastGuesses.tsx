@@ -1,13 +1,15 @@
 import { Item } from "@/src/interfaces/item"
-import ItemRow from "./ItemRow"
+import ItemBox from "./ItemBox"
 
 export default function PastGuesses({ items }: { items:Array<Item>}) {
   return (
     <div>
       <p>Guesses</p>
-      { items.map((item) =>
-        <ItemRow key={item.name} item={item}/>
-      )}
+      <div className="grid gap-2">
+        { items.map((item) =>
+          <ItemBox key={item.name} item={item}/>
+        )}
+      </div>
     </div>
   )
 }

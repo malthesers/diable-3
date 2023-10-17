@@ -2,12 +2,20 @@
 
 import { useEffect, useState } from "react"
 import { Item } from "../interfaces/item"
-import ItemRow from "../components/game/ItemRow"
+import ItemBox from "../components/game/ItemBox"
 import PastGuesses from "../components/game/PastGuesses"
 import KnownInfo from "../components/game/KnownInfo"
 
 export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
+
+  const [known, setKnown] = useState<Item>({
+    name: 'unidentified',
+    quality: 'undefined',
+    slot: 'unknown',
+    type: 'something'
+  })
+
   const [items, setItems] = useState<Array<Item>>([
     {
       name: 'Dawn',
@@ -32,7 +40,7 @@ export default function Home() {
   return (
     <main>
       <section className="sm:grid grid-cols-[1fr_2fr] gap-4">
-        <KnownInfo/>
+        <ItemBox item={known}/>
         <PastGuesses items={items}/>
       </section>
     </main>
