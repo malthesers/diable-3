@@ -11,7 +11,7 @@ export default function Home() {
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
     quality: 'undefined',
-    slot: 'head',
+    slot: 'unknown',
     type: 'something'
   })
 
@@ -54,7 +54,7 @@ export default function Home() {
     {
       name: 'Initiate\'s Hand Crossbow',
       class: 'demon hunter',
-      quality: 'set',
+      quality: 'common',
       slot: '1-hand',
       type: 'hand crossbow'
     },
