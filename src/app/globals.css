@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-800 text-white min-h-[100dvh];
+    @apply bg-zinc-700 text-white min-h-[100dvh];
   }
 
   header {
@@ -13,12 +13,6 @@
 
   main {
     @apply max-w-5xl mx-auto p-4 py-20;
-  }
-}
-
-@layer utilities {
-  .outline-groove {
-    outline: groove;
   }
 }
 
