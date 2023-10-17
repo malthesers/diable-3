@@ -16,6 +16,12 @@
   }
 }
 
+@layer utilities {
+  .outline-groove {
+    outline: groove;
+  }
+}
+
 nav a {
   position: relative;
   display: inline-block;
