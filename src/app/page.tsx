@@ -2,11 +2,13 @@
 
 import { useEffect, useState } from "react"
 import { Item } from "../interfaces/item"
-import ItemBox from "../components/game/ItemBox"
 import PastGuesses from "../components/game/PastGuesses"
+import ItemSearch from "../components/game/ItemSearch"
+import ItemBox from "../components/game/ItemBox"
 
 export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
+  const [guesses, setGuesses] = useState<Item[]>([])
 
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
@@ -68,7 +70,10 @@ export default function Home() {
     <main>
       <section className="sm:grid grid-cols-[1fr_2fr] gap-4">
         <ItemBox item={known}/>
-        <PastGuesses items={items}/>
+        <div>
+          <ItemSearch items={items} />
+          <PastGuesses items={guesses}/>
+        </div>
       </section>
     </main>
   )
