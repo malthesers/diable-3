@@ -5,7 +5,17 @@ import { Item } from "../interfaces/item"
 import { Context } from "../interfaces/context"
 
 
-const ItemsContext = createContext<Context>({})
+const ItemsContext = createContext<Context>({
+  items: [],
+  guesses: [],
+  answer: null,
+  known: {
+    name: 'unidentified',
+    quality: 'undefined',
+    slot: 'unknown',
+    type: 'something'
+  }
+})
 export function useItems() {
   return useContext(ItemsContext)
 }
