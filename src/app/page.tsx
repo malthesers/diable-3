@@ -8,8 +8,7 @@ import ItemBox from "../components/game/ItemBox"
 import { useItems } from "./items-provider"
 
 export default function Home() {
-  const [answer, setAnswer] = useState<Item | null>(null)
-  const { known } = useItems()
+  const { answer, known } = useItems()
 
   return (
     <main>
@@ -20,7 +19,7 @@ export default function Home() {
         </div>
         <div>
           <ItemSearch />
-          {/* <PastGuesses items={guesses}/> */}
+          <PastGuesses/>
         </div>
       </section>
     </main>
