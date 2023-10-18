@@ -2,9 +2,10 @@
 
 import { ReactNode, createContext, useContext, useState, useEffect } from "react"
 import { Item } from "../interfaces/item"
+import { Context } from "../interfaces/context"
 
 
-export const ItemsContext = createContext({})
+const ItemsContext = createContext<Context>({})
 export function useItems() {
   return useContext(ItemsContext)
 }
