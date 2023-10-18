@@ -9,7 +9,7 @@ type OffHand = 'shield' | 'crusader shield' | 'mojo' | 'source' | 'quiver' | 'ph
 type TwoHand = 'axe' | 'mace' | 'polearm' | 'staff' | 'sword' | 'daibo' | 'flail' | 'mighty weapon' | 'scythe' | 'bow' | 'crossbow'
 type OneHand = 'axe' | 'dagger' | 'mace' | 'spear' | 'sword' | 'ceremonial knife' | 'fist weapon' | 'flail' | 'mighty weapon' | 'hand crossbow' | 'wand'
 
-type Types<TSlot extends Item['slot']> =
+type Types<TSlot> =
   TSlot extends 'head' ? Head :
   TSlot extends 'shoulders' ? 'shoulders' :
   TSlot extends 'torso' ? Torso :
@@ -25,10 +25,10 @@ type Types<TSlot extends Item['slot']> =
   TSlot extends '1-hand' ? OneHand :
   'something';
 
-export interface Item<TSlot extends Item['slot']> {
+export interface Item {
   name: string,
   class?: Classes,
   quality: Qualities,
   slot: Slots,
-  type: Types<TSlot>
+  type: Types<Item['slot']>
 }
