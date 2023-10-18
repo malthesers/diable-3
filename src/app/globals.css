@@ -12,7 +12,7 @@
   }
 
   main {
-    @apply max-w-7xl mx-auto p-4 py-20;
+    @apply max-w-4xl mx-auto p-4 py-20;
   }
 }
 

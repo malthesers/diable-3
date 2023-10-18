@@ -9,7 +9,6 @@ import ItemBox from "../components/game/ItemBox"
 export default function Home() {
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
-
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
     quality: 'undefined',
@@ -68,8 +67,11 @@ export default function Home() {
 
   return (
     <main>
-      <section className="sm:grid grid-cols-[1fr_2fr] gap-4">
-        <ItemBox item={known}/>
+      <section className="sm:grid grid-cols-2 gap-4">
+        <div className="grid gap-2">
+          <ItemBox item={known}/>
+          { answer && <ItemBox item={answer}/> }
+        </div>
         <div>
           <ItemSearch items={items} />
           <PastGuesses items={guesses}/>
