@@ -13,7 +13,7 @@ export default function ItemSearch({ items }: { items:Array<Item>}) {
         <input value={search} onChange={e => setSearch(e.target.value)} type="text" name="item-search" placeholder="Enter item name..." className="bg-transparent text-center uppercase focus:outline-none"></input>
       </label>
       <div className="flex flex-wrap">
-        { results && results.map((item) =>
+        { 1 < search.length && results.map((item) =>
           <p key={item.name}>{item.name}</p>
         )}
       </div>
