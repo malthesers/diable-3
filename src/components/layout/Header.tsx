@@ -7,7 +7,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full px-6 py-4 font-semibold">
+    <header className="w-full bg-black bg-opacity-20 px-6 py-4 font-semibold">
       <div className="max-w-7xl mx-auto flex justify-between">
         <Link href="/" className="text-xl after:">Diable</Link>
         <nav className="flex gap-4">

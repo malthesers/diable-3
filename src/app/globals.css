@@ -7,10 +7,6 @@
     @apply bg-[url('/images/background.jpg')] backdrop-brightness-50 bg-no-repeat bg-cover bg-center text-white min-h-[100dvh];
   }
 
-  header {
-    @apply bg-zinc-950;
-  }
-
   main {
     @apply max-w-4xl mx-auto p-4 py-20;
   }
