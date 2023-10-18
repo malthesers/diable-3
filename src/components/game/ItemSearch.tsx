@@ -1,9 +1,12 @@
 'use client'
 
+import { useItems } from "@/src/app/items-provider"
 import { Item } from "@/src/interfaces/item"
 import { useState } from "react"
 
-export default function ItemSearch({ items }: { items:Array<Item>}) {
+export default function ItemSearch() {
+  const { items } = useItems()
+
   const [search, setSearch] = useState<string>('')
   const results:Item[] = items.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
 
