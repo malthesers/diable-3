@@ -5,7 +5,7 @@ import { useState } from "react"
 
 export default function ItemSearch({ items }: { items:Array<Item>}) {
   const [search, setSearch] = useState<string>('')
-  const results:Item[] = items.filter(item => item.name.toLowerCase().includes(search.toLowerCase()))
+  const results:Item[] = items.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
 
   return (
     <div>
