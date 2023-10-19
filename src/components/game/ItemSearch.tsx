@@ -18,7 +18,9 @@ export default function ItemSearch() {
       </label>
       <div className="absolute w-[315px] sm:w-[350px] md:w-[385px] h-fit mx-auto flex flex-col gap-1">
         { 0 < search.length && results.map((item) =>
-          <ItemNameplate item={item}/>
+          <article className="cursor-pointer shadow-item-inner">
+            <ItemNameplate item={item} search={true}/>
+          </article>
         )}
       </div>
     </div>

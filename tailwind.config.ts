@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'item-inner': 'inset 0px 0px 5px 5px rgba(240,222,108,0.25)'
+      },
       colors: {
         'grey': '#2E2921',
         'undefined': '#9B221B',
