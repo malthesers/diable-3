@@ -6,7 +6,7 @@ export default function PastGuesses() {
 
   return (
     <div>
-      <p className='text-2xl text-center mb-4'>Guesses</p>
+      <p className='text-2xl text-center'>Guesses</p>
       <div className='flex flex-wrap gap-2'>
         { guesses.map((item) =>
           <ItemBox key={item.name} item={item}/>

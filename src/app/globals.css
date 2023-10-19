@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-[url('/images/background.jpg')] backdrop-brightness-50 bg-no-repeat bg-cover bg-center text-white min-h-[100dvh];
+    @apply bg-[url('/images/background.jpg')] backdrop-brightness-50 bg-no-repeat bg-cover bg-center bg-fixed text-white min-h-[100dvh];
   }
 
   main {
