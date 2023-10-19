@@ -1,17 +1,17 @@
-"use client"
+'use client'
 
-import PastGuesses from "../components/game/PastGuesses"
-import ItemSearch from "../components/game/ItemSearch"
-import ItemBox from "../components/game/ItemBox"
-import { useItems } from "./items-provider"
+import PastGuesses from '../components/game/PastGuesses'
+import ItemSearch from '../components/game/ItemSearch'
+import ItemBox from '../components/game/ItemBox'
+import { useItems } from './items-provider'
 
 export default function Home() {
   const { answer, known } = useItems()
 
   return (
     <main>
-      <section className="grid sm:grid-cols-2 gap-4">
-        <div className="grid gap-2">
+      <section className='grid sm:grid-cols-2 gap-4'>
+        <div className='grid gap-2'>
           <ItemBox item={known}/>
           { answer && <ItemBox item={answer}/> }
         </div>
