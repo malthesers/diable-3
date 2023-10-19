@@ -1,14 +1,10 @@
 import { Item } from "@/src/interfaces/item"
 import { useState } from "react"
 import Image from "next/image"
+import { useItems } from "@/src/app/items-provider"
 
 export default function KnownInfo() {
-  let [known, setKnown] = useState<Item>({
-    name: 'unidentified',
-    quality: 'undefined',
-    slot: 'unknown',
-    type: 'something'
-  })
+  const { known } = useItems()
   
   return (
     <div className="w-[330px] sm:w-[400px] h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
@@ -24,8 +20,8 @@ export default function KnownInfo() {
         <div className="font-sans capitalize">
           <p className={`text-${known.quality}` + ' flex gap-1'}>
             <span>{known.quality}</span>
-            <span>{known.type}</span>
-            <span className="ml-auto text-neutral-500">{known.slot}</span>
+            <span>{known.equipment.type}</span>
+            <span className="ml-auto text-neutral-500">{known.equipment.slot}</span>
           </p>
           <p className="ml-auto">{known.class}</p>
         </div>
