@@ -6,10 +6,14 @@ import { useState } from 'react'
 import ItemNameplate from './ItemNameplate'
 
 export default function ItemSearch() {
-  const { items } = useItems()
-
+  const { items, addGuess } = useItems()
   const [search, setSearch] = useState<string>('')
   const results:Item[] = items.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
+
+  function submitGuess(item:Item) {
+    setSearch('')
+    addGuess(item)
+  }
 
   return (
     <div>
@@ -18,7 +22,7 @@ export default function ItemSearch() {
       </label>
       <div className='absolute w-[315px] sm:w-[350px] md:w-[385px] h-fit mx-auto flex flex-col gap-1'>
         { 0 < search.length && results.map((item) =>
-          <article key={item.name} className='cursor-pointer shadow-item-inner'>
+          <article onClick={() => submitGuess(item)} key={item.name} className='cursor-pointer shadow-item-inner'>
             <ItemNameplate item={item} hover={true}/>
           </article>
         )}

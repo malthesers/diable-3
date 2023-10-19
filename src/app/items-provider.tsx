@@ -9,6 +9,7 @@ const ItemsContext = createContext<Context>({
   items: [],
   guesses: [],
   answer: null,
+  addGuess: () => {},
   known: {
     name: 'unidentified',
     quality: 'undefined',
@@ -90,12 +91,19 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
   ])
 
+  function addGuess(item:Item) {
+    setGuesses([
+      item,
+      ...guesses
+    ])
+  }
+
   useEffect(() => {
     setAnswer(items[Math.floor(Math.random() * items.length)])
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, guesses, known }}>
+    <ItemsContext.Provider value={{ items, answer, guesses, addGuess, known }}>
       {children}
     </ItemsContext.Provider>
   )
