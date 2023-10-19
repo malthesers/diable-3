@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <section className='grid sm:grid-cols-2 gap-4'>
-        <div className='grid gap-2'>
+        <div className='h-fit grid gap-2'>
           <ItemBox item={known}/>
           { answer && <ItemBox item={answer}/> }
         </div>
