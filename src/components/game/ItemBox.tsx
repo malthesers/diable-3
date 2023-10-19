@@ -15,8 +15,8 @@ export default function ItemRow({ item }: { item: Item}) {
         <div className="font-sans capitalize">
           <p className={`text-${item.quality}` + ' flex gap-1'}>
             <span>{item.quality}</span>
-            <span>{item.type}</span>
-            <span className="ml-auto text-neutral-500">{item.slot}</span>
+            <span>{item.equipment.type}</span>
+            <span className="ml-auto text-neutral-500">{item.equipment.slot}</span>
           </p>
           <p className="text-right">{item.class}</p>
         </div>

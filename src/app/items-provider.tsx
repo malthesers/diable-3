@@ -12,8 +12,10 @@ const ItemsContext = createContext<Context>({
   known: {
     name: 'unidentified',
     quality: 'undefined',
-    slot: 'unknown',
-    type: 'something'
+    equipment: {
+      slot: 'unknown',
+      type: 'something'
+    }
   }
 })
 export function useItems() {
@@ -26,51 +28,65 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
     quality: 'undefined',
-    slot: 'unknown',
-    type: 'something'
+    equipment: {
+      slot: 'unknown',
+      type: 'something'
+    }
   })
   const [items, setItems] = useState<Item[]>([
     {
       name: 'Dawn',
       class: 'demon hunter',
       quality: 'legendary',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
     {
       name: 'Valla\'s Bequest',
       class: 'demon hunter',
       quality: 'legendary',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
     {
       name: 'Natalya\'s Slayer',
       class: 'demon hunter',
       quality: 'set',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
     {
       name: 'Penetrator',
       class: 'demon hunter',
       quality: 'rare',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
     {
       name: 'Hand Crossbow',
       class: 'demon hunter',
       quality: 'magic',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
     {
       name: 'Initiate\'s Hand Crossbow',
       class: 'demon hunter',
       quality: 'common',
-      slot: '1-hand',
-      type: 'hand crossbow'
+      equipment: {
+        slot: '1-hand',
+        type: 'hand crossbow'
+      }
     },
   ])
 
