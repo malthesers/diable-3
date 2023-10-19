@@ -1,16 +1,12 @@
-import { Item } from "@/src/interfaces/item"
-import { useState } from "react"
-import Image from "next/image"
 import { useItems } from "@/src/app/items-provider"
+import ItemNameplate from "./ItemNameplate"
 
 export default function KnownInfo() {
   const { known } = useItems()
   
   return (
-    <div className="w-[330px] sm:w-[400px] h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
-      <div className={`bg-${known.quality}-name` + ' w-full aspect-[350/40] bg-no-repeat bg-cover grid p-1'}>
-        <p className="text-red-800 pt-1 text-lg sm:text-xl leading-none tracking-wider uppercase place-self-center">{known.name}</p>
-      </div>
+    <div className="h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2">
+      <ItemNameplate item={known}/>
       <div className="grid grid-cols-[5rem_auto] border-grey border-2 gap-4 p-2">
         <div className={`bg-${known.quality}-icon border-${known.quality}-accent` + ` h-36 border rounded`}>
           <div className="h-full grid icon-gradient">
