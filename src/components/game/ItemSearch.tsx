@@ -24,7 +24,11 @@ export default function ItemSearch() {
       </label>
       <div className='absolute w-full h-fit mx-auto flex flex-col gap-1 bg-black'>
         { 0 < search.length && results.map((item) =>
-          <article onClick={() => submitGuess(item)} key={item.name} className='cursor-pointer shadow-item-inner'>
+          <article
+            key={item.name} tabIndex={0}
+            onClick={() => submitGuess(item)}
+            className='group focus-within:outline-none'
+          >
             <ItemNameplate item={item} hover={true}/>
           </article>
         )}
