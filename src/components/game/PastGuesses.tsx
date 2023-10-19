@@ -1,5 +1,5 @@
 import { useItems } from "@/src/app/items-provider"
-import ItemBox from "./ItemBox"
+import ItemBox from "./item-box/ItemBox"
 
 export default function PastGuesses() {
   const { guesses } = useItems()

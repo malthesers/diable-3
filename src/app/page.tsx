@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Item } from "../interfaces/item"
 import PastGuesses from "../components/game/PastGuesses"
 import ItemSearch from "../components/game/ItemSearch"
-import ItemBox from "../components/game/ItemBox"
+import ItemBox from "../components/game/item-box/ItemBox"
 import { useItems } from "./items-provider"
 
 export default function Home() {
