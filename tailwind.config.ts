@@ -36,7 +36,7 @@ const config: Config = {
         "undefined-icon": "url('/images/icons/base.png')",
         "common-icon": "url('/images/icons/common.png')",
         "magic-icon": "url('/images/icons/magic.png')",
-        "rareicone": "url('/images/icons/rare.png')",
+        "rare-icon": "url('/images/icons/rare.png')",
         "legendary-icon": "url('/images/icons/legendary.png')",
         "set-icon": "url('/images/icons/set.png')",
       },
