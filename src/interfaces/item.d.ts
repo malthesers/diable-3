@@ -1,37 +1,17 @@
-type Classes = 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
-type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
-type Slots = 'unknown' | 'head' | 'shoulders' | 'torso' | 'wrists' | 'hands' | 'waist' | 'legs' | 'feet' | 'neck' | 'finger' | 'off-hand' | '1-hand' | '2-hand'
-
-type Types<TSlot> =
-  TSlot extends 'head' ? Head :
-  TSlot extends 'shoulders' ? 'shoulders' :
-  TSlot extends 'torso' ? Torso :
-  TSlot extends 'wrists' ? 'bracers' :
-  TSlot extends 'hands' ? 'gloves' :
-  TSlot extends 'waist' ? Waist :
-  TSlot extends 'legs' ? 'pants' :
-  TSlot extends 'feet' ? 'boots' :
-  TSlot extends 'neck' ? 'amulet' :
-  TSlot extends 'finger' ? 'ring' :
-  TSlot extends 'off-hand' ? OffHand :
-  TSlot extends '2-hand' ? TwoHand :
-  TSlot extends '1-hand' ? OneHand :
-  'something';
-
-export interface TItem {
-  name: string,
-  class?: Classes,
-  quality: Qualities,
-  slot: Slots,
-  type: Types<Item['slot']>
-}
-
 export interface Item {
   name: string,
   class?: Classes,
   quality: Qualities,
-  equipment: Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand
-} 
+  equipment: Unknown | Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand
+}
+
+type Classes = 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
+type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
+
+type Unknown = {
+  slot: 'unknown'
+  type: 'something'
+}
 
 type Head = {
   slot: 'head'
