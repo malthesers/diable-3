@@ -26,7 +26,8 @@ export default function ItemSearch() {
         { 0 < search.length && results.map((item) =>
           <article
             key={item.name} tabIndex={0}
-            onClick={() => submitGuess(item)}
+            onClick={(e) => submitGuess(item)}
+            onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
             className='group focus-within:outline-none'
           >
             <ItemNameplate item={item} hover={true}/>
