@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className='grid sm:grid-cols-2 gap-4'>
+      <section className='grid lg:grid-cols-2 gap-4'>
         <div className='h-fit grid gap-2'>
           <ItemBox item={known}/>
           { answer && <ItemBox item={answer}/> }
