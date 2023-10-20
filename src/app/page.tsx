@@ -19,7 +19,7 @@ export default function Home() {
           { answer && <ItemBox item={answer}/> }
         </div>
         <div>
-          <ItemSearch />
+          <ItemSearch/>
           <PastGuesses/>
         </div>
       </section>
