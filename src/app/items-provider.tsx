@@ -36,6 +36,14 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   })
   const [items, setItems] = useState<Item[]>([
     {
+      name: 'Thunderfury, Blessed Blade of the Windseeker',
+      quality: 'legendary',
+      equipment: {
+        slot: '1-hand',
+        type: 'sword'
+      }
+    },
+    {
       name: 'Dawn',
       class: 'demon hunter',
       quality: 'legendary',
