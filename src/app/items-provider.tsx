@@ -9,6 +9,7 @@ const ItemsContext = createContext<Context>({
   items: [],
   guesses: [],
   answer: null,
+  resetGame: () => {},
   validateGuess: () => {},
   known: {
     name: 'unidentified',
@@ -102,6 +103,20 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
   ])
 
+  function resetGame() {
+    setAnswer(items[Math.floor(Math.random() * items.length)])
+    setGuesses([])
+    setKnown({
+      name: 'unidentified',
+      class: 'anonymous',
+      quality: 'undefined',
+      equipment: {
+        slot: 'unknown',
+        type: 'something'
+      }
+    })
+  }
+
   function validateGuess(item:Item) {
     setGuesses([
       item,
@@ -123,7 +138,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, resetGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )

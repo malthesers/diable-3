@@ -27,10 +27,10 @@ export default function ItemSearch() {
             value={search}
             onChange={e => setSearch(e.target.value)}
             id='item-search'
-            placeholder='Enter item name...'
             autoComplete='off'
+            placeholder='Enter item name...'
             className='bg-transparent text-center uppercase focus:outline-none'
-            ></input>
+          ></input>
         </label>
       </div>
       <div className='absolute w-full h-fit mx-auto flex flex-col gap-1 px-2'>
