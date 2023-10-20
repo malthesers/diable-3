@@ -107,8 +107,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    // setAnswer(items[Math.floor(Math.random() * items.length)])
-    setAnswer(items[0])
+    setAnswer(items[Math.floor(Math.random() * items.length)])
   }, [])
 
   return (

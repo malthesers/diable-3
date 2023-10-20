@@ -6,10 +6,11 @@ import { useState, useRef } from 'react'
 import ItemNameplate from './ItemNameplate'
 
 export default function ItemSearch() {
-  const { items, addGuess } = useItems()
+  const { items, guesses, addGuess } = useItems()
   const [search, setSearch] = useState<string>('')
   const input = useRef<HTMLInputElement | null>(null)
-  const results:Item[] = items.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
+  const remaining:Item[] = items.filter(item => !guesses.includes(item))
+  const results:Item[] = remaining.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
 
   function submitGuess(item:Item) {
     if (input.current) input.current.focus()
