@@ -9,7 +9,7 @@ const ItemsContext = createContext<Context>({
   items: [],
   guesses: [],
   answer: null,
-  addGuess: () => {},
+  validateGuess: () => {},
   known: {
     name: 'unidentified',
     quality: 'undefined',
@@ -99,11 +99,20 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
   ])
 
-  function addGuess(item:Item) {
+  function validateGuess(item:Item) {
     setGuesses([
       item,
       ...guesses
     ])
+
+    if (item.name === answer?.name) {
+      console.log('won') // TODO: win
+    } else {
+      if (item.class === answer?.class) known.class = item.class
+      if (item.quality === answer?.quality) known.quality = item.quality
+      if (item.equipment.slot === answer?.equipment.slot) known.equipment.slot = item.equipment.slot
+      if (item.equipment.type === answer?.equipment.type) known.equipment.type = item.equipment.type
+    }
   }
 
   useEffect(() => {
@@ -111,7 +120,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, guesses, addGuess, known }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )

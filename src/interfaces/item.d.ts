@@ -6,6 +6,7 @@ export interface Item {
 }
 
 type Classes = 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
+
 type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
 
 type Unknown = {

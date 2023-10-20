@@ -6,7 +6,7 @@ import { useState, useRef } from 'react'
 import ItemNameplate from './ItemNameplate'
 
 export default function ItemSearch() {
-  const { items, guesses, addGuess } = useItems()
+  const { items, guesses, validateGuess } = useItems()
   const [search, setSearch] = useState<string>('')
   const input = useRef<HTMLInputElement | null>(null)
   const remaining:Item[] = items.filter(item => !guesses.includes(item))
@@ -14,7 +14,7 @@ export default function ItemSearch() {
 
   function submitGuess(item:Item) {
     if (input.current) input.current.focus()
-    addGuess(item)
+    validateGuess(item)
     setSearch('')
   }
 
@@ -29,7 +29,7 @@ export default function ItemSearch() {
         { 0 < search.length && results.map((item) =>
           <article
             key={item.name} tabIndex={0}
-            onClick={(e) => submitGuess(item)}
+            onClick={() => submitGuess(item)}
             onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
             className='group focus-within:outline-none'
           >
