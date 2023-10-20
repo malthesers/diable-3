@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         'grey': '#2E2921',
+        'gold': '#DCAE73',
         'undefined': '#9B221B',
         'common': '#FFFFFF',
         'magic': '#6969FF',
