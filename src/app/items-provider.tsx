@@ -107,15 +107,15 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       item,
       ...guesses
     ])
-
+    
+    if (item.equipment.slot === answer?.equipment.slot) known.equipment.slot = item.equipment.slot
+    if (item.equipment.type === answer?.equipment.type) known.equipment.type = item.equipment.type
+    if (item.quality === answer?.quality) known.quality = item.quality
+    if (item.class === answer?.class) known.class = item.class
     if (item.name === answer?.name) {
+      known.name = item.name
       console.log('won') // TODO: win
-    } else {
-      if (item.class === answer?.class) known.class = item.class
-      if (item.quality === answer?.quality) known.quality = item.quality
-      if (item.equipment.slot === answer?.equipment.slot) known.equipment.slot = item.equipment.slot
-      if (item.equipment.type === answer?.equipment.type) known.equipment.type = item.equipment.type
-    }
+    } 
   }
 
   useEffect(() => {
