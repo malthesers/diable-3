@@ -22,7 +22,15 @@ export default function ItemSearch() {
     <div className='relative w-[315px] sm:w-[350px] md:w-[420px] mx-auto'>
       <div className='p-2'>
         <label htmlFor='item-search' className='mx-auto bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid'>
-          <input value={search} onChange={e => setSearch(e.target.value)} ref={input} type='text' id='item-search' name='item-search' placeholder='Enter item name...' className='bg-transparent text-center uppercase focus:outline-none'></input>
+          <input
+            ref={input}
+            value={search}
+            onChange={e => setSearch(e.target.value)}
+            id='item-search'
+            placeholder='Enter item name...'
+            autoComplete='off'
+            className='bg-transparent text-center uppercase focus:outline-none'
+            ></input>
         </label>
       </div>
       <div className='absolute w-full h-fit mx-auto flex flex-col gap-1 px-2'>
