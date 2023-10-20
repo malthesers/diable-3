@@ -12,6 +12,7 @@ const ItemsContext = createContext<Context>({
   validateGuess: () => {},
   known: {
     name: 'unidentified',
+    class: 'anonymous',
     quality: 'undefined',
     equipment: {
       slot: 'unknown',
@@ -28,6 +29,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [guesses, setGuesses] = useState<Item[]>([])
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
+    class: 'anonymous',
     quality: 'undefined',
     equipment: {
       slot: 'unknown',
@@ -37,6 +39,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Item[]>([
     {
       name: 'Thunderfury, Blessed Blade of the Windseeker',
+      class: 'generic',
       quality: 'legendary',
       equipment: {
         slot: '1-hand',
