@@ -19,12 +19,12 @@ export default function ItemRow({ item }: { item: Item}) {
           </div>
         </div>
         <div className='font-sans capitalize'>
-          <p className={`text-${item.quality}` + ' flex flex-col sm:flex-row gap-1'}>
+          <p className={`text-${item.quality}` + ' flex flex-col md:flex-row gap-1'}>
             <span>{item.quality}</span>
             <span>{item.equipment.type}</span>
-            <span className='sm:ml-auto text-neutral-500'>{item.equipment.slot}</span>
+            <span className='md:ml-auto text-neutral-500'>{item.equipment.slot}</span>
           </p>
-          <p className='sm:text-right'>{item.class}</p>
+          <p className='md:text-right'>{item.class}</p>
         </div>
       </div>
     </div>
