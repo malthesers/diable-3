@@ -16,6 +16,13 @@
   .icon-gradient {
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
   }
+
+  .grid-center {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
 }
 
 nav a {
