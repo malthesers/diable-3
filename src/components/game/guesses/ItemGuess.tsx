@@ -9,7 +9,7 @@ export default function ItemGuess({ item }: { item: Item}) {
   return (
     <div className='w-[315px] sm:w-[350px] md:w-[420px] lg:w-[455px] h-fit mx-auto'>
       <ItemNameplate item={item}/>
-      <div className='grid grid-cols-4 gap-2 text-sm text-center uppercase'>
+      <div className='grid grid-cols-4 gap-2 text-center uppercase'>
           {/* <p className={item.quality === answer?.quality ? 'bg-green-700' : 'bg-red-700'}>
             <span>{item.quality}</span>
           </p>
