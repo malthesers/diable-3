@@ -1,5 +1,5 @@
 import { useItems } from '@/src/app/items-provider'
-import ItemNameplate from './ItemNameplate'
+import ItemNameplate from '../ItemNameplate'
 
 export default function KnownInfo() {
   const { known } = useItems()
