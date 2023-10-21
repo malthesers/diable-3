@@ -1,5 +1,5 @@
 import { useItems } from '@/src/app/items-provider'
-import ItemGuess from './ItemGuess'
+import ItemGuess from './guesses/ItemGuess'
 
 export default function PastGuesses() {
   const { guesses } = useItems()

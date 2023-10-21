@@ -1,6 +1,6 @@
 import { useItems } from '@/src/app/items-provider'
 import { Item } from '@/src/interfaces/item'
-import ItemNameplate from './ItemNameplate'
+import ItemNameplate from '../ItemNameplate'
 
 export default function ItemGuess({ item }: { item: Item}) {
   const { answer } = useItems()
