@@ -1,6 +1,6 @@
 interface ItemGuessProps {
   guess: string,
-  answer: string,
+  answer: string | undefined,
 }
 
 export default function GuessBox({ guess, answer }: ItemGuessProps) {
