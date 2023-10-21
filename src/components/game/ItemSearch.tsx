@@ -19,7 +19,7 @@ export default function ItemSearch() {
   }
 
   return (
-    <div className='relative w-[315px] sm:w-[350px] md:w-[420px] mx-auto'>
+    <div className='relative w-[315px] sm:w-[350px] md:w-[420px] lg:w-[455px] mx-auto'>
       <div className='p-2'>
         <label htmlFor='item-search' className='mx-auto bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid'>
           <input
