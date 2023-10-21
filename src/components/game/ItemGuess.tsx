@@ -25,12 +25,14 @@ export default function ItemGuess({ item }: { item: Item}) {
             <div className={(item.quality === answer?.quality ? 'bg-green-700' : 'bg-red-700') + ' w-full h-full bg-opacity-40 grid-center'}></div>
             <span className='grid-center my-auto'>{item.quality}</span>
           </div>
-          <p className={item.equipment.slot === answer?.equipment.slot ? 'bg-green-700' : 'bg-red-700'}>
-            <span>{item.equipment.slot}</span>
-          </p>
-          <p className={item.equipment.type === answer?.equipment.type ? 'bg-green-700' : 'bg-red-700'}>
-            <span>{item.equipment.type}</span>
-          </p>
+          <div className='grid aspect-square bg-[url("/images/icons/set.png")] bg-center bg-cover'>
+            <div className={(item.equipment.slot === answer?.equipment.slot ? 'bg-green-700' : 'bg-red-700') + ' w-full h-full bg-opacity-40 grid-center'}></div>
+            <span className='grid-center my-auto'>{item.equipment.slot}</span>
+          </div>
+          <div className='grid aspect-square bg-[url("/images/icons/set.png")] bg-center bg-cover'>
+            <div className={(item.equipment.type === answer?.equipment.type ? 'bg-green-700' : 'bg-red-700') + ' w-full h-full bg-opacity-40 grid-center'}></div>
+            <span className='grid-center my-auto'>{item.equipment.type}</span>
+          </div>
           <div className='grid aspect-square bg-[url("/images/icons/set.png")] bg-center bg-cover'>
             <div className={(item.class === answer?.class ? 'bg-green-700' : 'bg-red-700') + ' w-full h-full bg-opacity-40 grid-center'}></div>
             <span className='grid-center my-auto'>{item.class}</span>
