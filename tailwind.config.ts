@@ -15,6 +15,7 @@ const config: Config = {
         'grey': '#2E2921',
         'gold': '#DCAE73',
         'gold-light': '#E0D2BF',
+        'bronze': '#54421E',
         'undefined': '#9B221B',
         'common': '#FFFFFF',
         'magic': '#6969FF',
