@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function ItemRow({ item }: { item: Item}) {
   return (
-    <div className='w-[315px] sm:w-[350px] md:w-[420px] h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2'>
+    <div className='h-fit mx-auto bg-black border-zinc-800 border-4 p-1 space-y-2'>
       <ItemNameplate item={item}/>
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
         <div className={`bg-${item.quality}-icon border-${item.quality}-accent` + ' h-32 border rounded'}>
