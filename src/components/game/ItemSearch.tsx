@@ -33,17 +33,19 @@ export default function ItemSearch() {
           ></input>
         </label>
       </div>
-      <div className='absolute w-full h-fit mx-auto flex flex-col gap-1 px-2'>
-        { 0 < search.length && results.map((item) =>
-          <article
-            key={item.name} tabIndex={0}
-            onClick={() => submitGuess(item)}
-            onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
-            className='group focus-within:outline-none'
-          >
-            <ItemNameplate item={item} hover={true}/>
-          </article>
-        )}
+      <div className='absolute w-full h-fit px-2'>
+        <div className='w-fit bg-black bg-opacity-70 flex flex-col gap-1 mx-auto'>
+          { 0 < search.length && results.map((item) =>
+            <article
+              key={item.name} tabIndex={0}
+              onClick={() => submitGuess(item)}
+              onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
+              className='group focus-within:outline-none'
+            >
+              <ItemNameplate item={item} hover={true}/>
+            </article>
+          )}
+        </div>
       </div>
     </div>
   )
