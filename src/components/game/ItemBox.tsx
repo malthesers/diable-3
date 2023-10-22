@@ -18,7 +18,7 @@ export default function ItemRow({ item }: { item: Item}) {
             />
           </div>
         </div>
-        <div className='font-sans capitalize'>
+        <div className='font-sans capitalize md:text-lg'>
           <p className={`text-${item.quality}` + ' flex flex-col md:flex-row gap-1'}>
             <span>{item.quality}</span>
             <span>{item.equipment.type}</span>
