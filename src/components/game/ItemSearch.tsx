@@ -6,8 +6,7 @@ import { useState, useRef } from 'react'
 import ItemNameplate from './ItemNameplate'
 
 export default function ItemSearch() {
-  const { items, guesses, validateGuess } = useItems()
-  const [search, setSearch] = useState<string>('')
+  const { items, guesses, validateGuess, search, setSearch } = useItems()
   const input = useRef<HTMLInputElement | null>(null)
   const remaining:Item[] = items.filter(item => !guesses.includes(item))
   const results:Item[] = remaining.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
