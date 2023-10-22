@@ -53,3 +53,22 @@ nav a:hover::after,
 nav a.active::after {
   transform: scaleX(1);
 }
+
+/* transitions */
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-enter-active {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
+}
