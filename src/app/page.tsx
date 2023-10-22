@@ -19,7 +19,7 @@ export default function Home() {
           <ItemBox item={known}/>
           { answer && <ItemBox item={answer}/> }
         </div>
-        <div>
+        <div className='flex flex-col place-items-center'>
           <ItemSearch/>
           <PastGuesses/>
         </div>

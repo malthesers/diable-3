@@ -19,9 +19,9 @@ export default function ItemSearch() {
   }
 
   return (
-    <div className='relative mx-auto'>
-      <div className='p-2'>
-        <label htmlFor='item-search' className='nameplate mx-auto bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid'>
+    <div className='relative'>
+      <div className='mb-1'>
+        <label htmlFor='item-search' className='nameplate bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid'>
           <input
             ref={input}
             value={search}
@@ -33,8 +33,8 @@ export default function ItemSearch() {
           ></input>
         </label>
       </div>
-      <div className='absolute w-full h-fit px-2'>
-        <div className='w-fit bg-black bg-opacity-70 flex flex-col gap-1 mx-auto'>
+      <div className='absolute w-full h-fit'>
+        <div className='w-fit bg-black bg-opacity-70 flex flex-col gap-1'>
           { 0 < search.length && results.map((item) =>
             <article
               key={item.name} tabIndex={0}
