@@ -6,5 +6,7 @@ export interface Context {
   resetGame: func,
   validateGuess: func,
   answer: Item | null,
-  known: Item
+  known: Item,
+  search: string,
+  setSearch: func
 }

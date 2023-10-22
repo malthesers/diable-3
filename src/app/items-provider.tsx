@@ -9,6 +9,8 @@ const ItemsContext = createContext<Context>({
   items: [],
   guesses: [],
   answer: null,
+  search: '',
+  setSearch: () => {},
   resetGame: () => {},
   validateGuess: () => {},
   known: {
@@ -102,6 +104,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       }
     },
   ])
+  const [search, setSearch] = useState<string>('')
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
@@ -138,7 +141,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, resetGame, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, resetGame, validateGuess, search, setSearch }}>
       {children}
     </ItemsContext.Provider>
   )
