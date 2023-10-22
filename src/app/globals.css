@@ -12,6 +12,12 @@
   }
 }
 
+@layer components {
+  .nameplate {
+    @apply w-[350px] md:w-[420px] lg:w-[455px];
+  }
+}
+
 @layer utilities {
   .icon-gradient {
     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
