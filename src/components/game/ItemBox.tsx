@@ -1,16 +1,9 @@
-import { useRef } from 'react'
-import { SwitchTransition, CSSTransition } from 'react-transition-group'
 import { Item } from '@/src/interfaces/item'
 import ItemNameplate from './ItemNameplate'
-import Image from 'next/image'
 import KnownValue from './KnownValue'
+import Image from 'next/image'
 
 export default function ItemRow({ item }: { item: Item}) {
-  const itemQuality = useRef<HTMLElement>(null)
-  const itemClass = useRef<HTMLElement>(null)
-  const itemType = useRef<HTMLElement>(null)
-  const itemSlot = useRef<HTMLElement>(null)
-
   return (
     <div className='h-fit mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
