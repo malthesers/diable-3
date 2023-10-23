@@ -1,6 +1,6 @@
 'use client'
 
-import PastGuesses from '../components/game/PastGuesses'
+import PastGuesses from '../components/game/guesses/PastGuesses'
 import ItemSearch from '../components/game/ItemSearch'
 import ItemBox from '../components/game/ItemBox'
 import Button from '../components/layout/Button'

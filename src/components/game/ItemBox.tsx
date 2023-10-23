@@ -3,7 +3,7 @@ import ItemNameplate from './ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
 
-export default function ItemRow({ item }: { item: Item}) {
+export default function ItemBox({ item }: { item: Item}) {
   return (
     <div className='h-fit mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
