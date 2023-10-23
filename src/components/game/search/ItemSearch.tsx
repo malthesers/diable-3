@@ -3,6 +3,7 @@ import { Item } from '@/src/interfaces/item'
 import { useRef } from 'react'
 import ItemNameplate from '../ItemNameplate'
 import SearchBar from './SearchBar'
+import SearchResults from './SearchResults'
 
 export default function ItemSearch() {
   const { items, guesses, validateGuess, search, setSearch } = useItems()
@@ -19,20 +20,7 @@ export default function ItemSearch() {
   return (
     <div className='relative'>
       <SearchBar ref={ref}/>
-      <div className='absolute z-10 w-full h-fit'>
-        <div className='w-fit bg-black bg-opacity-70 flex flex-col gap-2'>
-          { 0 < search.length && results.map((item) =>
-            <article
-              key={item.name} tabIndex={0}
-              onClick={() => submitGuess(item)}
-              onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
-              className='group focus-within:outline-none'
-            >
-              <ItemNameplate item={item} hover={true}/>
-            </article>
-          )}
-        </div>
-      </div>
+      <SearchResults submitGuess={submitGuess} results={results} />
     </div>
   )
 }
