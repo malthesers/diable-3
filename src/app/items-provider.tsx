@@ -109,6 +109,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
     setGuesses([])
+    setSearch('')
     setKnown({
       name: 'unidentified',
       class: 'anonymous',

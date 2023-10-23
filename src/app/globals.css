@@ -54,7 +54,7 @@ nav a.active::after {
   transform: scaleX(1);
 }
 
-/* transitions */
+/* --- Transitions --- */
 
 .fade-enter {
   opacity: 0;
