@@ -11,10 +11,10 @@ export default function Home() {
 
   return (
     <main>
-      <section className='mx-auto flex flex-row gap-4 mb-2 md:px-1'>
+      <section className='mx-auto flex flex-row gap-2 mb-2 md:px-1'>
         <Button onClick={resetGame} text='New Game'/>
       </section>
-      <section className='grid lg:grid-cols-2 gap-4'>
+      <section className='grid md:grid-cols-2'>
         <div className='h-fit grid gap-2'>
           <ItemBox item={known}/>
           { answer && <ItemBox item={answer}/> }

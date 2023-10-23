@@ -7,6 +7,11 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      'md': '840px',
+      'lg': '1024px',
+    },
     extend: {
       boxShadow: {
         'item-inner': 'inset 0px 0px 5px 5px rgba(240,222,108,0.25)',
