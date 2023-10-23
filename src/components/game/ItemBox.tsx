@@ -3,6 +3,7 @@ import { SwitchTransition, CSSTransition } from 'react-transition-group'
 import { Item } from '@/src/interfaces/item'
 import ItemNameplate from './ItemNameplate'
 import Image from 'next/image'
+import KnownValue from './KnownValue'
 
 export default function ItemRow({ item }: { item: Item}) {
   const itemQuality = useRef<HTMLElement>(null)
@@ -37,7 +38,7 @@ export default function ItemRow({ item }: { item: Item}) {
                 <span ref={itemQuality}>{item.quality}</span>
               </CSSTransition>
             </SwitchTransition>
-            <span>{item.equipment.type}</span>
+            <KnownValue value={item.equipment.type}/>
             <span className='md:ml-auto text-neutral-500'>{item.equipment.slot}</span>
           </p>
           <p className='md:text-right'>{item.class}</p>
