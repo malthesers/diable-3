@@ -1,9 +1,9 @@
 'use client'
 
-import PastGuesses from '../components/game/guesses/PastGuesses'
-import ItemSearch from '../components/game/ItemSearch'
-import ItemBox from '../components/game/known/ItemBox'
-import Button from '../components/layout/Button'
+import PastGuesses from '@/src/components/game/guesses/PastGuesses'
+import ItemSearch from '@/src/components/game/search/ItemSearch'
+import ItemBox from '@/src/components/game/known/ItemBox'
+import Button from '@/src/components/layout/Button'
 import { useItems } from './items-provider'
 
 export default function Home() {
