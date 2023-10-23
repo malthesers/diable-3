@@ -1,5 +1,5 @@
 import { Item } from '@/src/interfaces/item'
-import ItemNameplate from './ItemNameplate'
+import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
 

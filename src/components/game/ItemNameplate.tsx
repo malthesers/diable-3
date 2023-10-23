@@ -1,5 +1,5 @@
 import { Item } from '@/src/interfaces/item';
-import KnownValue from './KnownValue';
+import KnownValue from './known/KnownValue';
 
 interface ItemNameplateProps {
   item: Item

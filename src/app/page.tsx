@@ -2,7 +2,7 @@
 
 import PastGuesses from '../components/game/guesses/PastGuesses'
 import ItemSearch from '../components/game/ItemSearch'
-import ItemBox from '../components/game/ItemBox'
+import ItemBox from '../components/game/known/ItemBox'
 import Button from '../components/layout/Button'
 import { useItems } from './items-provider'
 
