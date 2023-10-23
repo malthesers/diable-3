@@ -8,6 +8,7 @@ interface KnownValueProps {
 
 export default function KnownValue({ className, value }: KnownValueProps) {
   const node = useRef<HTMLElement>(null)
+  const tagName = 'span'
 
   return (
     <SwitchTransition mode='out-in'>
