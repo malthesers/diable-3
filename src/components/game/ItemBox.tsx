@@ -28,20 +28,11 @@ export default function ItemRow({ item }: { item: Item}) {
         </div>
         <div className='font-sans capitalize md:text-lg'>
           <p className={`text-${item.quality}` + ' flex flex-col md:flex-row gap-1'}>
-            <SwitchTransition mode='out-in'>
-              <CSSTransition
-                classNames='fade'
-                key={item.quality}
-                nodeRef={itemQuality}
-                addEndListener={(done: () => void) => itemQuality.current?.addEventListener("transitionend", done, false)}
-              >
-                <span ref={itemQuality}>{item.quality}</span>
-              </CSSTransition>
-            </SwitchTransition>
+            <KnownValue value={item.quality}/>
             <KnownValue value={item.equipment.type}/>
-            <span className='md:ml-auto text-neutral-500'>{item.equipment.slot}</span>
+            <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
-          <p className='md:text-right'>{item.class}</p>
+          <KnownValue value={item.class} className='block md:text-right'/>
         </div>
       </div>
     </div>
