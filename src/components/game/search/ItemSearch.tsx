@@ -1,9 +1,8 @@
 import { useItems } from '@/src/app/items-provider'
 import { Item } from '@/src/interfaces/item'
 import { useRef } from 'react'
-import ItemNameplate from '../ItemNameplate'
-import SearchBar from './SearchBar'
 import SearchResults from './SearchResults'
+import SearchBar from './SearchBar'
 
 export default function ItemSearch() {
   const { items, guesses, validateGuess, search, setSearch } = useItems()
