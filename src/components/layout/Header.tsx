@@ -14,7 +14,7 @@ export default function Header() {
         <Link href='/' className='text-xl after:'>Diable III</Link>
         <nav className='flex gap-4'>
           {/* <Link href='/' className={`${pathname === '/' ? 'active' : ''}`}>Diablo III</Link> */}
-          <Link href='https://github.com/malthesers/diable-3'>
+          <Link href='https://github.com/malthesers/diable-3' rel="noopener noreferrer" target='_blank'>
             <Image
               src={GitHubIcon}
               alt='GitHub icon'
