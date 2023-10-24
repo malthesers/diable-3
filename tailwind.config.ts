@@ -15,7 +15,7 @@ const config: Config = {
     extend: {
       boxShadow: {
         'item-inner': 'inset 0px 0px 5px 5px rgba(240,222,108,0.25)',
-        'guess-inner': 'inset 0px 0px 4px 4px rgba(84,66,30,1)'
+        'guess-inner': 'inset 0px 0px 4px 4px #413014'
       },
       colors: {
         'grey': '#2E2921',
