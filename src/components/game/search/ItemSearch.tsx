@@ -17,7 +17,7 @@ export default function ItemSearch() {
   }
 
   return (
-    <div className='relative'>
+    <div className='relative mb-2'>
       <SearchBar ref={ref}/>
       <SearchResults submitGuess={submitGuess} results={results} />
     </div>

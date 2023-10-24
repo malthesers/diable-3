@@ -11,7 +11,7 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
   const { search } = useItems()
 
   return (
-    <div className='absolute z-10 w-full h-fit'>
+    <div className='absolute z-10 w-full h-fit mt-2'>
       <div className='w-fit bg-black bg-opacity-70 flex flex-col gap-2'>
         { 0 < search.length && results.map((item) =>
           <article
