@@ -1,7 +1,7 @@
 import { useItems } from '@/src/app/items-provider'
 import { forwardRef } from 'react'
 
-const SearchBar = forwardRef<HTMLInputElement>((props, ref) => {
+const SearchBar = forwardRef<HTMLInputElement>(function SearchBar(props, ref) {
   const { search, setSearch } = useItems()
 
   return (
