@@ -16,7 +16,7 @@ export default function KnownValue({ className, value }: KnownValueProps) {
         key={value}
         nodeRef={node}
         addEndListener={(done: () => void) =>
-          node.current?.addEventListener("transitionend", done, false)
+          node.current?.addEventListener('transitionend', done, false)
         }
       >
         <span ref={node} className={className}>{value}</span>
