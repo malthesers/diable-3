@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main>
-      <section className='mx-auto flex flex-row gap-2 mb-2 md:px-1'>
+      <section className='max-w-[400px] sm:max-w-[430px] md:max-w-[920px] lg:max-w-none mx-auto flex flex-row gap-2 mb-2 px-2 lg:px-3'>
         <Button onClick={resetGame} text='New Game'/>
       </section>
       <section className='grid md:grid-cols-2'>
