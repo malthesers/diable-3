@@ -31,7 +31,7 @@
   }
 }
 
-nav a {
+/* nav a {
   position: relative;
   display: inline-block;
 }
@@ -52,7 +52,7 @@ nav a::after {
 nav a:hover::after,
 nav a.active::after {
   transform: scaleX(1);
-}
+} */
 
 /* --- Transitions --- */
 
