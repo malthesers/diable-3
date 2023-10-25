@@ -2,6 +2,7 @@
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
 import { ItemsContext } from '../interfaces/items-context'
+import { useModals } from './ModalsProvider'
 import { Item } from '../interfaces/item'
 
 
@@ -29,6 +30,7 @@ export function useItems() {
 }
 
 export default function ItemsProvider({ children }: { children: ReactNode }) {
+  const { toggleShowVictory } = useModals()
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
   const [known, setKnown] = useState<Item>({
@@ -134,7 +136,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     if (item.class === answer?.class) known.class = item.class
     if (item.name === answer?.name) {
       known.name = item.name
-      console.log('won') // TODO: win
+      toggleShowVictory(true)
     } 
   }
 
