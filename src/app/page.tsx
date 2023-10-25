@@ -5,7 +5,7 @@ import ModalsContainer from '../components/modals/ModalsContainer'
 import ItemSearch from '@/src/components/game/search/ItemSearch'
 import ItemBox from '@/src/components/game/known/ItemBox'
 import Button from '@/src/components/layout/Button'
-import { useItems } from './items-provider'
+import { useItems } from '../context/ItemsProvider'
 import { createPortal } from 'react-dom'
 
 export default function Home() {

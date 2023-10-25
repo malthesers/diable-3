@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import Button from "../layout/Button";
-import { useItems } from "@/src/app/items-provider";
+import { useItems } from "@/src/context/ItemsProvider";
 
 interface ModalProps {
   closeModal: () => void,

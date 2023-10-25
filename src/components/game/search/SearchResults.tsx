@@ -1,4 +1,4 @@
-import { useItems } from '@/src/app/items-provider'
+import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/item'
 import ItemNameplate from '../ItemNameplate'
 

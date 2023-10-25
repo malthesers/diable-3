@@ -2,7 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Spectral } from 'next/font/google'
 import Header from '../components/layout/Header'
-import ItemsProvider from './items-provider'
+import ItemsProvider from '../context/ItemsProvider'
 
 const spectral = Spectral({
   weight: '400',

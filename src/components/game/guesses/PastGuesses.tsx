@@ -1,4 +1,4 @@
-import { useItems } from '@/src/app/items-provider'
+import { useItems } from '@/src/context/ItemsProvider'
 import ItemGuess from './ItemGuess'
 
 export default function PastGuesses() {
