@@ -17,7 +17,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title }
       <div className="max-w-xl w-full grid m-auto bg-undefined-icon bg-center border-bronze border-2">
         <div className="grid-center w-full h-full bg-black bg-opacity-70"></div>
         <div className="grid-center p-4 text-white">
-          <p className="text-2xl text-center">{title}</p>
+          <p className="text-2xl text-center mb-2">{title}</p>
           <>{children}</>
           <div className="grid place-content-center mt-4">
             <Button onClick={() => closeModal()} text="Close"/>
