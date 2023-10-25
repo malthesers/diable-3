@@ -1,11 +1,11 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
-import { Context } from '../interfaces/context'
+import { ItemsContext } from '../interfaces/context'
 import { Item } from '../interfaces/item'
 
 
-const ItemsContext = createContext<Context>({
+const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
   setSearch: () => {},
   resetGame: () => {},

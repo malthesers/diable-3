@@ -1,6 +1,6 @@
 import { Item } from './item';
 
-export interface Context {
+export interface ItemsContext {
   items: Item[],
   guesses: Item[],
   resetGame: () => void,
@@ -9,4 +9,9 @@ export interface Context {
   answer: Item | null,
   search: string,
   known: Item,
+}
+
+export interface ModalsContext {
+  setShowVictory: (boolean) => void,
+  showVictory: boolean,
 }
