@@ -1,8 +1,9 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
-import { Item } from '../interfaces/item'
 import { Context } from '../interfaces/context'
+import { Modals } from '../interfaces/modals'
+import { Item } from '../interfaces/item'
 
 
 const ItemsContext = createContext<Context>({
@@ -23,6 +24,7 @@ const ItemsContext = createContext<Context>({
     }
   }
 })
+
 export function useItems() {
   return useContext(ItemsContext)
 }
@@ -105,6 +107,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
   ])
   const [search, setSearch] = useState<string>('')
+  const [showModal, setShowModal] = useState<Modals>({
+    guessed: false,
+    instructions: false
+  })
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
