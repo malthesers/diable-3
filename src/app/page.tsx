@@ -5,6 +5,8 @@ import ItemSearch from '@/src/components/game/search/ItemSearch'
 import ItemBox from '@/src/components/game/known/ItemBox'
 import Button from '@/src/components/layout/Button'
 import { useItems } from './items-provider'
+import { createPortal } from 'react-dom'
+import GuessedModal from '../components/modals/GuessedModal'
 
 export default function Home() {
   const { answer, known, resetGame } = useItems()
@@ -24,6 +26,10 @@ export default function Home() {
           <PastGuesses/>
         </div>
       </section>
+      {createPortal(
+        <GuessedModal/>,
+        document.body
+      )}
     </main>
   )
 }
