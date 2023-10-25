@@ -10,8 +10,3 @@ export interface ItemsContext {
   search: string,
   known: Item,
 }
-
-export interface ModalsContext {
-  toggleShowVictory: (value?: boolean) => void,
-  showVictory: boolean,
-}

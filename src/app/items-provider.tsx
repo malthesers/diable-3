@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
-import { ItemsContext } from '../interfaces/context'
+import { ItemsContext } from '../interfaces/items-context'
 import { Item } from '../interfaces/item'
 
 
