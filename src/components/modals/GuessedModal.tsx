@@ -9,7 +9,7 @@ export default function GuessedModal() {
   }
 
   return (
-    <ModalTemplate closeModal={closeModal} title="Item was guessed!">
+    <ModalTemplate showModal={showModal} closeModal={closeModal} title="Item was guessed!">
       <p>yo</p>
     </ModalTemplate>
   )

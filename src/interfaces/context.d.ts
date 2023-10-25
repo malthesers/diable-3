@@ -7,6 +7,6 @@ export interface Context {
   setSearch: (value:string) => void,
   validateGuess: (item:Item) => void,
   answer: Item | null,
-  known: Item,
   search: string,
+  known: Item,
 }

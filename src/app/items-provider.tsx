@@ -2,18 +2,17 @@
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
 import { Context } from '../interfaces/context'
-import { Modals } from '../interfaces/modals'
 import { Item } from '../interfaces/item'
 
 
 const ItemsContext = createContext<Context>({
+  validateGuess: () => {},
+  setSearch: () => {},
+  resetGame: () => {},
   items: [],
   guesses: [],
   answer: null,
   search: '',
-  setSearch: () => {},
-  resetGame: () => {},
-  validateGuess: () => {},
   known: {
     name: 'unidentified',
     class: 'anonymous',
@@ -107,10 +106,6 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
   ])
   const [search, setSearch] = useState<string>('')
-  const [showModal, setShowModal] = useState<Modals>({
-    guessed: false,
-    instructions: false
-  })
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
@@ -148,7 +143,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, resetGame, validateGuess, search, setSearch }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, search, setSearch, resetGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )
