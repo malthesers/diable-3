@@ -13,7 +13,7 @@ export function useModals() {
   return useContext(ModalsContext)
 }
 
-export default function ItemsProvider({ children }: { children: ReactNode }) {
+export default function ModalsProvider({ children }: { children: ReactNode }) {
   const [showVictory, toggleShowVictory] = useToggle(false)
 
 

@@ -1,8 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Spectral } from 'next/font/google'
-import Header from '../components/layout/Header'
+import ModalsProvider from '../context/ModalsProvider'
 import ItemsProvider from '../context/ItemsProvider'
+import Header from '../components/layout/Header'
 
 const spectral = Spectral({
   weight: '400',
@@ -23,9 +24,11 @@ export default function RootLayout({
     <html lang='en'>
       <body className={spectral.className}>
         <Header/>
-        <ItemsProvider>
-          {children}
-        </ItemsProvider>
+        <ModalsProvider>
+          <ItemsProvider>
+            {children}
+          </ItemsProvider>
+        </ModalsProvider>
       </body>
     </html>
   )
