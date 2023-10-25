@@ -12,6 +12,6 @@ export interface ItemsContext {
 }
 
 export interface ModalsContext {
-  setShowVictory: (boolean) => void,
+  toggleShowVictory: (value?: boolean) => void,
   showVictory: boolean,
 }

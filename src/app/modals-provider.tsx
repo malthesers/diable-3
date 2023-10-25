@@ -1,10 +1,11 @@
 'use client'
 
-import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
+import { ReactNode, createContext, useContext } from 'react'
 import { ModalsContext } from '../interfaces/context'
+import useToggle from '../hooks/useToggle'
 
 const ModalsContext = createContext<ModalsContext>({
-  setShowVictory: (boolean) => {},
+  toggleShowVictory: (value?: boolean) => {},
   showVictory: false
 })
 
@@ -13,11 +14,11 @@ export function useModals() {
 }
 
 export default function ItemsProvider({ children }: { children: ReactNode }) {
-  const [showVictory, setShowVictory] = useState<boolean>(false)
+  const [showVictory, toggleShowVictory] = useToggle(false)
 
 
   return (
-    <ModalsContext.Provider value={{ showVictory, setShowVictory }}>
+    <ModalsContext.Provider value={{ showVictory, toggleShowVictory }}>
       {children}
     </ModalsContext.Provider>
   )
