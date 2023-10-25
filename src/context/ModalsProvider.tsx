@@ -5,8 +5,10 @@ import { ModalsContext } from '../interfaces/modals-context'
 import useToggle from '../hooks/useToggle'
 
 const ModalsContext = createContext<ModalsContext>({
+  toggleShowInstructions: (value?: boolean) => {},
   toggleShowVictory: (value?: boolean) => {},
-  showVictory: false
+  showInstructions: false,
+  showVictory: false,
 })
 
 export function useModals() {
@@ -14,11 +16,12 @@ export function useModals() {
 }
 
 export default function ModalsProvider({ children }: { children: ReactNode }) {
+  const [showInstructions, toggleShowInstructions] = useToggle(false)
   const [showVictory, toggleShowVictory] = useToggle(false)
 
 
   return (
-    <ModalsContext.Provider value={{ showVictory, toggleShowVictory }}>
+    <ModalsContext.Provider value={{ showInstructions, toggleShowInstructions, showVictory, toggleShowVictory }}>
       {children}
     </ModalsContext.Provider>
   )
