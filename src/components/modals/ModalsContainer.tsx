@@ -1,9 +1,9 @@
-import GuessedModal from "./GuessedModal";
+import VictoryModal from "./VictoryModal";
 
 export default function ModalsContainer() {
   return (
     <>
-      <GuessedModal/>
+      <VictoryModal/>
     </>
   )
 }
