@@ -8,6 +8,7 @@ import { Item } from '../interfaces/item'
 
 const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
+  surrenderGame: () => {},
   setSearch: () => {},
   resetGame: () => {},
   items: [],
@@ -124,6 +125,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     })
   }
 
+  function surrenderGame() {
+    if (answer) setKnown(answer)
+  }
+
   function validateGuess(item:Item) {
     setGuesses([
       item,
@@ -145,7 +150,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, search, setSearch, resetGame, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, search, setSearch, resetGame, surrenderGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )
