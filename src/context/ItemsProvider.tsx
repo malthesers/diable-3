@@ -31,7 +31,7 @@ export function useItems() {
 }
 
 export default function ItemsProvider({ children }: { children: ReactNode }) {
-  const { toggleShowVictory } = useModals()
+  const { toggleShowVictory, toggleShowDefeat } = useModals()
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
   const [known, setKnown] = useState<Item>({
@@ -126,7 +126,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   function surrenderGame() {
-    if (answer) setKnown(answer)
+    if (answer) {
+      setKnown(answer)
+      toggleShowDefeat(true)
+    }
   }
 
   function validateGuess(item:Item) {
