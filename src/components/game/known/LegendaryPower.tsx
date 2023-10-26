@@ -5,7 +5,8 @@ import { useItems } from '@/src/context/ItemsProvider'
 import { useRef } from 'react'
 
 export default function Legend({ power }: { power: string }) {
-  const { guesses } = useItems()
+  const { answer, known, guesses } = useItems()
+  const wasGuessed = answer?.name === known.name
   const showHint = guesses.length > 3
   const powerRef = useRef(null)
 
@@ -17,7 +18,7 @@ export default function Legend({ power }: { power: string }) {
       classNames='fade'
       unmountOnExit
     >
-      <p ref={powerRef} className='duration-200 blur-sm hover:blur-none'>
+      <p ref={powerRef} className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
         <Image
           src={Bullet}
           alt='Legendary power bullet'
