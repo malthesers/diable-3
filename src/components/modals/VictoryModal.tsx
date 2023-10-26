@@ -4,10 +4,25 @@ import ModalTemplate from './ModalTemplate';
 
 export default function VictoryModal() {
   const { showVictory, toggleShowVictory } = useModals()
-  const { answer, guesses } = useItems()
+  const { answer, guesses, resetGame } = useItems()
+
+  function newGame() {
+    toggleShowVictory(false)
+    setTimeout(() => {
+      resetGame()
+    }, 500)
+  }
 
   return (
-    <ModalTemplate showModal={showVictory} closeModal={() => toggleShowVictory(false)} title='Item was guessed!'>
+    <ModalTemplate
+      showModal={showVictory}
+      closeModal={() => toggleShowVictory(false)}
+      title='Item was guessed!'
+      button={{
+        onClick: newGame, 
+        text: 'New Game'
+      }}
+    >
       <p className='text-xl text-center'>
         <span>You guessed</span>
         <span className={`text-${answer?.quality}`}> {`[${answer?.name}]`} </span>

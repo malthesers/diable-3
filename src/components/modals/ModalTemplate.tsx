@@ -25,7 +25,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
           <div className='grid-center p-4 text-white'>
             <p className='text-2xl text-center mb-2'>{title}</p>
             <>{children}</>
-            <div className='grid place-content-center mt-4'>
+            <div className='flex flex-wrap place-content-center gap-4 mt-4'>
               { button && <Button onClick={button.onClick} text={button.text}/>}
               <Button onClick={() => closeModal()} text='Close'/>
             </div>
