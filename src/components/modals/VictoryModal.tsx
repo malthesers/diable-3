@@ -14,7 +14,7 @@ export default function VictoryModal() {
         <span>
           <span>in</span>
           <span className={`text-${answer?.quality}`}> {guesses.length} </span>
-          <span>guesses.</span>
+          <span>{ guesses.length === 1 ? 'guess' : 'guesses'}.</span>
         </span>
       </p>
     </ModalTemplate>
