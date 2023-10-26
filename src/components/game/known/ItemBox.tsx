@@ -21,9 +21,11 @@ export default function ItemBox({ item }: { item: Item}) {
           </div>
         </div>
         <div className='font-sans capitalize md:text-lg'>
-          <p className={`text-${item.quality}` + ' flex flex-col md:flex-row gap-1'}>
-            <KnownValue value={item.quality}/>
-            <KnownValue value={item.equipment.type}/>
+          <p className='flex flex-col md:flex-row'>
+            <span className={`text-${item.quality} flex flex-row gap-1`}>
+              <KnownValue value={item.quality}/>
+              <KnownValue value={item.equipment.type}/>
+            </span>
             <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={item.class} className='block md:text-right'/>

@@ -6,13 +6,13 @@ import { useRef } from 'react'
 
 export default function Legend({ power }: { power: string }) {
   const { guesses } = useItems()
-  const enableHint = guesses.length > 3
+  const showHint = guesses.length > 3
   const powerRef = useRef(null)
 
   return (
     <CSSTransition
       nodeRef={powerRef}
-      in={enableHint}
+      in={showHint}
       timeout={500}
       classNames='fade'
       unmountOnExit
