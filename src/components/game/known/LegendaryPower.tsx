@@ -17,7 +17,7 @@ export default function Legend({ power }: { power: string }) {
       classNames='fade'
       unmountOnExit
     >
-      <p ref={powerRef}>
+      <p ref={powerRef} className='duration-200 blur-sm hover:blur-none'>
         <Image
           src={Bullet}
           alt='Legendary power bullet'
