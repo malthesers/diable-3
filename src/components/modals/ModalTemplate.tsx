@@ -6,10 +6,14 @@ interface ModalProps {
   closeModal: () => void,
   showModal: boolean,
   children: ReactNode,
-  title: string
+  title: string,
+  button?: {
+    onClick: () => void,
+    text: string
+  }
 }
 
-export default function ModalTemplate({ closeModal, showModal, children, title }: ModalProps) {
+export default function ModalTemplate({ closeModal, showModal, children, title, button }: ModalProps) {
   const modal = useRef<HTMLElement>(null)
   
   return (
@@ -22,6 +26,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title }
             <p className='text-2xl text-center mb-2'>{title}</p>
             <>{children}</>
             <div className='grid place-content-center mt-4'>
+              { button && <Button onClick={button.onClick} text={button.text}/>}
               <Button onClick={() => closeModal()} text='Close'/>
             </div>
           </div>

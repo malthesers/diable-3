@@ -9,7 +9,7 @@ export default function VictoryModal() {
   return (
     <ModalTemplate showModal={showVictory} closeModal={() => toggleShowVictory(false)} title='Item was guessed!'>
       <p className='text-xl text-center'>
-        <span>You succesfully guessed</span>
+        <span>You guessed</span>
         <span className={`text-${answer?.quality}`}> {`[${answer?.name}]`} </span>
         <span>
           <span>in</span>
