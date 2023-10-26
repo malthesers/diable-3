@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <section className='max-w-[400px] sm:max-w-[430px] md:max-w-[920px] lg:max-w-none mx-auto flex flex-row gap-2 mb-2 px-2 lg:px-3'>
         <Button onClick={resetGame} text='New Game'/>
-        <Button onClick={() => toggleShowInstructions(true)} text='Instructions'/>
+        <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
       </section>
       <section className='grid md:grid-cols-2'>
         <div className='h-fit grid gap-2'>
