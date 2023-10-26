@@ -29,7 +29,7 @@ export default function Home() {
           <PastGuesses/>
         </div>
       </section>
-      <ModalsContainer/>
+      {/* <ModalsContainer/> */}
     </main>
   )
 }

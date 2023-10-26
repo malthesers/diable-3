@@ -1,11 +1,12 @@
 import { Item } from '@/src/interfaces/item'
+import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
 
 export default function ItemBox({ item }: { item: Item}) {
   return (
-    <div className='h-fit mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
+    <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
         <div className={`bg-${item.quality}-icon border-${item.quality}-accent` + ' h-32 border rounded'}>
@@ -26,6 +27,7 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={item.class} className='block md:text-right'/>
+          <LegendaryPower power='Fire skills deal 15% increased damage.'/>
         </div>
       </div>
     </div>
