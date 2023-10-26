@@ -1,19 +1,30 @@
 import Image from 'next/image'
 import Bullet from '@/public/images/legendary-bullet.png'
+import { CSSTransition } from 'react-transition-group'
+import { useItems } from '@/src/context/ItemsProvider'
+import { useRef } from 'react'
 
-interface LegendaryPowerProps {
-  power: string
-}
+export default function Legend({ power }: { power: string }) {
+  const { guesses } = useItems()
+  const enableHint = guesses.length > 3
+  const powerRef = useRef(null)
 
-export default function Legend({ power }: LegendaryPowerProps) {
   return (
-    <p className=''>
-      <Image
-        src={Bullet}
-        alt='Legendary power bullet'
-        className='inline-block w-4 h-4 mb-1 mr-1'
-      />
-      <span className='text-legendary'>{power}</span>
-    </p>
+    <CSSTransition
+      nodeRef={powerRef}
+      in={enableHint}
+      timeout={500}
+      classNames='fade'
+      unmountOnExit
+    >
+      <p ref={powerRef}>
+        <Image
+          src={Bullet}
+          alt='Legendary power bullet'
+          className='inline-block w-4 h-4 mb-1 mr-1'
+        />
+        <span className='text-legendary normal-case'>{power}</span>
+      </p>
+    </CSSTransition>
   )
 }
