@@ -7,7 +7,6 @@ import ItemBox from '@/src/components/game/known/ItemBox'
 import Button from '@/src/components/layout/Button'
 import { useModals } from '../context/ModalsProvider'
 import { useItems } from '../context/ItemsProvider'
-import { createPortal } from 'react-dom'
 
 export default function Home() {
   const { answer, known, resetGame } = useItems()
@@ -29,10 +28,7 @@ export default function Home() {
           <PastGuesses/>
         </div>
       </section>
-      {createPortal(
-        <ModalsContainer/>,
-        document.body
-      )}
+      <ModalsContainer/>
     </main>
   )
 }
