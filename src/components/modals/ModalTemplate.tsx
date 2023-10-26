@@ -12,7 +12,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title }
   if (!showModal) return null
   
   return (
-    <aside className='fixed top-0 w-full h-[100dvh] bg-black bg-opacity-20 grid p-4'>
+    <aside className='fixed z-50 top-0 w-full h-[100dvh] bg-black bg-opacity-20 grid p-4'>
       <div className='max-w-xl w-full grid m-auto bg-undefined-icon bg-center border-bronze border-2'>
         <div className='grid-center w-full h-full bg-black bg-opacity-70'></div>
         <div className='grid-center p-4 text-white'>
