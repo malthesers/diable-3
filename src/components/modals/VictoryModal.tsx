@@ -17,7 +17,7 @@ export default function VictoryModal() {
     <ModalTemplate
       showModal={showVictory}
       closeModal={() => toggleShowVictory(false)}
-      title='Item was guessed!'
+      title='VICTORY'
       button={{
         onClick: newGame, 
         text: 'New Game'
@@ -29,7 +29,7 @@ export default function VictoryModal() {
         <span>
           <span>in</span>
           <span className={`text-${answer?.quality}`}> {guesses.length} </span>
-          <span>{ guesses.length === 1 ? 'guess' : 'guesses'}.</span>
+          <span>{ guesses.length === 1 ? 'guess' : 'guesses'}!</span>
         </span>
       </p>
     </ModalTemplate>
