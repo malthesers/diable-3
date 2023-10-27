@@ -1,4 +1,4 @@
-import { Item } from '@/src/interfaces/item'
+import { Item } from '@/src/interfaces/Item'
 import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'

@@ -1,5 +1,5 @@
 import { useItems } from '@/src/context/ItemsProvider'
-import { Item } from '@/src/interfaces/item'
+import { Item } from '@/src/interfaces/Item'
 import ItemNameplate from '../ItemNameplate'
 
 interface SearchResultsProps {

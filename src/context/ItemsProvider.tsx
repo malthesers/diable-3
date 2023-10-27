@@ -1,9 +1,10 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
-import { ItemsContext } from '../interfaces/items-context'
+import { ItemsContext } from '../interfaces/ItemsContext'
 import { useModals } from './ModalsProvider'
-import { Item } from '../interfaces/item'
+import { Item } from "@/src/interfaces/Item"
+
 
 
 const ItemsContext = createContext<ItemsContext>({

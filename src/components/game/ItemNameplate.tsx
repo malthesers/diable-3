@@ -1,4 +1,4 @@
-import { Item } from '@/src/interfaces/item';
+import { Item } from '@/src/interfaces/Item';
 import KnownValue from './known/KnownValue';
 
 interface ItemNameplateProps {

@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode, createContext, useContext } from 'react'
-import { ModalsContext } from '../interfaces/modals-context'
+import { ModalsContext } from '../interfaces/ModalsContext'
 import useToggle from '../hooks/useToggle'
 
 const ModalsContext = createContext<ModalsContext>({

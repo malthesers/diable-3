@@ -1,4 +1,4 @@
-import { Item } from "../../interfaces/item";
+import { Item } from "@/src/interfaces/Item"
 
 interface HandCrossbow extends Item {
   equipment: {
