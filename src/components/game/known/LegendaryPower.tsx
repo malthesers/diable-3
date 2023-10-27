@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { useRef } from 'react'
 
-export default function LegendaryPower({ power }: { power: string }) {
+export default function LegendaryPower({ power }: { power: string | undefined }) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
   const showHint = guesses.length > 3
@@ -18,16 +18,19 @@ export default function LegendaryPower({ power }: { power: string }) {
       classNames='fade'
       unmountOnExit
     >
-      <p ref={powerRef}>
-        <span className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
-          <Image
-            src={Bullet}
-            alt='Legendary power bullet'
-            className='inline-block w-4 h-4 mb-1 mr-1'
-          />
-          <span className='text-legendary normal-case'>{power}</span>
-        </span>
-      </p>
+      <div ref={powerRef}>
+        { (power !== undefined)
+          ? <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
+              <Image
+                src={Bullet}
+                alt='Legendary power bullet'
+                className='inline-block w-4 h-4 mb-1 mr-1'
+              />
+              <span className='text-legendary normal-case'>{power}</span>
+            </p>
+          : <p className='text-legendary normal-case'>No legendary power</p>
+        }
+      </div>
     </CSSTransition>
   )
 }

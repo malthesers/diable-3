@@ -29,7 +29,7 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={item.class} className='block md:text-right'/>
-          <LegendaryPower power='Fire skills deal 15% increased damage.'/>
+          <LegendaryPower power={item.legendaryPower}/>
         </div>
       </div>
     </div>
