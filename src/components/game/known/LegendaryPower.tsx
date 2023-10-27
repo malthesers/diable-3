@@ -39,7 +39,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
                 alt='Legendary power bullet'
                 className='inline-block w-4 h-4 mb-1 mr-1'
               />
-              <span className='text-legendary normal-case'>{power}</span>
+              <span className='text-legendary normal-case'>{power ? power : 'No legendary power'}</span>
             </p>
           }
         </div>
