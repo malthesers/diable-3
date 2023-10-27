@@ -11,7 +11,7 @@ export default function ItemBox({ item }: { item: Item}) {
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
-        <div className={`bg-${item.quality}-icon border-${item.quality}-accent` + ' h-32 border rounded'}>
+        <div className={`bg-${item.quality}-icon border-${item.quality}-accent` + ' h-32 border rounded duration-500'}>
           <div className='h-full grid place-content-center icon-gradient'>
             {/* <span className='place-self-center text-4xl'>?</span> */}
             <Image
@@ -24,7 +24,7 @@ export default function ItemBox({ item }: { item: Item}) {
         </div>
         <div className='font-sans capitalize md:text-lg'>
           <p className='flex flex-col md:flex-row'>
-            <span className={`text-${item.quality} flex flex-row gap-1`}>
+            <span className={`text-${item.quality} flex flex-row gap-1 duration-500`}>
               <KnownValue value={item.quality}/>
               <KnownValue value={item.equipment.type}/>
             </span>
