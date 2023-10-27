@@ -28,7 +28,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
               />
               <span className='text-legendary normal-case'>{power}</span>
             </p>
-          : <p className='text-legendary normal-case'>No legendary power</p>
+          : <p className='text-undefined normal-case'>No legendary power</p>
         }
       </div>
     </CSSTransition>
