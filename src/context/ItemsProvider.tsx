@@ -4,15 +4,14 @@ import { ReactNode, createContext, useContext, useState, useEffect } from 'react
 import { ItemsContext } from '../interfaces/ItemsContext'
 import { useModals } from './ModalsProvider'
 import { Item } from "@/src/interfaces/Item"
-
-
+import { allItems } from '@/src/data'
 
 const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
   surrenderGame: () => {},
   setSearch: () => {},
   resetGame: () => {},
-  items: [],
+  items: allItems,
   guesses: [],
   answer: null,
   search: '',
@@ -44,71 +43,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       type: 'something'
     }
   })
-  const [items, setItems] = useState<Item[]>([
-    {
-      name: 'Thunderfury, Blessed Blade of the Windseeker',
-      class: 'generic',
-      quality: 'legendary',
-      equipment: {
-        slot: '1-hand',
-        type: 'sword'
-      }
-    },
-    {
-      name: 'Dawn',
-      class: 'demon hunter',
-      quality: 'legendary',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-    {
-      name: 'Valla\'s Bequest',
-      class: 'demon hunter',
-      quality: 'legendary',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-    {
-      name: 'Natalya\'s Slayer',
-      class: 'demon hunter',
-      quality: 'set',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-    {
-      name: 'Penetrator',
-      class: 'demon hunter',
-      quality: 'rare',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-    {
-      name: 'Hand Crossbow',
-      class: 'demon hunter',
-      quality: 'magic',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-    {
-      name: 'Initiate\'s Hand Crossbow',
-      class: 'demon hunter',
-      quality: 'common',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      }
-    },
-  ])
+  const [items, setItems] = useState<Item[]>(allItems)
   const [search, setSearch] = useState<string>('')
 
   function resetGame() {

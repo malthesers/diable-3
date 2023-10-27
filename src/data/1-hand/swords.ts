@@ -1,13 +1,13 @@
 import { Item } from "@/src/interfaces/Item"
 
-interface HandCrossbow extends Item {
+interface Sword extends Item {
   equipment: {
     slot: '1-hand',
     type: 'sword'
   }
 }
 
-export const handCrossbows:HandCrossbow[] = [
+export const swords:Sword[] = [
   {
     name: 'Thunderfury, Blessed Blade of the Windseeker',
     class: 'generic',
