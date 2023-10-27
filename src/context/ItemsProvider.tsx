@@ -22,7 +22,8 @@ const ItemsContext = createContext<ItemsContext>({
     equipment: {
       slot: 'unknown',
       type: 'something'
-    }
+    },
+    legendaryPower: ''
   }
 })
 
@@ -41,7 +42,8 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     equipment: {
       slot: 'unknown',
       type: 'something'
-    }
+    },
+    legendaryPower: ''
   })
   const [items, setItems] = useState<Item[]>(allItems)
   const [search, setSearch] = useState<string>('')
@@ -57,7 +59,8 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       equipment: {
         slot: 'unknown',
         type: 'something'
-      }
+      },
+      legendaryPower: ''
     })
   }
 

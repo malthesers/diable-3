@@ -6,7 +6,6 @@ import KnownValue from './KnownValue'
 import Image from 'next/image'
 
 export default function ItemBox({ item }: { item: Item}) {
-  const { answer } = useItems()
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
@@ -31,7 +30,7 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={item.class} className='block md:text-right'/>
-          <LegendaryPower power={answer?.legendaryPower}/>
+          <LegendaryPower power={item.legendaryPower}/>
         </div>
       </div>
     </div>
