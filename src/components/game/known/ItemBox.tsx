@@ -1,3 +1,4 @@
+import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
 import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
@@ -5,6 +6,7 @@ import KnownValue from './KnownValue'
 import Image from 'next/image'
 
 export default function ItemBox({ item }: { item: Item}) {
+  const { answer } = useItems()
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
       <ItemNameplate item={item}/>
@@ -29,7 +31,7 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={item.class} className='block md:text-right'/>
-          <LegendaryPower power={item.legendaryPower}/>
+          <LegendaryPower power={answer?.legendaryPower}/>
         </div>
       </div>
     </div>

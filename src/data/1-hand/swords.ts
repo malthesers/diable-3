@@ -15,6 +15,7 @@ export const swords:Sword[] = [
     equipment: {
       slot: '1-hand',
       type: 'sword'
-    }
+    },
+    legendaryPower: 'Chance on hit to blast your enemy with Lightning, dealing 372% weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by 30% for 3 seconds. Jumps up to 5 targets.'
   },
 ]

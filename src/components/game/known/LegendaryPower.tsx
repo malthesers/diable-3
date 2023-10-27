@@ -7,7 +7,7 @@ import { useRef } from 'react'
 export default function LegendaryPower({ power }: { power: string | undefined }) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
-  const showHint = guesses.length > 3
+  const showHint = guesses.length > 2 || wasGuessed
   const powerRef = useRef(null)
 
   return (
@@ -19,7 +19,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
       unmountOnExit
     >
       <div ref={powerRef}>
-        { (power !== undefined)
+        { (typeof(power) === 'string')
           ? <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
               <Image
                 src={Bullet}
