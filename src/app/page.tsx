@@ -17,7 +17,7 @@ export default function Home() {
     <main>
       <section className='max-w-[400px] sm:max-w-[430px] md:max-w-[920px] lg:max-w-none mx-auto flex flex-row flex-wrap place-content-center md:place-content-start gap-2 mb-2 px-2 lg:px-3'>
         <Button onClick={resetGame} text='New Game'/>
-        <Button onClick={surrenderGame} text='Surrender'/>
+        <Button onClick={surrenderGame} text='Surrender' className={wasGuessed ? ' brightness-50 pointer-events-none' : ''}/>
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
       </section>
       <section className='grid md:grid-cols-2'>
