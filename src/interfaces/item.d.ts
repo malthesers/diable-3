@@ -2,7 +2,8 @@ export interface Item {
   name: string,
   class: Classes,
   quality: Qualities,
-  equipment: Unknown | Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand
+  equipment: Unknown | Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand,
+  legendaryPower?: string
 }
 
 type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
