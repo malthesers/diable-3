@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { useRef } from 'react'
 
-export default function Legend({ power }: { power: string }) {
+export default function LegendaryPower({ power }: { power: string }) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
   const showHint = guesses.length > 3
