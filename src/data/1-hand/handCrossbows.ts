@@ -9,13 +9,101 @@ interface HandCrossbow extends Item {
 
 export const handCrossbows:HandCrossbow[] = [
   {
+    name: 'Fortress Ballista',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Attacks grant you an absorb shield for 3.0% of your maximum Life. Stacks up to 10 times.'
+  },
+  {
+    name: 'Lianna\'s Wings',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Shadow Power also triggers Smoke Screen.'
+  },
+  {
+    name: 'The Demon\'s Demise',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Each blast from Spike Trap will damage all enemies again after 1 second, and deals 200% increased damage.'
+  },
+  {
+    name: 'Blitzbolter',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
+  {
+    name: 'Calamity',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Automatically cast Marked for Death when you damage an enemy.'
+  },
+  {
+    name: 'Deadeye',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
+  {
+    name: 'K\'mar Tenclip',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Strafe gains the effect of the Drifting Shadow rune.'
+  },
+  {
+    name: 'Balefire Caster',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
+  {
+    name: 'Helltrapper',
+    class: 'demon hunter',
+    quality: 'legendary',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: '10% chance on hit to summon a Spike Trap, Caltrops or Sentry.'
+  },
+  {
     name: 'Dawn',
     class: 'demon hunter',
     quality: 'legendary',
     equipment: {
       slot: '1-hand',
       type: 'hand crossbow'
-    }
+    },
+    legendaryPower: 'Reduce the cooldown of Vengeance by 65%.'
   },
   {
     name: 'Valla\'s Bequest',
@@ -24,7 +112,8 @@ export const handCrossbows:HandCrossbow[] = [
     equipment: {
       slot: '1-hand',
       type: 'hand crossbow'
-    }
+    },
+    legendaryPower: 'Strafe projectiles pierce.'
   },
   {
     name: 'Natalya\'s Slayer',
