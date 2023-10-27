@@ -125,6 +125,44 @@ export const handCrossbows:HandCrossbow[] = [
     }
   },
   {
+    name: 'Danetta\'s Revenge',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Vault gains the effect of the Rattling Roll rune.'
+  },
+  {
+    name: 'Danetta\'s Spite',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Leave a clone of yourself behind after using Vault.'
+  },
+  {
+    name: 'Hallowed Judgment',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
+  {
+    name: 'Hallowed Condemnation',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
+  {
     name: 'Penetrator',
     class: 'demon hunter',
     quality: 'rare',
