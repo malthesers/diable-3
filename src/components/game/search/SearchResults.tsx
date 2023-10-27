@@ -13,7 +13,7 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
   return (
     <div className='absolute z-10 w-full h-fit mt-2'>
       <div className='w-fit flex flex-col gap-2'>
-        { 0 < search.length && results.map((item) =>
+        { 1 < search.length && results.map((item) =>
           <article
             key={item.name} tabIndex={0}
             onClick={() => submitGuess(item)}
