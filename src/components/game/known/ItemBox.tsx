@@ -46,7 +46,7 @@ export default function ItemBox({ item }: { item: Item}) {
             unmountOnExit
           >
             <div ref={node}> */}
-              <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/>
+              {/* <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/> */}
             {/* </div>
           </CSSTransition> */}
         </div>
