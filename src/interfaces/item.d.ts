@@ -77,5 +77,5 @@ type TwoHand = {
 
 type OneHand = {
   slot: '1-hand'
-  type: 'axe' | 'dagger' | 'mace' | 'spear' | 'sword' | 'ceremonial knife' | 'fist weapon' | 'flail' | 'mighty weapon' | 'hand crossbow' | 'wand'
+  type: 'axe' | 'dagger' | 'mace' | 'spear' | 'sword' | 'ceremonial knife' | 'scythe' | 'fist weapon' | 'flail' | 'mighty weapon' | 'hand crossbow' | 'wand'
 }
