@@ -35,6 +35,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const { toggleShowVictory, toggleShowDefeat } = useModals()
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
+  const [items, setItems] = useState<Item[]>(allItems)
   const [known, setKnown] = useState<Item>({
     name: 'unidentified',
     class: 'anonymous',
@@ -45,7 +46,6 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     },
     legendaryPower: ''
   })
-  const [items, setItems] = useState<Item[]>(allItems)
   const [search, setSearch] = useState<string>('')
 
   function resetGame() {
@@ -66,7 +66,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
 
   function surrenderGame() {
     if (answer) {
-      setKnown(answer)
+      setKnown({
+        ...answer,
+        legendaryPower: answer.legendaryPower || ''
+      })
       toggleShowDefeat(true)
     }
   }

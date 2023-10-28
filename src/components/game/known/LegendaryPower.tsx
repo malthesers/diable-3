@@ -7,7 +7,7 @@ import { useRef } from 'react'
 export default function LegendaryPower({ power }: { power: string | undefined }) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
-  const showHint = guesses.length > 2 || wasGuessed
+  const showHint = guesses.length > 2
   const node = useRef<HTMLDivElement>(null)
 
   return (
@@ -21,27 +21,14 @@ export default function LegendaryPower({ power }: { power: string | undefined })
         }
       >
         <div ref={node}>
-          {/* { (power !== '')
-            ? <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
-                <Image
-                  src={Bullet}
-                  alt='Legendary power bullet'
-                  className='inline-block w-4 h-4 mb-1 mr-1'
-                />
-                <span className='text-legendary normal-case'>{power}</span>
-              </p>
-            : <p className='text-undefined normal-case'>No legendary power</p>
-          } */}
-          { showHint &&
-            <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
-              <Image
-                src={Bullet}
-                alt='Legendary power bullet'
-                className='inline-block w-4 h-4 mb-1 mr-1'
-              />
-              <span className='text-legendary normal-case'>{power ? power : 'No legendary power'}</span>
-            </p>
-          }
+          <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
+            <Image
+              src={Bullet}
+              alt='Legendary power bullet'
+              className='inline-block w-4 h-4 mb-1 mr-1'
+            />
+            <span className='text-legendary normal-case'>{power}</span>
+          </p>
         </div>
       </CSSTransition>
     </SwitchTransition>

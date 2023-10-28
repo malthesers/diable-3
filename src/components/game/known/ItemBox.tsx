@@ -4,33 +4,51 @@ import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
+import { CSSTransition } from 'react-transition-group'
+import { useRef } from 'react'
 
 export default function ItemBox({ item }: { item: Item}) {
+  const { answer, known, guesses } = useItems()
+  const wasGuessed = answer?.name === known.name
+  const showHint = guesses.length > 2 || wasGuessed
+
+  const node = useRef<HTMLDivElement>(null)
+
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
-      <ItemNameplate item={item}/>
+      <ItemNameplate item={known}/>
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
-        <div className={`bg-${item.quality}-icon border-${item.quality}-accent` + ' h-32 border rounded duration-500'}>
+        <div className={`bg-${known.quality}-icon border-${known.quality}-accent` + ' h-32 border rounded duration-500'}>
           <div className='h-full grid place-content-center icon-gradient'>
             {/* <span className='place-self-center text-4xl'>?</span> */}
             <Image
               src='/items/thunderfury.png'
-              alt={item.name}
+              alt={known.name}
               width={64}
-              height={(item.equipment.slot === ('waist' || 'neck' || 'finger')) ? 64 : 128}
+              height={(known.equipment.slot === ('waist' || 'neck' || 'finger')) ? 64 : 128}
             />
           </div>
         </div>
         <div className='font-sans capitalize md:text-lg'>
           <p className='flex flex-col md:flex-row'>
-            <span className={`text-${item.quality} flex flex-row gap-1 duration-500`}>
-              <KnownValue value={item.quality}/>
-              <KnownValue value={item.equipment.type}/>
+            <span className={`text-${known.quality} flex flex-row gap-1 duration-500`}>
+              <KnownValue value={known.quality}/>
+              <KnownValue value={known.equipment.type}/>
             </span>
-            <KnownValue value={item.equipment.slot} className='md:ml-auto text-neutral-500'/>
+            <KnownValue value={known.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
-          <KnownValue value={item.class} className='block md:text-right'/>
-          <LegendaryPower power={item.legendaryPower}/>
+          <KnownValue value={known.class} className='block md:text-right'/>
+          {/* <CSSTransition
+            classNames='fade'
+            in={showHint}
+            nodeRef={node}
+            timeout={500}
+            unmountOnExit
+          >
+            <div ref={node}> */}
+              <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/>
+            {/* </div>
+          </CSSTransition> */}
         </div>
       </div>
     </div>
