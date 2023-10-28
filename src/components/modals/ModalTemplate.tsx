@@ -22,7 +22,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
         <div onClick={() => closeModal()} className='absolute -z-10 w-full h-full bg-black bg-opacity-50 cursor-pointer'></div>
         <div className='max-w-xl w-full grid m-auto bg-undefined-icon bg-center border-bronze border-2'>
           <div className='grid-center w-full h-full bg-black bg-opacity-70'></div>
-          <div className='grid-center p-4 text-white'>
+          <div className='grid-center p-4 text-white shadow-guess-inner'>
             <p className='text-2xl text-center mb-2'>{title}</p>
             <>{children}</>
             <div className='flex flex-wrap place-content-center gap-4 mt-4'>
