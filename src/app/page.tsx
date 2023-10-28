@@ -20,7 +20,7 @@ export default function Home() {
         <Button onClick={surrenderGame} text='Surrender' className={wasGuessed ? ' brightness-50 pointer-events-none' : ''}/>
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
       </section>
-      <section className='grid md:grid-cols-2'>
+      <section className='grid md:grid-cols-2 gap-4'>
         <div className='h-fit grid gap-2'>
           <ItemBox item={known}/>
           {/* { answer && <ItemBox item={answer}/> } */}
