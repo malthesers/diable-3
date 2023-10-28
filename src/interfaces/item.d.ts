@@ -6,7 +6,7 @@ export interface Item {
   legendaryPower?: string
 }
 
-type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch dcotor' | 'wizard'
+type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch doctor' | 'wizard'
 
 type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
 
