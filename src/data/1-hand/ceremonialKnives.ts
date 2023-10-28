@@ -10,7 +10,7 @@ interface CeremonialKnife extends Item {
 
 export const ceremonialKnives:CeremonialKnife[] = [
   {
-    name: 'Fleshrake',
+    name: 'Deadly Rebirth',
     class: 'witch doctor',
     quality: 'legendary',
     equipment: {
