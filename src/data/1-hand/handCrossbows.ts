@@ -1,6 +1,7 @@
 import { Item } from "@/src/interfaces/Item"
 
 interface HandCrossbow extends Item {
+  class: 'demon hunter',
   equipment: {
     slot: '1-hand',
     type: 'hand crossbow'
