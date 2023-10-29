@@ -18,8 +18,8 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
         { 1 < search.length && results.map((item) =>
           <CSSTransition
             key={item.name}
-            timeout={1000}
-            classNames='appear'
+            timeout={250}
+            classNames='search'
           >
             <article
               key={item.name} tabIndex={0}
