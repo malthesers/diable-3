@@ -4,11 +4,14 @@ export interface Item {
   quality: Qualities,
   equipment: Unknown | Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand,
   legendaryPower?: string
+  elementalDamage?: ElementalDamage
 }
 
 type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch doctor' | 'wizard'
 
 type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
+
+type ElementalDamage = 'physical' | 'arcane' | 'cold' | 'fire' | 'holy' | 'lightning' | 'poison'
 
 type Unknown = {
   slot: 'unknown'
