@@ -1,6 +1,6 @@
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import ItemGuess from './ItemGuess'
-import { CSSTransition, TransitionGroup } from 'react-transition-group'
 
 export default function PastGuesses() {
   const { guesses, search } = useItems()
@@ -11,7 +11,7 @@ export default function PastGuesses() {
         <CSSTransition
           key={item.name}
           timeout={500}
-          classNames='appear'
+          classNames='fade'
         >
           <ItemGuess key={item.name} item={item}/>
         </CSSTransition>

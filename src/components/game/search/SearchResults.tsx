@@ -1,6 +1,8 @@
+import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
 import ItemNameplate from '../ItemNameplate'
+
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,
@@ -12,18 +14,24 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
 
   return (
     <div className='absolute z-10 w-full h-fit mt-2'>
-      <div className='w-fit flex flex-col gap-2'>
+      <TransitionGroup className='w-fit flex flex-col gap-2'>
         { 1 < search.length && results.map((item) =>
-          <article
-            key={item.name} tabIndex={0}
-            onClick={() => submitGuess(item)}
-            onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
-            className='group focus-within:outline-none'
+          <CSSTransition
+            key={item.name}
+            timeout={1000}
+            classNames='appear'
           >
-            <ItemNameplate item={item} hover={true}/>
-          </article>
+            <article
+              key={item.name} tabIndex={0}
+              onClick={() => submitGuess(item)}
+              onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
+              className='group focus-within:outline-none'
+            >
+              <ItemNameplate item={item} hover={true}/>
+            </article>
+          </CSSTransition>
         )}
-      </div>
+      </TransitionGroup>
     </div>
   )
 }
