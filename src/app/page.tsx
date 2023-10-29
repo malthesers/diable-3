@@ -1,8 +1,8 @@
 'use client'
 
-import PastGuesses from '@/src/components/game/guesses/PastGuesses'
+import SearchContainer from '@/src/components/game/search/SearchContainer'
 import ModalsContainer from '../components/modals/ModalsContainer'
-import ItemSearch from '@/src/components/game/search/ItemSearch'
+import PastGuesses from '@/src/components/game/guesses/PastGuesses'
 import ItemBox from '@/src/components/game/known/ItemBox'
 import Button from '@/src/components/layout/Button'
 import { useModals } from '../context/ModalsProvider'
@@ -28,7 +28,7 @@ export default function Home() {
           { answer && <p className='text-center'>{answer.name}</p>}
         </div>
         <div className='flex flex-col place-items-center p-1 border-2 border-transparent'>
-          <ItemSearch/>
+          <SearchContainer/>
           <PastGuesses/>
         </div>
       </section>

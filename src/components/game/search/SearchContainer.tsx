@@ -4,7 +4,7 @@ import { useRef } from 'react'
 import SearchResults from './SearchResults'
 import SearchBar from './SearchBar'
 
-export default function ItemSearch() {
+export default function SearchContainer() {
   const { items, guesses, validateGuess, search, setSearch } = useItems()
   const ref = useRef<HTMLInputElement | null>(null)
   const remaining:Item[] = items.filter(item => !guesses.includes(item))
