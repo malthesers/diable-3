@@ -6,6 +6,17 @@ import { useModals } from './ModalsProvider'
 import { Item } from "@/src/interfaces/Item"
 import { allItems } from '@/src/data'
 
+const defaultItem:Item = {
+  name: 'unidentified',
+  class: 'anonymous',
+  quality: 'undefined',
+  equipment: {
+    slot: 'unknown',
+    type: 'something'
+  },
+  legendaryPower: ''
+}
+
 const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
   surrenderGame: () => {},
@@ -15,16 +26,7 @@ const ItemsContext = createContext<ItemsContext>({
   guesses: [],
   answer: null,
   search: '',
-  known: {
-    name: 'unidentified',
-    class: 'anonymous',
-    quality: 'undefined',
-    equipment: {
-      slot: 'unknown',
-      type: 'something'
-    },
-    legendaryPower: ''
-  }
+  known: defaultItem
 })
 
 export function useItems() {
@@ -36,32 +38,14 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
   const [items, setItems] = useState<Item[]>(allItems)
-  const [known, setKnown] = useState<Item>({
-    name: 'unidentified',
-    class: 'anonymous',
-    quality: 'undefined',
-    equipment: {
-      slot: 'unknown',
-      type: 'something'
-    },
-    legendaryPower: ''
-  })
+  const [known, setKnown] = useState<Item>(defaultItem)
   const [search, setSearch] = useState<string>('')
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
     setGuesses([])
     setSearch('')
-    setKnown({
-      name: 'unidentified',
-      class: 'anonymous',
-      quality: 'undefined',
-      equipment: {
-        slot: 'unknown',
-        type: 'something'
-      },
-      legendaryPower: ''
-    })
+    setKnown(defaultItem)
   }
 
   function surrenderGame() {
