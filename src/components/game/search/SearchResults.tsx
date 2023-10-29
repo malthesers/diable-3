@@ -14,7 +14,7 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
 
   return (
     <div className='absolute z-10 w-full h-fit mt-2'>
-      <TransitionGroup className='w-fit flex flex-col gap-2'>
+      {/* <TransitionGroup className='w-fit flex flex-col gap-2'> */}
         { 1 < search.length && results.map((item) =>
           <CSSTransition
             key={item.name}
@@ -31,7 +31,7 @@ export default function SearchResults({ submitGuess, results }: SearchResultsPro
             </article>
           </CSSTransition>
         )}
-      </TransitionGroup>
+      {/* </TransitionGroup> */}
     </div>
   )
 }
