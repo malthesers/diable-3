@@ -56,32 +56,41 @@ nav a.active::after {
 
 /* --- Transitions --- */
 
+.search-enter,
 .guess-enter,
 .fade-enter {
   opacity: 0;
 }
 
+.search-exit,
 .guess-exit,
 .fade-exit {
   opacity: 1;
 }
 
+.search-enter-active,
 .guess-enter-active,
 .fade-enter-active {
   opacity: 1;
 }
 
+.search-exit-active,
 .guess-exit-active,
 .fade-exit-active {
   opacity: 0;
 }
 
-.fade-enter-active,
-.fade-exit-active {
-  transition: opacity 500ms;
+.search-enter-active,
+.search-exit-active {
+  transition: opacity 250ms;
 }
 
 .guess-enter-active,
 .guess-exit-active {
   transition: opacity 1000ms;
+}
+
+.fade-enter-active,
+.fade-exit-active {
+  transition: opacity 500ms;
 }

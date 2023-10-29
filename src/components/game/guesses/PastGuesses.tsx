@@ -10,7 +10,7 @@ export default function PastGuesses() {
       { guesses.map((item) =>
         <CSSTransition
           key={item.name}
-          timeout={500}
+          timeout={1000}
           classNames='guess'
         >
           <ItemGuess key={item.name} item={item}/>
