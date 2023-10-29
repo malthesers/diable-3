@@ -72,3 +72,20 @@ nav a.active::after {
 .fade-exit-active {
   transition: opacity 500ms;
 }
+
+.appear-enter {
+  opacity: 0;
+}
+.appear-exit {
+  opacity: 1;
+}
+.appear-enter-active {
+  opacity: 1;
+}
+.appear-exit-active {
+  opacity: 0;
+}
+.appear-enter-active,
+.appear-exit-active {
+  transition: opacity 1000ms;
+}

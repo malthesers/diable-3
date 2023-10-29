@@ -11,7 +11,7 @@ export default function PastGuesses() {
         <CSSTransition
           key={item.name}
           timeout={500}
-          classNames='fade'
+          classNames='appear'
         >
           <ItemGuess key={item.name} item={item}/>
         </CSSTransition>
