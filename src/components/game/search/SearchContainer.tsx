@@ -5,9 +5,10 @@ import SearchResults from './SearchResults'
 import SearchBar from './SearchBar'
 
 export default function SearchContainer() {
-  const { items, guesses, validateGuess, search, setSearch } = useItems()
+  const { items, chosen, guesses, validateGuess, search, setSearch } = useItems()
   const ref = useRef<HTMLInputElement | null>(null)
-  const remaining:Item[] = items.filter(item =>  !guesses.some(guess => guess.name === item.name))
+  const eligible:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
+  const remaining:Item[] = eligible.filter(item =>  !guesses.some(guess => guess.name === item.name))
   const results:Item[] = remaining.filter(item => item.name.toLowerCase().includes(search.toLowerCase())).slice(0, 10)
 
   function submitGuess(item:Item) {
