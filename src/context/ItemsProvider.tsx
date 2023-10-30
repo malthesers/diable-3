@@ -52,8 +52,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [guesses, setGuesses] = useState<Item[]>([])
   const [search, setSearch] = useState<string>('')
   const [items, setItems] = useState<Item[]>(allItems)
+  const [mounted, setMounted] = useState<boolean>(false)
 
   function selectAnswer() {
+    console.log(chosen)
     const eligibleItems:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
 
     setAnswer(eligibleItems[Math.floor(Math.random() * eligibleItems.length)])
@@ -100,11 +102,17 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    selectAnswer()
+    // Load chosen qualities from localStorage
     if (localStorage.getItem('qualities')) {
       setChosen(JSON.parse(localStorage.getItem('qualities') as string))
     }
+    setMounted(true)
   }, [])
+
+  useEffect(() => {
+    // Set random item as answer
+    selectAnswer()
+  }, [mounted])
 
   return (
     <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, toggleChosen, setSearch, resetGame, surrenderGame, validateGuess }}>
