@@ -2,15 +2,12 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
 import ItemSearch from './ItemSearch'
-import { RefObject, createRef } from 'react'
+import { createRef } from 'react'
+import { ItemRef } from '@/src/interfaces/ItemRef'
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,
   results: Item[],
-}
-
-interface ItemRef extends Item {
-  ref: RefObject<HTMLDivElement>
 }
 
 export default function SearchResults({ submitGuess, results }: SearchResultsProps) {
