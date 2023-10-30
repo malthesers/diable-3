@@ -101,6 +101,9 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     selectAnswer()
+    if (localStorage.getItem('qualities')) {
+      setChosen(JSON.parse(localStorage.getItem('qualities') as string))
+    }
   }, [])
 
   return (
