@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
   body {
     @apply bg-[url('/images/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-white min-h-[100dvh];
   }
