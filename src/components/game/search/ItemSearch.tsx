@@ -1,4 +1,3 @@
-import { CSSTransition } from 'react-transition-group'
 import { Item } from '@/src/interfaces/Item'
 import { useRef } from 'react'
 import ItemNameplate from '../ItemNameplate'

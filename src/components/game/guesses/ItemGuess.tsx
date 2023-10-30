@@ -2,8 +2,6 @@ import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
 import ItemNameplate from '../ItemNameplate'
 import GuessBox from './GuessBox'
-import { CSSTransition } from 'react-transition-group'
-import { useRef } from 'react'
 
 export default function ItemGuess({ item }: { item: Item}) {
   const { answer, known } = useItems()
