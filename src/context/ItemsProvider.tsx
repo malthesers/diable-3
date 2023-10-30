@@ -18,6 +18,14 @@ const defaultItem:Item = {
   legendaryPower: ''
 }
 
+const defaultChosen:ChosenQualities = {
+  common: true,
+  magic: true,
+  rare: true,
+  legendary: true,
+  set: true
+}
+
 const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
   surrenderGame: () => {},
@@ -27,7 +35,8 @@ const ItemsContext = createContext<ItemsContext>({
   guesses: [],
   answer: null,
   search: '',
-  known: defaultItem
+  known: defaultItem,
+  chosen: defaultChosen
 })
 
 export function useItems() {
@@ -36,19 +45,12 @@ export function useItems() {
 
 export default function ItemsProvider({ children }: { children: ReactNode }) {
   const { toggleShowVictory, toggleShowDefeat } = useModals()
+  const [chosen, setChosen] = useState<ChosenQualities>(defaultChosen)
+  const [known, setKnown] = useState<Item>(defaultItem)
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
-  const [items, setItems] = useState<Item[]>(allItems)
-  const [known, setKnown] = useState<Item>(defaultItem)
   const [search, setSearch] = useState<string>('')
-
-  const [qualities, setQualities] = useState<ChosenQualities>({
-    common: false,
-    magic: false,
-    rare: false,
-    legendary: false,
-    set: false
-  })
+  const [items, setItems] = useState<Item[]>(allItems)
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
@@ -88,7 +90,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, search, setSearch, resetGame, surrenderGame, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, setSearch, resetGame, surrenderGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )

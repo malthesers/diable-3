@@ -11,8 +11,7 @@ export default function QualitiesModal() {
       closeModal={() => toggleShowQualities(false)}
       title='Qualities'
     >
-      <p className='text-xl text-center'>
-      </p>
+      <p className='text-xl text-center'>Below you can toggle item qualities, dictating which items will be <span className='text-set'>included</span> and <span className='text-undefined'>excluded</span> in the list of possible answers.</p>
     </ModalTemplate>
   )
 }
