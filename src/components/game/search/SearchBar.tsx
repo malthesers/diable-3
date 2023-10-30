@@ -8,7 +8,7 @@ const SearchBar = forwardRef<HTMLInputElement>(function SearchBar(props, ref) {
   return (
     <label
       htmlFor='item-search'
-      className={(wasGuessed ? 'brightness-50 ' : '') + 'nameplate bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid'}
+      className={(wasGuessed ? 'brightness-50 ' : '') + 'nameplate bg-undefined-name bg-no-repeat bg-cover bg-center aspect-[350/40] grid duration-200'}
     >
       <input
         ref={ref}
