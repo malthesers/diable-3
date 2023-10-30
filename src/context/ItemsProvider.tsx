@@ -54,7 +54,9 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Item[]>(allItems)
 
   function selectAnswer() {
-    setAnswer(items[Math.floor(Math.random() * items.length)])
+    const eligibleItems:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
+
+    setAnswer(eligibleItems[Math.floor(Math.random() * eligibleItems.length)])
   }
 
   function toggleChosen(quality: keyof ChosenQualities) {
