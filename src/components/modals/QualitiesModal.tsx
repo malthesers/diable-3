@@ -11,8 +11,9 @@ export default function QualitiesModal() {
 
   function closeModal() {
     toggleShowQualities(false)
-    // Only reset game if chosen qualities were changed
+    // Only reset game save chosen qualities if any changes
     if (JSON.stringify(startChosen.current) !== JSON.stringify(chosen)) {
+      localStorage.setItem('qualities', JSON.stringify(chosen))
       resetGame()
     }
   }
