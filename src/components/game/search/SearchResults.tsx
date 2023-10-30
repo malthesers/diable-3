@@ -1,9 +1,9 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
-import { Item } from '@/src/interfaces/Item'
-import ItemSearch from './ItemSearch'
-import { createRef } from 'react'
 import { ItemRef } from '@/src/interfaces/ItemRef'
+import { Item } from '@/src/interfaces/Item'
+import { createRef } from 'react'
+import ItemSearch from './ItemSearch'
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,

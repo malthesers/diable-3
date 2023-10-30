@@ -9,7 +9,7 @@ interface ItemSearchProps {
 export default function ItemSearch({ submitGuess, item }: ItemSearchProps) {
   return (
     <article
-      key={item.name} tabIndex={0}
+      tabIndex={0}
       onClick={() => submitGuess(item)}
       onKeyDown={(e) => {if (e.key === 'Enter') submitGuess(item)}}
       className='group focus-within:outline-none'
