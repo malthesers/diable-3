@@ -17,7 +17,7 @@ export default function DefeatModal() {
     <ModalTemplate
       showModal={showDefeat}
       closeModal={() => toggleShowDefeat(false)}
-      title='DEFEAT'
+      title='Defeat'
       button={{
         onClick: newGame, 
         text: 'New Game'

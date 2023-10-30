@@ -9,7 +9,7 @@ export default function QualitiesModal() {
     <ModalTemplate
       showModal={showQualities}
       closeModal={() => toggleShowQualities(false)}
-      title='QUALITIES'
+      title='Qualities'
     >
       <p className='text-xl text-center'>
       </p>

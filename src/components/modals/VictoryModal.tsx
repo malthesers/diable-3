@@ -17,7 +17,7 @@ export default function VictoryModal() {
     <ModalTemplate
       showModal={showVictory}
       closeModal={() => toggleShowVictory(false)}
-      title='VICTORY'
+      title='Victory'
       button={{
         onClick: newGame, 
         text: 'New Game'
