@@ -1,15 +1,28 @@
 import { useModals } from '@/src/context/ModalsProvider';
 import { useItems } from '@/src/context/ItemsProvider';
 import ModalTemplate from './ModalTemplate';
+import { useEffect, useRef } from 'react';
+import { ChosenQualities } from '@/src/interfaces/ChosenQualities';
 
 export default function QualitiesModal() {
   const { showQualities, toggleShowQualities } = useModals()
   const { chosen, toggleChosen, resetGame } = useItems()
+  const startChosen = useRef<ChosenQualities>({...chosen})
 
   function closeModal() {
     toggleShowQualities(false)
-    resetGame()
+    // Only reset game if chosen qualities were changed
+    if (JSON.stringify(startChosen.current) !== JSON.stringify(chosen)) {
+      resetGame()
+    }
   }
+
+  // Set chosen qualities on opening of modal
+  useEffect(() => {
+    if (showQualities) {
+      startChosen.current = {...chosen}
+    }
+  }, [showQualities])
 
   return (
     <ModalTemplate
