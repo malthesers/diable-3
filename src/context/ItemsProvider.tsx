@@ -53,6 +53,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [search, setSearch] = useState<string>('')
   const [items, setItems] = useState<Item[]>(allItems)
 
+  function selectAnswer() {
+    setAnswer(items[Math.floor(Math.random() * items.length)])
+  }
+
   function toggleChosen(quality: keyof ChosenQualities) {
     setChosen((prevState) => ({
       ...prevState,
@@ -61,7 +65,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   function resetGame() {
-    setAnswer(items[Math.floor(Math.random() * items.length)])
+    selectAnswer()
     setGuesses([])
     setSearch('')
     setKnown(defaultItem)
@@ -94,7 +98,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-    setAnswer(items[Math.floor(Math.random() * items.length)])
+    selectAnswer()
   }, [])
 
   return (
