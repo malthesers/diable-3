@@ -56,27 +56,19 @@ nav a.active::after {
 
 /* --- Transitions --- */
 
-.search-enter,
-.guess-enter,
-.fade-enter {
+.search-enter {
   opacity: 0;
 }
 
-.search-exit,
-.guess-exit,
-.fade-exit {
+.search-exit {
   opacity: 1;
 }
 
-.search-enter-active,
-.guess-enter-active,
-.fade-enter-active {
+.search-enter-active {
   opacity: 1;
 }
 
-.search-exit-active,
-.guess-exit-active,
-.fade-exit-active {
+.search-exit-active {
   opacity: 0;
 }
 
@@ -85,9 +77,41 @@ nav a.active::after {
   transition: opacity 250ms;
 }
 
+.guess-enter {
+  opacity: 0;
+}
+
+.guess-exit {
+  opacity: 1;
+}
+
+.guess-enter-active {
+  opacity: 1;
+}
+
+.guess-exit-active {
+  opacity: 0;
+}
+
 .guess-enter-active,
 .guess-exit-active {
   transition: opacity 1000ms;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
 }
 
 .fade-enter-active,
