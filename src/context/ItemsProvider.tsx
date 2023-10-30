@@ -1,6 +1,7 @@
 'use client'
 
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
+import { ChosenQualities } from '../interfaces/ChosenQualities'
 import { ItemsContext } from '../interfaces/ItemsContext'
 import { useModals } from './ModalsProvider'
 import { Item } from "@/src/interfaces/Item"
@@ -40,6 +41,14 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Item[]>(allItems)
   const [known, setKnown] = useState<Item>(defaultItem)
   const [search, setSearch] = useState<string>('')
+
+  const [qualities, setQualities] = useState<ChosenQualities>({
+    common: false,
+    magic: false,
+    rare: false,
+    legendary: false,
+    set: false
+  })
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
