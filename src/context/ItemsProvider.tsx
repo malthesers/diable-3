@@ -47,7 +47,7 @@ export function useItems() {
 export default function ItemsProvider({ children }: { children: ReactNode }) {
   const { toggleShowVictory, toggleShowDefeat } = useModals()
   const [chosen, setChosen] = useState<ChosenQualities>(defaultChosen)
-  const [known, setKnown] = useState<Item>(defaultItem)
+  const [known, setKnown] = useState<Item>({...defaultItem})
   const [answer, setAnswer] = useState<Item | null>(null)
   const [guesses, setGuesses] = useState<Item[]>([])
   const [search, setSearch] = useState<string>('')
@@ -70,7 +70,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     selectAnswer()
     setGuesses([])
     setSearch('')
-    setKnown(defaultItem)
+    setKnown({...defaultItem})
   }
 
   function surrenderGame() {
