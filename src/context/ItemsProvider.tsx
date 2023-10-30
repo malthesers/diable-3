@@ -29,6 +29,7 @@ const defaultChosen:ChosenQualities = {
 const ItemsContext = createContext<ItemsContext>({
   validateGuess: () => {},
   surrenderGame: () => {},
+  toggleQuality: () => {},
   setSearch: () => {},
   resetGame: () => {},
   items: allItems,
@@ -51,6 +52,13 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [guesses, setGuesses] = useState<Item[]>([])
   const [search, setSearch] = useState<string>('')
   const [items, setItems] = useState<Item[]>(allItems)
+
+  function toggleQuality(quality: keyof ChosenQualities) {
+    setChosen((prevState) => ({
+      ...prevState,
+      [quality]: !prevState[quality]
+    }))
+  }
 
   function resetGame() {
     setAnswer(items[Math.floor(Math.random() * items.length)])
@@ -90,7 +98,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, setSearch, resetGame, surrenderGame, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, toggleQuality, setSearch, resetGame, surrenderGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )

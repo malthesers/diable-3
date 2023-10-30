@@ -5,8 +5,3 @@ export interface ChosenQualities {
   legendary: boolean,
   set: boolean,
 }
-
-interface Quality {
-  quality: string,
-  active: true
-}

@@ -1,7 +1,8 @@
 import { ChosenQualities } from './ChosenQualities';
-import { Item } from './Item';
+import { Item, Qualities } from './Item';
 
 export interface ItemsContext {
+  toggleQuality: (quality: keyof ChosenQualities) => void,
   validateGuess: (item:Item) => void,
   setSearch: (value:string) => void,
   surrenderGame: () => void,
