@@ -4,7 +4,7 @@ import ModalTemplate from './ModalTemplate';
 
 export default function QualitiesModal() {
   const { showQualities, toggleShowQualities } = useModals()
-  const { chosen } = useItems()
+  const { chosen, toggleChosen } = useItems()
 
   return (
     <ModalTemplate
