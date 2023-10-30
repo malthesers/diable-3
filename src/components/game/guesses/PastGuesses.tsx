@@ -15,7 +15,7 @@ export default function PastGuesses() {
         >
           <ItemGuess key={item.name} item={item}/>
         </CSSTransition>
-        )}
+      )}
     </TransitionGroup>
   )
 }

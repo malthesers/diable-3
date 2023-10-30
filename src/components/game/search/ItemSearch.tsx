@@ -12,11 +12,6 @@ export default function ItemSearch({ submitGuess, item }: ItemSearchProps) {
   const node = useRef(null)
 
   return (
-    <CSSTransition
-      timeout={250}
-      classNames='search'
-      nodeRef={node}
-    >
       <article
         ref={node}
         key={item.name} tabIndex={0}
@@ -26,6 +21,5 @@ export default function ItemSearch({ submitGuess, item }: ItemSearchProps) {
       >
         <ItemNameplate item={item} hover={true}/>
       </article>
-    </CSSTransition>
   )
 }
