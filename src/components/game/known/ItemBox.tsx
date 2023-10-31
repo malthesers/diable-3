@@ -31,7 +31,7 @@ export default function ItemBox({ item }: { item: Item}) {
               >
                 <Image
                   ref={node}
-                  src={`/images/items/${known?.equipment.slot}.png`}
+                  src={`/images/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`}
                   alt={known.name}
                   width={64}
                   height={(['waist', 'neck', 'finger'].includes(known.equipment.slot)) ? 64 : 128}
