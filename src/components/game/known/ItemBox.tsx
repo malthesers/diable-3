@@ -1,17 +1,18 @@
+import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
+import { useRef } from 'react'
 import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
-import { CSSTransition, SwitchTransition } from 'react-transition-group'
-import { useRef } from 'react'
 
 export default function ItemBox({ item }: { item: Item}) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
-  const showHint = guesses.length > 2 || wasGuessed
-  const node = useRef<HTMLImageElement>(null)
+  const showHint = guesses.length > 1 || wasGuessed
+  const imageRef = useRef<HTMLImageElement>(null)
+  const powerRef = useRef<HTMLDivElement>(null)
 
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
@@ -23,14 +24,14 @@ export default function ItemBox({ item }: { item: Item}) {
             <SwitchTransition mode='out-in'>
               <CSSTransition
                 classNames='fade'
-                key={known?.equipment.slot}
-                nodeRef={node}
+                key={known.equipment.type}
+                nodeRef={imageRef}
                 addEndListener={(done: () => void) =>
-                  node.current?.addEventListener('transitionend', done, false)
+                  imageRef.current?.addEventListener('transitionend', done, false)
                 }
               >
                 <Image
-                  ref={node}
+                  ref={imageRef}
                   src={`/images/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`}
                   alt={known.name}
                   width={64}
@@ -49,17 +50,17 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={known.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={known.class} className='block md:text-right'/>
-          {/* <CSSTransition
+          <CSSTransition
             classNames='fade'
             in={showHint}
-            nodeRef={node}
+            nodeRef={powerRef}
             timeout={500}
             unmountOnExit
           >
-            <div ref={node}> */}
-              {/* <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/> */}
-            {/* </div>
-          </CSSTransition> */}
+            <div ref={powerRef}>
+              <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/>
+            </div>
+          </CSSTransition>
         </div>
       </div>
     </div>

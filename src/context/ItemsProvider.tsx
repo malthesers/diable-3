@@ -72,14 +72,18 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     selectAnswer()
     setGuesses([])
     setSearch('')
-    setKnown({...defaultItem, equipment: { ...defaultItem.equipment}})
+    setKnown({
+      ...defaultItem,
+      equipment: { ...defaultItem.equipment}
+    })
   }
 
   function surrenderGame() {
     if (answer) {
       setKnown({
         ...answer,
-        legendaryPower: answer.legendaryPower || ''
+        equipment: { ...answer.equipment},
+        legendaryPower: answer.legendaryPower || '',
       })
       toggleShowDefeat(true)
     }
