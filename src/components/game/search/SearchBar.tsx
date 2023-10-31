@@ -18,7 +18,7 @@ const SearchBar = forwardRef<HTMLInputElement>(function SearchBar(props, ref) {
         id='item-search'
         autoComplete='off'
         placeholder={ wasGuessed ? 'Item was guessed' : 'Enter item name...'}
-        className='bg-transparent text-center uppercase focus:outline-none'
+        className='bg-transparent text-center text-sm/4 sm:text-base/4 md:text-lg/4 uppercase focus:outline-none'
       ></input>
     </label>
   )
