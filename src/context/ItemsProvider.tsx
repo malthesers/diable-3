@@ -14,8 +14,7 @@ const defaultItem:Item = {
   equipment: {
     slot: 'unknown',
     type: 'something'
-  },
-  legendaryPower: ''
+  }
 }
 
 const defaultChosen:ChosenQualities = {
@@ -55,13 +54,13 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useState<boolean>(false)
 
   function selectAnswer() {
-    console.log(chosen)
+    // Remove items of deselected qualities and pick random item from those
     const eligibleItems:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
-
     setAnswer(eligibleItems[Math.floor(Math.random() * eligibleItems.length)])
   }
 
   function toggleChosen(quality: keyof ChosenQualities) {
+    // Toggle quality passed in parameter
     setChosen((prevState) => ({
       ...prevState,
       [quality]: !prevState[quality]
@@ -69,6 +68,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }
 
   function resetGame() {
+    // Set new answer, empty guesses, clear search and reset known
     selectAnswer()
     setGuesses([])
     setSearch('')
@@ -83,21 +83,23 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
 
   function surrenderGame() {
     if (answer) {
+      // Set correct info as known and show modal
       setKnown({
         ...answer,
         equipment: {...answer.equipment},
-        legendaryPower: answer.legendaryPower || '',
       })
       toggleShowDefeat(true)
     }
   }
 
   function validateGuess(item:Item) {
+    // Add guess to list of guesses
     setGuesses([
       item,
       ...guesses
     ])
     
+    // Set known info if correct and show modal if correct item
     if (item.equipment.slot === answer?.equipment.slot) known.equipment.slot = item.equipment.slot
     if (item.equipment.type === answer?.equipment.type) known.equipment.type = item.equipment.type
     if (item.quality === answer?.quality) known.quality = item.quality
@@ -117,7 +119,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [])
 
   useEffect(() => {
-    // Set random item as answer
+    // Set random item as answer when qualities have been loaded
     selectAnswer()
   }, [mounted])
 
