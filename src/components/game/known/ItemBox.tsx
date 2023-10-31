@@ -12,7 +12,6 @@ export default function ItemBox({ item }: { item: Item}) {
   const wasGuessed = answer?.name === known.name
   const showHint = guesses.length > 1 || wasGuessed
   const imageRef = useRef<HTMLImageElement>(null)
-  const powerRef = useRef<HTMLDivElement>(null)
 
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
@@ -20,7 +19,6 @@ export default function ItemBox({ item }: { item: Item}) {
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
         <div className={`bg-${known.quality}-icon border-${known.quality}-accent` + ' h-32 border rounded duration-500'}>
           <div className='h-full grid place-content-center icon-gradient'>
-            {/* <span className='place-self-center text-4xl'>?</span> */}
             <SwitchTransition mode='out-in'>
               <CSSTransition
                 classNames='fade'
@@ -50,17 +48,7 @@ export default function ItemBox({ item }: { item: Item}) {
             <KnownValue value={known.equipment.slot} className='md:ml-auto text-neutral-500'/>
           </p>
           <KnownValue value={known.class} className='block md:text-right'/>
-          <CSSTransition
-            classNames='fade'
-            in={showHint}
-            nodeRef={powerRef}
-            timeout={500}
-            unmountOnExit
-          >
-            <div ref={powerRef}>
-              <LegendaryPower power={(known?.legendaryPower ? known.legendaryPower : 'No legendary power')}/>
-            </div>
-          </CSSTransition>
+            <LegendaryPower power={(answer?.legendaryPower ? answer.legendaryPower : 'No legendary power')}/>
         </div>
       </div>
     </div>

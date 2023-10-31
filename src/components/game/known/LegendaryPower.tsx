@@ -7,27 +7,33 @@ import { useRef } from 'react'
 export default function LegendaryPower({ power }: { power: string | undefined }) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
-  const showHint = guesses.length > 2
-  const node = useRef<HTMLDivElement>(null)
+  const showHint = guesses.length < 1
+  const ref = useRef<HTMLDivElement>(null)
+  
+  let powerMan = power
+
+  if (showHint && !wasGuessed) {
+    powerMan = ''
+  }
 
   return (
     <SwitchTransition mode='out-in'>
       <CSSTransition
         classNames='fade'
-        key={power}
-        nodeRef={node}
+        key={powerMan}
+        nodeRef={ref}
         addEndListener={(done: () => void) =>
-          node.current?.addEventListener('transitionend', done, false)
+          ref.current?.addEventListener('transitionend', done, false)
         }
       >
-        <div ref={node}>
+        <div ref={ref}>
           <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
-            <Image
+            { powerMan && <Image
               src={Bullet}
               alt='Legendary power bullet'
               className='inline-block w-4 h-4 mb-1 mr-1'
-            />
-            <span className='text-legendary normal-case'>{power}</span>
+            />}
+            <span className='text-legendary normal-case'>{powerMan}</span>
           </p>
         </div>
       </CSSTransition>
