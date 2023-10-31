@@ -26,7 +26,7 @@
 
 @layer components {
   .nameplate {
-    @apply w-[280px] xs:w-[350px] sm:w-[385px] lg:w-[455px];
+    @apply w-[280px] xs:w-[350px] sm:w-[420px] lg:w-[455px];
   }
 }
 

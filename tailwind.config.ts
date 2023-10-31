@@ -10,8 +10,8 @@ const config: Config = {
     screens: {
       'xs': '400px',
       'sm': '640px',
-      'md': '840px',
-      'lg': '1024px',
+      'md': '860px',
+      'lg': '960px',
     },
     extend: {
       boxShadow: {
