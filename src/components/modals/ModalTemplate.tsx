@@ -17,7 +17,13 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
   const modal = useRef<HTMLElement>(null)
   
   return (
-    <CSSTransition nodeRef={modal} in={showModal} timeout={500} classNames='fade' unmountOnExit>
+    <CSSTransition
+      nodeRef={modal}
+      in={showModal}
+      timeout={500}
+      classNames='fade'
+      unmountOnExit
+    >
       <aside ref={modal} className='fixed z-50 top-0 w-full h-[100dvh] grid p-4'>
         <div onClick={() => closeModal()} className='absolute -z-10 w-full h-full bg-black bg-opacity-50 cursor-pointer'></div>
         <div className='max-w-xl w-full grid m-auto bg-undefined-icon bg-center border-bronze border-2'>

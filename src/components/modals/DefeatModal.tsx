@@ -7,10 +7,9 @@ export default function DefeatModal() {
   const { answer, guesses, resetGame } = useItems()
 
   function newGame() {
+    // Hide modal and reset game after transition end
     toggleShowDefeat(false)
-    setTimeout(() => {
-      resetGame()
-    }, 500)
+    resetGame()
   }
 
   return (
