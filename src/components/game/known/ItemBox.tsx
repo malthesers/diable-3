@@ -1,17 +1,17 @@
 import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
-import { Item } from '@/src/interfaces/Item'
 import { useRef } from 'react'
 import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
 
-export default function ItemBox({ item }: { item: Item}) {
+export default function ItemBox() {
   const { answer, known, guesses } = useItems()
-  const wasGuessed = answer?.name === known.name
-  const showHint = guesses.length > 1 || wasGuessed
-  const imageRef = useRef<HTMLImageElement>(null)
+  const node = useRef<HTMLImageElement>(null)
+  const src = known.equipment.type !== 'something'
+  ? `/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`
+  : '/items/unknown/something.png'
 
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
@@ -23,14 +23,14 @@ export default function ItemBox({ item }: { item: Item}) {
               <CSSTransition
                 classNames='fade'
                 key={known.equipment.type}
-                nodeRef={imageRef}
+                nodeRef={node}
                 addEndListener={(done: () => void) =>
-                  imageRef.current?.addEventListener('transitionend', done, false)
+                  node.current?.addEventListener('transitionend', done, false)
                 }
               >
                 <Image
-                  ref={imageRef}
-                  src={`/images/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`}
+                  ref={node}
+                  src={src}
                   alt={known.name}
                   width={64}
                   height={(['waist', 'neck', 'finger'].includes(known.equipment.slot)) ? 64 : 128}
