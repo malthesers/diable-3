@@ -7,7 +7,7 @@ import KnownValue from './KnownValue'
 import Image from 'next/image'
 
 export default function ItemBox() {
-  const { answer, known, guesses } = useItems()
+  const { answer, known } = useItems()
   const node = useRef<HTMLImageElement>(null)
   const src = known.equipment.type !== 'something'
   ? `/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`

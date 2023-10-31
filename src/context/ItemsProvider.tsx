@@ -74,7 +74,10 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     setSearch('')
     setKnown({
       ...defaultItem,
-      equipment: { ...defaultItem.equipment}
+      equipment: {
+        slot: 'unknown',
+        type: 'something'
+      }
     })
   }
 
@@ -82,7 +85,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     if (answer) {
       setKnown({
         ...answer,
-        equipment: { ...answer.equipment},
+        equipment: {...answer.equipment},
         legendaryPower: answer.legendaryPower || '',
       })
       toggleShowDefeat(true)
