@@ -4,15 +4,14 @@ import LegendaryPower from './LegendaryPower'
 import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
-import { CSSTransition } from 'react-transition-group'
+import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { useRef } from 'react'
 
 export default function ItemBox({ item }: { item: Item}) {
   const { answer, known, guesses } = useItems()
   const wasGuessed = answer?.name === known.name
   const showHint = guesses.length > 2 || wasGuessed
-
-  const node = useRef<HTMLDivElement>(null)
+  const node = useRef<HTMLImageElement>(null)
 
   return (
     <div className='h-fit w-min mx-auto bg-black border-zinc-800 border-2 p-1 space-y-2'>
@@ -21,12 +20,24 @@ export default function ItemBox({ item }: { item: Item}) {
         <div className={`bg-${known.quality}-icon border-${known.quality}-accent` + ' h-32 border rounded duration-500'}>
           <div className='h-full grid place-content-center icon-gradient'>
             {/* <span className='place-self-center text-4xl'>?</span> */}
-            <Image
-              src='/items/thunderfury.png'
-              alt={known.name}
-              width={64}
-              height={(known.equipment.slot === ('waist' || 'neck' || 'finger')) ? 64 : 128}
-            />
+            <SwitchTransition mode='out-in'>
+              <CSSTransition
+                classNames='fade'
+                key={known?.equipment.slot}
+                nodeRef={node}
+                addEndListener={(done: () => void) =>
+                  node.current?.addEventListener('transitionend', done, false)
+                }
+              >
+                <Image
+                  ref={node}
+                  src={`/images/items/${known?.equipment.slot}.png`}
+                  alt={known.name}
+                  width={64}
+                  height={(['waist', 'neck', 'finger'].includes(known.equipment.slot)) ? 64 : 128}
+                />
+              </CSSTransition>
+            </SwitchTransition>
           </div>
         </div>
         <div className='font-sans capitalize md:text-lg'>
