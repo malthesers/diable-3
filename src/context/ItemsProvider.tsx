@@ -72,7 +72,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     selectAnswer()
     setGuesses([])
     setSearch('')
-    setKnown({...defaultItem})
+    setKnown({...defaultItem, equipment: { ...defaultItem.equipment}})
   }
 
   function surrenderGame() {
