@@ -4,7 +4,7 @@ import { ReactNode, createContext, useContext, useState, useEffect } from 'react
 import { ChosenQualities } from '../interfaces/ChosenQualities'
 import { ItemsContext } from '../interfaces/ItemsContext'
 import { useModals } from './ModalsProvider'
-import { Item } from "@/src/interfaces/Item"
+import { Item } from '@/src/interfaces/Item'
 import { allItems } from '@/src/data'
 
 const defaultItem:Item = {

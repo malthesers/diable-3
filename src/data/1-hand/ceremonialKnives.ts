@@ -1,4 +1,4 @@
-import { Item } from "@/src/interfaces/Item"
+import { Item } from '@/src/interfaces/Item'
 
 interface CeremonialKnife extends Item {
   class: 'witch doctor',

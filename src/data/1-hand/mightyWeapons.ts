@@ -1,4 +1,4 @@
-import { Item } from "@/src/interfaces/Item"
+import { Item } from '@/src/interfaces/Item'
 
 interface MightyWeapon extends Item {
   class: 'barbarian',
