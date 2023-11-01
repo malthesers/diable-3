@@ -5,6 +5,7 @@ import { handCrossbows } from './handCrossbows';
 import { fistWeapons } from './fistWeapons';
 import { daggers } from './daggers';
 import { scythes } from './scythes';
+import { spears } from './spears';
 import { swords } from './swords';
 import { flails } from './flails';
 import { maces } from './maces';
@@ -18,6 +19,7 @@ export const oneHandItems:Item[] = [
   ...fistWeapons,
   ...daggers,
   ...scythes,
+  ...spears,
   ...swords,
   ...flails,
   ...maces,
