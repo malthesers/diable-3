@@ -17,7 +17,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: '34% chance to Chain Lightning enemies when you hit them.',
+    legendaryPower: '[20 - 40]% chance to Chain Lightning enemies when you hit them.',
     elementalDamage: 'lightning'
   },
 ]
