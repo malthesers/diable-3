@@ -3,11 +3,18 @@ import QualitiesModal from './QualitiesModal';
 import VictoryModal from './VictoryModal';
 import DefeatModal from './DefeatModal';
 import { createPortal } from 'react-dom';
+import { useEffect, useState } from 'react'
 
 export default function ModalsContainer() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
-    <>
-      {createPortal(
+    mounted ? 
+      createPortal(
         <>
           <DefeatModal/>
           <VictoryModal/>
@@ -15,7 +22,6 @@ export default function ModalsContainer() {
           <InstructionsModal/>
         </>,
         document.body
-      )}
-    </>
+      ) : null
   )
 }
