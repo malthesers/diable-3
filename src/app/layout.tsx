@@ -11,8 +11,8 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
-  title: 'Diable',
-  description: 'Diablo III Worlde ||| Guess the item by specifications',
+  title: 'Diable III',
+  description: 'Diablo III Wordlde ||| Guess the item by its properties!',
 }
 
 export default function RootLayout({
