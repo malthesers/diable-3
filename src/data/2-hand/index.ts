@@ -1,4 +1,5 @@
 import { Item } from '@/src/interfaces/Item';
+import { mightyWeapons } from './mightyWeapons';
 import { crossbows } from './crossbows';
 import { polearms } from './polearms';
 import { daibos } from './daibos';
@@ -10,6 +11,7 @@ import { bows } from './bows';
 import { axes } from './axes';
 
 export const twoHandItems:Item[] = [
+  ...mightyWeapons,
   ...crossbows,
   ...polearms,
   ...daibos,
