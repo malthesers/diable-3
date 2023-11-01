@@ -16,6 +16,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
+    elementalDamage: 'lightning'
   },
   {
     name: 'Longshot',
@@ -44,6 +45,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
+    elementalDamage: 'cold'
   },
   {
     name: 'Kridershot',
@@ -73,6 +75,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
+    elementalDamage: 'poison'
   },
   {
     name: 'Windforce',
@@ -111,6 +114,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
+    elementalDamage: 'poison'
   },
   {
     name: 'Odyssey\'s End',
@@ -130,5 +134,6 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
+    elementalDamage: 'cold'
   },
 ]
