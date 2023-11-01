@@ -17,6 +17,7 @@ export const flails:Flail[] = [
       slot: '1-hand',
       type: 'flail'
     },
-    legendaryPower: 'Fist of the Heavens now casts twice and deals [800 - 1000]% more damage.'
+    legendaryPower: 'Fist of the Heavens now casts twice and deals [800 - 1000]% more damage.',
+    elementalDamage: 'lightning'
   },
 ]
