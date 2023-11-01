@@ -3,6 +3,7 @@ import { ceremonialKnives } from './ceremonialKnives';
 import { mightyWeapons } from './mightyWeapons';
 import { handCrossbows } from './handCrossbows';
 import { fistWeapons } from './fistWeapons';
+import { daggers } from './daggers';
 import { scythes } from './scythes';
 import { swords } from './swords';
 import { flails } from './flails';
@@ -15,6 +16,7 @@ export const oneHandItems:Item[] = [
   ...mightyWeapons,
   ...handCrossbows,
   ...fistWeapons,
+  ...daggers,
   ...scythes,
   ...swords,
   ...flails,
