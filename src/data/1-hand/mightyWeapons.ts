@@ -17,6 +17,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'Seismic Slam attacks 50% faster and also deals [100 - 150]% increased damage against Slowed or Chilled enemies.'
+    legendaryPower: 'Seismic Slam attacks 50% faster and also deals [100 - 150]% increased damage against Slowed or Chilled enemies.',
+    elementalDamage: 'cold'
   },
 ]
