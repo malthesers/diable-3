@@ -6,7 +6,7 @@ import ItemNameplate from '../ItemNameplate'
 import KnownValue from './KnownValue'
 import Image from 'next/image'
 
-export default function ItemBox() {
+export default function KnownInfo() {
   const { answer, known } = useItems()
   const node = useRef<HTMLImageElement>(null)
   const src = known.equipment.type !== 'something'
