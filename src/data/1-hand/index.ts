@@ -1,20 +1,22 @@
 import { Item } from '@/src/interfaces/Item';
-import { handCrossbows } from './handCrossbows';
-import { swords } from './swords';
-import { wands } from './wands'
-import { mightyWeapons } from './mightyWeapons';
-import { flails } from './flails';
-import { scythes } from './scythes';
 import { ceremonialKnives } from './ceremonialKnives';
+import { mightyWeapons } from './mightyWeapons';
+import { handCrossbows } from './handCrossbows';
 import { fistWeapons } from './fistWeapons';
+import { scythes } from './scythes';
+import { swords } from './swords';
+import { flails } from './flails';
+import { wands } from './wands'
+import { axes } from './axes';
 
 export const oneHandItems:Item[] = [
   ...ceremonialKnives,
   ...mightyWeapons,
   ...handCrossbows,
   ...fistWeapons,
-  ...flails,
   ...scythes,
   ...swords,
-  ...wands
+  ...flails,
+  ...wands,
+  ...axes
 ]
