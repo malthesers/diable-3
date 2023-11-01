@@ -17,6 +17,7 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Grasp of the Dead gains the effect of the Rain of Corpses rune.'
+    legendaryPower: 'Grasp of the Dead gains the effect of the Rain of Corpses rune.',
+    elementalDamage: 'arcane'
   },
 ]
