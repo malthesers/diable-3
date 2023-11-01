@@ -27,7 +27,8 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Shadow Power also triggers Smoke Screen.'
+    legendaryPower: 'Shadow Power also triggers Smoke Screen.',
+    elementalDamage: 'holy'
   },
   {
     name: 'The Demon\'s Demise',
@@ -47,6 +48,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
+    elementalDamage: 'holy'
   },
   {
     name: 'Calamity',
@@ -85,6 +87,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
+    elementalDamage: 'fire'
   },
   {
     name: 'Helltrapper',
@@ -104,7 +107,8 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Reduce the cooldown of Vengeance by 65%.'
+    legendaryPower: 'Reduce the cooldown of Vengeance by 65%.',
+    elementalDamage: 'holy'
   },
   {
     name: 'Valla\'s Bequest',
@@ -123,7 +127,8 @@ export const handCrossbows:HandCrossbow[] = [
     equipment: {
       slot: '1-hand',
       type: 'hand crossbow'
-    }
+    },
+    elementalDamage: 'cold'
   },
   {
     name: 'Danetta\'s Revenge',
@@ -153,6 +158,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
+    elementalDamage: 'holy'
   },
   {
     name: 'Hallowed Condemnation',
@@ -162,6 +168,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
+    elementalDamage: 'holy'
   },
   {
     name: 'Penetrator',
