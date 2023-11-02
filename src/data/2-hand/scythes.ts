@@ -49,13 +49,4 @@ export const scythes:Scythe[] = [
     },
     legendaryPower: 'Every point of Maximum Essence increases your damage by 0.5% and Bone Spikes generates [2 - 5] additional Essence for each enemy hit.',
   },
-  {
-    name: 'The Reaper\'s Kiss',
-    class: 'necromancer',
-    quality: 'common',
-    equipment: {
-      slot: '2-hand',
-      type: 'scythe'
-    },
-  },
 ]

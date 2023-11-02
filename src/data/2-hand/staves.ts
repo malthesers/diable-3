@@ -172,4 +172,13 @@ export const staves:Staff[] = [
       type: 'staff'
     },
   },
+  {
+    name: 'The Reaper\'s Kiss',
+    class: 'necromancer',
+    quality: 'common',
+    equipment: {
+      slot: '2-hand',
+      type: 'scythe'
+    },
+  },
 ]
