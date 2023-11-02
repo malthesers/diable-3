@@ -306,4 +306,49 @@ export const swords:Sword[] = [
     },
     legendaryPower: 'When you kill a Fallen, you have a [9 - 12%] chance to charm all other nearby Fallen.'
   },
+  {
+    name: 'Amberwing',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Ghoul King\'s Blade',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'God-Butcher',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Quinquennial Sword',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Second Quinquennial Sword',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
 ]

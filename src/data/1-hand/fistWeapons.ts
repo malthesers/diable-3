@@ -169,4 +169,13 @@ export const fistWeapons:FistWeapon[] = [
     },
     elementalDamage: 'lightning'
   },
+  {
+    name: 'Hand of Despair',
+    class: 'monk',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
 ]

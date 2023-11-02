@@ -69,4 +69,13 @@ export const spears:Spear[] = [
     },
     elementalDamage: 'holy'
   },
+  {
+    name: 'Steffon\'s Heavy Lance',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'spear'
+    },
+  },
 ]

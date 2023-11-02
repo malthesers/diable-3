@@ -92,4 +92,31 @@ export const flails:Flail[] = [
     legendaryPower: 'Smite now jumps to 3 additional enemies.',
     elementalDamage: 'holy'
   },
+  {
+    name: 'The Que-Hegan\'s Will',
+    class: 'crusader',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'flail'
+    },
+  },
+  {
+    name: 'Templar\'s Chain',
+    class: 'crusader',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'flail'
+    },
+  },
+  {
+    name: 'Flail of Carnage',
+    class: 'crusader',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'flail'
+    },
+  },
 ]
