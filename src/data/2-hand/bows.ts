@@ -55,7 +55,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
-    legendaryPower: 'Elemental Arrow now generates 4 Hatred.'
+    legendaryPower: 'Elemental Arrow now generates [3 - 4] Hatred.'
   },
   {
     name: 'Cluckeye',
@@ -65,7 +65,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
-    legendaryPower: '50% chance to cluck when attacking.'
+    legendaryPower: '[25 - 50%] chance to cluck when attacking.'
   },
   {
     name: 'Venomhusk',
@@ -94,7 +94,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
-    legendaryPower: 'Multishot attacks 50% faster and its damage is increased by 200%.'
+    legendaryPower: 'Multishot attacks 50% faster and its damage is increased by [150 - 200%].'
   },
   {
     name: 'Leonine Bow of Hashir',
@@ -104,7 +104,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
-    legendaryPower: 'Bolas have a 100% chance on explosion to pull in all enemies within 24 yards, and also deals 150% increased damage.'
+    legendaryPower: 'Bolas have a 100% chance on explosion to pull in all enemies within 24 yards, and also deals [100 - 150%] increased damage.'
   },
   {
     name: 'Sydyru Crust',
@@ -124,7 +124,7 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow',
     },
-    legendaryPower: 'Enemies snared by your Entangling Shot take 150% increased damage from all sources.'
+    legendaryPower: 'Enemies snared by your Entangling Shot take [100 - 150%] increased damage from all sources.'
   },
   {
     name: 'Unbound Bolt',
