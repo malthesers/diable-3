@@ -9,10 +9,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
   const ref = useRef<HTMLDivElement>(null)
   const wasGuessed = answer?.name === known.name
   const legendaryPower = (guesses.length < 9 && !wasGuessed) ? '' : power
-  const preVar = legendaryPower?.substring(0, legendaryPower.indexOf('['))
-  const rangeVar = legendaryPower?.substring(legendaryPower.indexOf('['), legendaryPower.indexOf(']') + 1)
-  const postVar = legendaryPower?.substring(legendaryPower.indexOf(']') + 1)
-
+  
   return (
     <SwitchTransition mode='out-in'>
       <CSSTransition
@@ -33,10 +30,9 @@ export default function LegendaryPower({ power }: { power: string | undefined })
               />
             }
             <span className='text-legendary normal-case'>
-              {legendaryPower}
-              {/* <span>{preVar}</span>
-              <span className='text-magic-accent'>{rangeVar}</span>
-              <span>{postVar}</span> */}
+              <span>{legendaryPower?.substring(0, legendaryPower.indexOf('['))}</span>
+              <span className='text-magic-accent'>{legendaryPower?.substring(legendaryPower.indexOf('['), legendaryPower.indexOf(']') + 1)}</span>
+              <span>{legendaryPower?.substring(legendaryPower.indexOf(']') + 1)}</span>
             </span>
           </p>
         </div>
