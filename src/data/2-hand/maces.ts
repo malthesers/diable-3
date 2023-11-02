@@ -103,13 +103,4 @@ export const maces:Mace[] = [
     legendaryPower: 'Increases damage against elites by [40 - 50%].',
     elementalDamage: 'cold'
   },
-  {
-    name: 'Splintered Oar',
-    class: 'generic',
-    quality: 'magic',
-    equipment: {
-      slot: '2-hand',
-      type: 'mace'
-    },
-  },
 ]

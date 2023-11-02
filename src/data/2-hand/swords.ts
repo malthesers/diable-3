@@ -139,4 +139,13 @@ export const swords:Sword[] = [
       type: 'sword'
     },
   },
+  {
+    name: 'Splintered Oar',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '2-hand',
+      type: 'sword'
+    },
+  },
 ]
