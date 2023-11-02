@@ -100,4 +100,13 @@ export const axes:Axe[] = [
     },
     elementalDamage: 'holy'
   },
+  {
+    name: 'The Butcher\'s Cleaver',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'axe'
+    },
+  },
 ]
