@@ -221,4 +221,89 @@ export const swords:Sword[] = [
     },
     elementalDamage: 'poison'
   },
+  {
+    name: 'Born\'s Furious Wrath',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    elementalDamage: 'holy'
+  },
+  {
+    name: 'Born\'s Searing Spite',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    elementalDamage: 'lightning'
+  },
+  {
+    name: 'Little Rogue',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'The Slanderer',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Griswold\'s Edge',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Griswold\'s Worn Edge',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    elementalDamage: 'fire'
+  },
+  {
+    name: 'King\'s Sword of Haste',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'The Clipper',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
+    name: 'Rakanishu\'s Blade',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    legendaryPower: 'When you kill a Fallen, you have a [9 - 12%] chance to charm all other nearby Fallen.'
+  },
 ]
