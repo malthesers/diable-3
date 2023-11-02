@@ -129,4 +129,13 @@ export const maces:Mace[] = [
       type: 'mace'
     },
   },
+  {
+    name: 'Wirt\'s Original Leg',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'mace'
+    },
+  },
 ]
