@@ -17,7 +17,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Attacks grant you an absorb shield for 3.0% of your maximum Life. Stacks up to 10 times.'
+    legendaryPower: 'Attacks grant you an absorb shield for [2.0 - 3.0]% of your maximum Life. Stacks up to 10 times.'
   },
   {
     name: 'Lianna\'s Wings',
@@ -38,7 +38,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Each blast from Spike Trap will damage all enemies again after 1 second, and deals 200% increased damage.'
+    legendaryPower: 'Each blast from Spike Trap will damage all enemies again after 1 second, and deals [150 - 200]% increased damage.'
   },
   {
     name: 'Blitzbolter',
@@ -97,7 +97,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: '10% chance on hit to summon a Spike Trap, Caltrops or Sentry.'
+    legendaryPower: '[7 - 10]% chance on hit to summon a Spike Trap, Caltrops or Sentry.'
   },
   {
     name: 'Dawn',
@@ -107,7 +107,7 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Reduce the cooldown of Vengeance by 65%.',
+    legendaryPower: 'Reduce the cooldown of Vengeance by [50 - 65]%.',
     elementalDamage: 'holy'
   },
   {
