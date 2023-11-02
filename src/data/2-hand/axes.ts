@@ -17,6 +17,6 @@ export const axes:Axe[] = [
       slot: '2-hand',
       type: 'axe'
     },
-    legendaryPower: 'Attacks will slay enemies with less than [5 - 10]% health.',
+    legendaryPower: 'Attacks will slay enemies with less than [5 - 10%] health.',
   },
 ]

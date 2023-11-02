@@ -17,7 +17,7 @@ export const crossbows:Crossbow[] = [
       slot: '2-hand',
       type: 'crossbow'
     },
-    legendaryPower: '[35 - 65]% chance to shoot explosive bolts when attacking.',
+    legendaryPower: '[35 - 65%] chance to shoot explosive bolts when attacking.',
     elementalDamage: 'fire'
   },
 ]

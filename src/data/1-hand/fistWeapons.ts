@@ -17,7 +17,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Dashing Strike reduces your damage taken by [40 - 50]% for 6 seconds.'
+    legendaryPower: 'Dashing Strike reduces your damage taken by [40 - 50%] for 6 seconds.'
   },
   {
     name: 'Demon Claw',
@@ -37,7 +37,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Dashing Strike increases the damage of Dashing Strike by [75 - 100]% for 1 second, stacking up to 5 times.'
+    legendaryPower: 'Dashing Strike increases the damage of Dashing Strike by [75 - 100%] for 1 second, stacking up to 5 times.'
   },
   {
     name: 'Jawbreaker',
@@ -57,7 +57,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Increase the damage of Wave of Light by 150%. When the initial impact of your Wave of Light hits 3 or fewer enemies, the damage is increased by [200 - 250]%.'
+    legendaryPower: 'Increase the damage of Wave of Light by 150%. When the initial impact of your Wave of Light hits 3 or fewer enemies, the damage is increased by [200 - 250%].'
   },
   {
     name: 'Lion\'s Claw',
@@ -87,7 +87,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Spirit spenders that teleport you while Epiphany is active are also mimicked on a nearby target with [350 - 450]% increased damage for free.'
+    legendaryPower: 'Spirit spenders that teleport you while Epiphany is active are also mimicked on a nearby target with [350 - 450%] increased damage for free.'
   },
   {
     name: 'Scarbringer',
@@ -97,7 +97,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'The damage of Lashing Tail Kick is increased by [450 - 600]% to the first 7 enemies hit.'
+    legendaryPower: 'The damage of Lashing Tail Kick is increased by [450 - 600%] to the first 7 enemies hit.'
   },
   {
     name: 'Sledge Fist',
@@ -116,7 +116,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Exploding Palm\'s on-death explosion damage is increased by [400 - 500]%.'
+    legendaryPower: 'Exploding Palm\'s on-death explosion damage is increased by [400 - 500%].'
   },
   {
     name: 'Vengeful Wind',
@@ -126,7 +126,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Increases the maximum stack count of Sweeping Wind by 10 and increases the damage by [600 - 800]%.'
+    legendaryPower: 'Increases the maximum stack count of Sweeping Wind by 10 and increases the damage by [600 - 800%].'
   },
   {
     name: 'Won Khim Lau',
@@ -136,7 +136,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Hitting with Tempest Rush will activate Cyclone Strike, and both skills deal [500 - 600]% increased damage.',
+    legendaryPower: 'Hitting with Tempest Rush will activate Cyclone Strike, and both skills deal [500 - 600%] increased damage.',
     elementalDamage: 'lightning'
   },
   {

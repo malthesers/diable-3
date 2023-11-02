@@ -17,6 +17,6 @@ export const maces:Mace[] = [
       slot: '2-hand',
       type: 'mace'
     },
-    legendaryPower: 'Heal for [3 - 4]% of your missing Life when you kill an Undead enemy.',
+    legendaryPower: 'Heal for [3 - 4%] of your missing Life when you kill an Undead enemy.',
   },
 ]

@@ -17,7 +17,7 @@ export const spears:Spear[] = [
       slot: '1-hand',
       type: 'spear'
     },
-    legendaryPower: 'Your Thorns is increased by [10 - 15]% for every enemy afflicted by one of your curses.'
+    legendaryPower: 'Your Thorns is increased by [10 - 15%] for every enemy afflicted by one of your curses.'
   },
   {
     name: 'Scrimshaw',
@@ -37,7 +37,7 @@ export const spears:Spear[] = [
       slot: '1-hand',
       type: 'spear'
     },
-    legendaryPower: 'Weapon Throw and Ancient Spear deal [150 - 200]% increased damage. Weapon Throw generates up to 50 additional Fury based on the distance of the enemy hit. The generated Fury can go above the maximum cap by 200 Fury. Ancient Spear refunds up to 50 Fury based on the distance of the enemy hit, and resets your Fury cap to its base maximum.'
+    legendaryPower: 'Weapon Throw and Ancient Spear deal [150 - 200%] increased damage. Weapon Throw generates up to 50 additional Fury based on the distance of the enemy hit. The generated Fury can go above the maximum cap by 200 Fury. Ancient Spear refunds up to 50 Fury based on the distance of the enemy hit, and resets your Fury cap to its base maximum.'
   },
   {
     name: 'The Three Hundredth Spear',
@@ -47,7 +47,7 @@ export const spears:Spear[] = [
       slot: '1-hand',
       type: 'spear'
     },
-    legendaryPower: 'Increase the damage of Weapon Throw and Ancient Spear by [150 - 200]%. The attack speed of Weapon Throw is increased by 200%.'
+    legendaryPower: 'Increase the damage of Weapon Throw and Ancient Spear by [150 - 200%]. The attack speed of Weapon Throw is increased by 200%.'
   },
   {
     name: 'Empyrean Messenger',

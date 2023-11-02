@@ -27,7 +27,7 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Instead of dealing direct damage, your Spirit Barrage now accumulates on the target. When you stop casting, it explodes dealing [400 - 500]% of the accumulated damage to all enemies within 15 yards.',
+    legendaryPower: 'Instead of dealing direct damage, your Spirit Barrage now accumulates on the target. When you stop casting, it explodes dealing [400 - 500%] of the accumulated damage to all enemies within 15 yards.',
     elementalDamage: 'cold'
   },
   {
@@ -38,7 +38,7 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Your Poison Darts and your Fetishes\' Poison Darts now pierce and deal an additional [400 - 500]% damage.',
+    legendaryPower: 'Your Poison Darts and your Fetishes\' Poison Darts now pierce and deal an additional [400 - 500%] damage.',
   },
   {
     name: 'Deadly Rebirth',
@@ -108,7 +108,7 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Corpse Spiders deals an additional [600 - 800]% damage and releases a web on impact that Slows enemies by 80%.',
+    legendaryPower: 'Corpse Spiders deals an additional [600 - 800%] damage and releases a web on impact that Slows enemies by 80%.',
   },
   {
     name: 'Starmetal Kukri',

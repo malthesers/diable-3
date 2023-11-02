@@ -28,7 +28,7 @@ export const axes:Axe[] = [
       slot: '1-hand',
       type: 'axe'
     },
-    legendaryPower: '[20 - 25]% chance to drag enemies to you when attacking.',
+    legendaryPower: '[20 - 25%] chance to drag enemies to you when attacking.',
   },
   {
     name: 'Flesh Tearer',
@@ -57,7 +57,7 @@ export const axes:Axe[] = [
       slot: '1-hand',
       type: 'axe'
     },
-    legendaryPower: '[75 - 100]% of your Thorns damage is applied on every attack.'
+    legendaryPower: '[75 - 100%] of your Thorns damage is applied on every attack.'
   },
   {
     name: 'Sky Splitter',
@@ -67,7 +67,7 @@ export const axes:Axe[] = [
       slot: '1-hand',
       type: 'axe'
     },
-    legendaryPower: '[15 - 20]% chance to Smite enemies for 600-750% weapon damage as Lightning when you hit them.',
+    legendaryPower: '[15 - 20%] chance to Smite enemies for 600-750% weapon damage as Lightning when you hit them.',
     elementalDamage: 'holy'
   },
   {

@@ -16,7 +16,7 @@ export const swords:Sword[] = [
       slot: '1-hand',
       type: 'sword'
     },
-    legendaryPower: 'Undead and Demon enemies within 25 yards take [500 - 650]% weapon damage as Holy every second and are sometimes knocked into the air.',
+    legendaryPower: 'Undead and Demon enemies within 25 yards take [500 - 650%] weapon damage as Holy every second and are sometimes knocked into the air.',
     elementalDamage: 'cold'
   },
   {
@@ -27,7 +27,7 @@ export const swords:Sword[] = [
       slot: '1-hand',
       type: 'sword'
     },
-    legendaryPower: 'While channeling Arcane Torrent, Disintegrate, or Ray of Frost for at least 1 second, all damage is increased by [250 - 325]%',
+    legendaryPower: 'While channeling Arcane Torrent, Disintegrate, or Ray of Frost for at least 1 second, all damage is increased by [250 - 325%]',
   },
   {
     name: 'Devil Tongue',
@@ -65,7 +65,7 @@ export const swords:Sword[] = [
       slot: '1-hand',
       type: 'sword'
     },
-    legendaryPower: 'Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse [444 - 555]% weapon damage as Lightning every second to nearby enemies for 6 seconds.',
+    legendaryPower: 'Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse [444 - 555%] weapon damage as Lightning every second to nearby enemies for 6 seconds.',
     elementalDamage: 'lightning'
   },
   {

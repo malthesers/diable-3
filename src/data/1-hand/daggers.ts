@@ -38,7 +38,7 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'Attacking enemies below [17 - 20]% Life freezes them for 3 seconds.',
+    legendaryPower: 'Attacking enemies below [17 - 20%] Life freezes them for 3 seconds.',
     elementalDamage: 'cold'
   },
   {
@@ -49,7 +49,7 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'The damage of Impale is increased by [300 - 375]% and it returns 15 Hatred if it hits an enemy already Impaled.',
+    legendaryPower: 'The damage of Impale is increased by [300 - 375%] and it returns 15 Hatred if it hits an enemy already Impaled.',
     elementalDamage: 'cold'
   },
   {
@@ -60,7 +60,7 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'Every second, gain [300 - 400]% increased damage for your next Fan of Knives. Stacks up to 30 times.',
+    legendaryPower: 'Every second, gain [300 - 400%] increased damage for your next Fan of Knives. Stacks up to 30 times.',
     elementalDamage: 'cold'
   },
   {
@@ -90,6 +90,6 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'Performing an attack has a 25% chance to hurl a Frozen Orb. Arcane Orb deals [300 - 350]% increased damage.'
+    legendaryPower: 'Performing an attack has a 25% chance to hurl a Frozen Orb. Arcane Orb deals [300 - 350%] increased damage.'
   },
 ]

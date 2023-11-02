@@ -17,7 +17,7 @@ export const flails:Flail[] = [
       slot: '1-hand',
       type: 'flail'
     },
-    legendaryPower: 'Fist of the Heavens now casts twice and deals [800 - 1000]% more damage.',
+    legendaryPower: 'Fist of the Heavens now casts twice and deals [800 - 1000%] more damage.',
     elementalDamage: 'lightning'
   },
   {
@@ -28,7 +28,7 @@ export const flails:Flail[] = [
       slot: '1-hand',
       type: 'flail'
     },
-    legendaryPower: 'Removes the resource cost of Blessed Shield and increases its damage by [275 - 350]%.',
+    legendaryPower: 'Removes the resource cost of Blessed Shield and increases its damage by [275 - 350%].',
   },
   {
     name: 'Justinian\'s Mercy',
@@ -58,7 +58,7 @@ export const flails:Flail[] = [
       slot: '1-hand',
       type: 'flail'
     },
-    legendaryPower: 'Casting Justice increases your movement speed by [15 - 20]% for 2 seconds.',
+    legendaryPower: 'Casting Justice increases your movement speed by [15 - 20%] for 2 seconds.',
   },
   {
     name: 'Inviolable Faith',

@@ -48,7 +48,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: 'After killing 10 enemies, you release a Poison Nova that deals [1050 - 1400]% weapon damage as Poison to enemies within 30 yards.',
+    legendaryPower: 'After killing 10 enemies, you release a Poison Nova that deals [1050 - 1400%] weapon damage as Poison to enemies within 30 yards.',
     elementalDamage: 'holy'
   },
   {
@@ -86,7 +86,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: '[20 - 40]% chance to Chain Lightning enemies when you hit them.',
+    legendaryPower: '[20 - 40%] chance to Chain Lightning enemies when you hit them.',
     elementalDamage: 'lightning'
   },
   {
@@ -97,7 +97,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: 'Critical Hits have a [3 - 4]% chance to spawn a health globe.',
+    legendaryPower: 'Critical Hits have a [3 - 4%] chance to spawn a health globe.',
     elementalDamage: 'holy'
   },
   {

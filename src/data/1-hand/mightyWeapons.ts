@@ -27,7 +27,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'Bash consumes up to 40 Fury to deal up to [400 - 500]% increased damage.',
+    legendaryPower: 'Bash consumes up to 40 Fury to deal up to [400 - 500%] increased damage.',
     elementalDamage: 'holy'
   },
   {
@@ -38,7 +38,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'Cleave deals up to [300 - 400]% increased damage based on percentage of missing Fury.',
+    legendaryPower: 'Cleave deals up to [300 - 400%] increased damage based on percentage of missing Fury.',
   },
   {
     name: 'Fjord Cutter',
@@ -48,7 +48,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'Seismic Slam attacks 50% faster and also deals [100 - 150]% increased damage against Slowed or Chilled enemies.',
+    legendaryPower: 'Seismic Slam attacks 50% faster and also deals [100 - 150%] increased damage against Slowed or Chilled enemies.',
     elementalDamage: 'cold'
   },
   {
@@ -69,7 +69,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'Your primary skills attack 50% faster and deal [150 - 200]% increased damage.'
+    legendaryPower: 'Your primary skills attack 50% faster and deal [150 - 200%] increased damage.'
   },
   {
     name: 'Remorseless',
@@ -79,7 +79,7 @@ export const mightyWeapons:MightyWeapon[] = [
       slot: '1-hand',
       type: 'mighty weapon'
     },
-    legendaryPower: 'While both Wrath of the Berserker and Call of the Ancients are active, Hammer of the Ancients deals [200 - 800]% increased damage.'
+    legendaryPower: 'While both Wrath of the Berserker and Call of the Ancients are active, Hammer of the Ancients deals [200 - 800%] increased damage.'
   },
   {
     name: 'Bul-Katho\'s Solemn Vow',
