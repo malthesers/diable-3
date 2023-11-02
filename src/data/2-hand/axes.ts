@@ -70,4 +70,31 @@ export const axes:Axe[] = [
       type: 'axe'
     },
   },
+  {
+    name: 'Kanai\'s Skorn',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '2-hand',
+      type: 'axe'
+    },
+  },
+  {
+    name: 'King Maker',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '2-hand',
+      type: 'axe'
+    },
+  },
+  {
+    name: 'Sungjae\'s Fury',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '2-hand',
+      type: 'axe'
+    },
+  },
 ]

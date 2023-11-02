@@ -288,15 +288,6 @@ export const swords:Sword[] = [
     },
   },
   {
-    name: 'The Clipper',
-    class: 'generic',
-    quality: 'magic',
-    equipment: {
-      slot: '1-hand',
-      type: 'sword'
-    },
-  },
-  {
     name: 'Rakanishu\'s Blade',
     class: 'generic',
     quality: 'magic',

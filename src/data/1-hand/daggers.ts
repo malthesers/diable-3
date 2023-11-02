@@ -92,4 +92,13 @@ export const daggers:Dagger[] = [
     },
     legendaryPower: 'Performing an attack has a 25% chance to hurl a Frozen Orb. Arcane Orb deals [300 - 350%] increased damage.'
   },
+  {
+    name: 'The Clipper',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: '1-hand',
+      type: 'dagger'
+    },
+  },
 ]
