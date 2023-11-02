@@ -90,5 +90,6 @@ export const flails:Flail[] = [
       type: 'flail'
     },
     legendaryPower: 'Smite now jumps to 3 additional enemies.',
+    elementalDamage: 'holy'
   },
 ]
