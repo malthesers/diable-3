@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Helm extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: 'head',
     type: 'helm'
@@ -177,6 +177,330 @@ export const helms:Helm[] = [
     name: 'Helm of Cranial Crustacean',
     class: 'generic',
     quality: 'common',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Sage\'s Apogee',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Guardians\'s Gaze',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Cain\'s Insight',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Aughild\'s Spike',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Skull of Savages',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Immortal King\'s Triumph',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Eyes of the Earth',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Raekor\'s Will',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Helm of the Wastes',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Crown of Valor',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Helm of Akkhan',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Roland\'s Visage',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Crown of the Light',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Crown of the Invoker',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Accursed Visage',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Marauder\'s Visage',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'The Shadow\'s Mask',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Natalya\'s Sight',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Dystopian Goggles',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Decree of Justice',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Sunwuko\'s Crown',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Mask of the Searing Sky',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Uliana\'s Spirit',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Rathma\'s Skull Helm',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Inarius\'s Understanding',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Luxurious Bauta',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Pestilence Mask',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Trag\'Oul\'s Guise',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Helltooth Mask',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Jade Harvester\'s Wisdom',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Arachyr\'s Visage',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Firebird\'s Plume',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Shrouded Mask',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Tal Rasha\'s Guise of Wisdom',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Typhon\'s Frons',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Vyr\'s Sightless Skull',
+    class: 'wizard',
+    quality: 'set',
     equipment: {
       slot: 'head',
       type: 'helm'
