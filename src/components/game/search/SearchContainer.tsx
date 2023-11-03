@@ -10,15 +10,17 @@ export default function SearchContainer() {
   const { items, chosen, guesses, validateGuess, search, setSearch } = useItems()
   const ref = useRef<HTMLInputElement | null>(null)
 
-  const eligible:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
-  const remaining:Item[] = eligible.filter(item =>  !guesses.some(guess => guess.name === item.name))
+  const remaining:Item[] = items.filter(item =>  {
+    return !guesses.some(guess => guess.name === item.name) && chosen[item.quality as keyof typeof chosen]
+  })
 
   const fuse = new Fuse(remaining, {
     keys: ['name'],
+    threshold: 0.3
   })
 
   const fuseResults = fuse.search(search, {
-    limit: 10
+    limit: 10,
   })
 
   const results:ItemRef[] = fuseResults.map((result) => {
@@ -27,7 +29,6 @@ export default function SearchContainer() {
       ref: createRef()
     }
   })
-
 
   function submitGuess(item:Item) {
     if (ref.current) ref.current.focus()
