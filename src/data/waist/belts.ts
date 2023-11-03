@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Belt extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: 'waist',
     type: 'belt'
@@ -377,5 +377,78 @@ export const belts:Belt[] = [
       type: 'belt'
     },
     legendaryPower: 'You take [8.0 - 9.0%] less damage for every Companion you have active.'
+  },
+  {
+    name: 'Krelm\'s Buff Belt',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+    legendaryPower: 'Gain 25% run speed. This effect is lost for 5 seconds after taking damage.'
+  },
+  {
+    name: 'Blackthorne\'s Notched Belt',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Captain Crimson\'s Silk Girdle',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Guardian\'s Case',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Demon\'s Restraint',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Sage\'s Ribbon',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Inna\'s Favor',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
+  {
+    name: 'Tal Rasha\'s Brace',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
   },
 ]
