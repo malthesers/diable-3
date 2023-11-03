@@ -8,7 +8,7 @@ interface Bracers extends Item {
   }
 }
 
-export const bracersItems:Bracers[] = [
+export const wristsItems:Bracers[] = [
   {
     name: 'Akkhan\'s Manacles',
     class: 'generic',
