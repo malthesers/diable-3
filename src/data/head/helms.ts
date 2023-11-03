@@ -137,4 +137,49 @@ export const helms:Helm[] = [
     },
     legendaryPower: 'Reduce the cooldown and increase the damage of Phalanx by [45 - 60%].'
   },
+  {
+    name: 'Veil of Steel',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'The Undead Crown',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Harlequin Crest',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Star Helm',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
+  {
+    name: 'Helm of Cranial Crustacean',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
 ]
