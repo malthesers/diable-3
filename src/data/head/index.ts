@@ -4,7 +4,7 @@ import { voodooMasks } from './voodooMasks';
 import { wizardHats } from './wizardHats';
 import { helms } from './helms';
 
-export const offHandItems:Item[] = [
+export const headItems:Item[] = [
   ...spiritStones,
   ...voodooMasks,
   ...wizardHats,
