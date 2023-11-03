@@ -257,4 +257,50 @@ export const bracersItems:Bracers[] = [
     },
     legendaryPower: 'Health globes restore [25 - 30%] of your primary resource. This effect cannot occur more than once every 2 seconds.'
   },
+  {
+    name: 'Shackles of the Invoker',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+  },
+  {
+    name: 'Krelm\'s Buff Bracers',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'You are immune to Knockback and Stun effects.'
+  },
+  {
+    name: 'Guardian\'s Aversion',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+  },
+  {
+    name: 'Demon\'s Animus',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+  },
+  {
+    name: 'Aughild\'s Search',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+  },
 ]
