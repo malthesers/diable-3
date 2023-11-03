@@ -59,4 +59,31 @@ export const cloaks:Cloak[] = [
     },
     legendaryPower: 'Companion - Wolf Companion now summons 3 wolves.'
   },
+  {
+    name: 'Cage of the Hellborn',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'torso',
+      type: 'cloak'
+    },
+  },
+  {
+    name: 'Galvanized Vest',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'torso',
+      type: 'cloak'
+    },
+  },
+  {
+    name: 'Natalya\'s Embrace',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'torso',
+      type: 'cloak'
+    },
+  },
 ]
