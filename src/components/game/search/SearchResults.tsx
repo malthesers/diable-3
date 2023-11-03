@@ -2,15 +2,34 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
 import { ItemRef } from '@/src/interfaces/ItemRef'
 import { Item } from '@/src/interfaces/Item'
+import { createRef } from 'react'
 import ItemSearch from './ItemSearch'
+import Fuse from 'fuse.js'
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,
-  results: ItemRef[],
 }
 
-export default function SearchResults({ submitGuess, results }: SearchResultsProps) {
-  const { search } = useItems()
+export default function SearchResults({ submitGuess }: SearchResultsProps) {
+  const { items, guesses, chosen, search } = useItems()
+
+  const remaining:Item[] = items.filter(item =>  {
+    return !guesses.some(guess => guess.name === item.name) && chosen[item.quality as keyof typeof chosen]
+  })
+
+  const fuse = new Fuse(remaining, {
+    keys: ['name'],
+    threshold: 0.3
+  })
+
+  const results:ItemRef[] = fuse.search(search, {
+    limit: 10,
+  }).map((result) => {
+    return {
+      ...result.item,
+      ref: createRef()
+    }
+  })
 
   return (
     <div className='absolute z-10 w-full h-fit mt-2'>
