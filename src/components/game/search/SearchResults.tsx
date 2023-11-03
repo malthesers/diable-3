@@ -7,23 +7,16 @@ import ItemSearch from './ItemSearch'
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,
-  results: Item[],
+  results: ItemRef[],
 }
 
 export default function SearchResults({ submitGuess, results }: SearchResultsProps) {
   const { search } = useItems()
 
-  const resultsRef:ItemRef[] = results.map((item) => {
-    return {
-      ...item,
-      ref: createRef()
-    }
-  })
-
   return (
     <div className='absolute z-10 w-full h-fit mt-2'>
       <TransitionGroup className='w-fit flex flex-col gap-2'>
-        {1 < search.length && resultsRef.map((item) => (
+        {1 < search.length && results.map((item) => (
           <CSSTransition
             timeout={250}
             classNames='search'
