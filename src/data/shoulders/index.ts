@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item';
+import { Classes, Item } from '@/src/interfaces/Item';
 
 interface Shoulders extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: 'shoulders',
     type: 'shoulders'
@@ -126,6 +126,311 @@ export const shouldersItems:Shoulders[] = [
       slot: 'shoulders',
       type: 'shoulders'
     },
-    legendaryPower: 'Furious Charge deals [30 - 35%] increased damage for every enemy hit while charging.'
+  },
+  {
+    name: 'Asheara\'s Custodian',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Aughild\'s Power',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Born\'s Privilege',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Demon\'s Aileron',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Spines of Savages',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Spires of the Earth',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Raekor\'s Burden',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Pauldrons of the Wastes',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Spaulders of Valor',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Pauldrons of Akkhan',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Roland\'s Mantle',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Mountain of the Light',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Burden of the Invoker',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Unsanctified Shoulders',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Marauder\'s Spines',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'The Shadow\'s Burden',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Mechanical Pauldrons',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Mirrors of Justice',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Sunwuko\'s Balance',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Mantle of the Upside-Down Sinners',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Uliana\'s Strength',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Rathma\'s Spikes',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Inarius\'s Martyrdom',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Glamorous Gigot',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Pestilence Defense',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Trag\'Oul\'s Heart',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Helltooth Mantle',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Jade Harvester\'s Joy',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Arachyr\'s Mantle',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Mundunugu\'s Descendant',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Firebird\'s Pinions',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Dashing Pauldrons of Despair',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Typhon\'s Tibia',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
+  {
+    name: 'Vyr\'s Proud Pauldrons',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
   },
 ]
