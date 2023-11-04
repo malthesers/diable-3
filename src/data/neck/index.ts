@@ -257,4 +257,58 @@ export const neckItems:Amulet[] = [
     },
     legendaryPower: 'Prevent all Lightning damage taken and heal yourself for [10 - 15%] of the amount prevented.'
   },
+  {
+    name: 'Optic Amulet',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
+  {
+    name: 'Blackthorne\'s Duncraig Cross',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
+  {
+    name: 'Talisman of Akkhan',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
+  {
+    name: 'Sunwuko\'s Shines',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
+  {
+    name: 'The Traveler\'s Pledge',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
+  {
+    name: 'Tal Rasha\'s Allegiance',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
 ]
