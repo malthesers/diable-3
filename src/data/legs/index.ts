@@ -98,4 +98,364 @@ export const legsItems:Pants[] = [
     },
     legendaryPower: 'Sacrifice deals [300 - 400%] additional damage against enemies affected by Locust Swarm or Grasp of the Dead.'
   },
+  {
+    name: 'Demon\s Plate',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Captain Crimson\s Thrust',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Cain\s Habit',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Asheara\s Pace',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Blackthorne\'s Jousting Mail',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Leggings of Savages',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Immortal King\'s Stature',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Weight of the Earth',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Raekor\'s Breeches',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Tasset of the Wastes',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Chausses of Valor',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Cuisses of Akkhan',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Roland\'s Determination',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Towers of the Light',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Renewal of the Invoker',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Unholy Plates',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Marauder\'s Encasement',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'The Shadow\'s Coil',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Natalya\'s Leggings',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Cold Cathode Trousers',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Mountains of Justice',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Sunwuko\'s Leggings',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Scales of the Dancing Serpent',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Uliana\'s Burden',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Inna\'s Temperance',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Rathma\'s Skeletal Legplates',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Inarius\'s Reticence',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Elegant Pants',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Pestilence Incantations',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Trag\'Oul\'s Hide',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Helltooth Leg Guards',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Jade Harvester\'s Courage',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Arachyr\'s Legs',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Mundunugu\'s Decoration',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Zunimasssa\'s Cloth',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Firebird\'s Down',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Leg Guards of Mystery',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Typhon\'s Abdomen',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Vyr\'s Fantastic Finery',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
+  {
+    name: 'Tal Rasha\'s Stride',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
 ]
