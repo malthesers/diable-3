@@ -9,6 +9,7 @@ import { handsItems } from './hands';
 import { torsoItems } from './torso';
 import { headItems } from './head';
 import { legsItems } from './legs';
+import { feetItems } from './feet';
 
 export const allItems:Item[] = [
   ...shouldersItems,
@@ -20,5 +21,6 @@ export const allItems:Item[] = [
   ...handsItems,
   ...torsoItems,
   ...headItems,
-  ...legsItems
+  ...legsItems,
+  ...feetItems
 ]
