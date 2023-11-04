@@ -1,6 +1,7 @@
 {
   "name": "diable-3",
-  "version": "0.1.0",
+  "description": "Diablo III Wordlde | Guess the item by its properties!",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
