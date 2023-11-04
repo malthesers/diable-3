@@ -368,4 +368,85 @@ export const fingerItems:Ring[] = [
     },
     legendaryPower: 'Lightning damage has a [25 - 35%] chance to Stun for 1.5 seconds.'
   },
+  {
+    name: 'Ring of Truth',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Empyrean Band',
+    class: 'generic',
+    quality: 'magic',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Focus',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Restraint',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Litany of the Undaunted',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'The Wailing Host',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'The Compass Rose',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Natalya\'s Reflection',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
+  {
+    name: 'Zunimassa\'s Pox',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
 ]
