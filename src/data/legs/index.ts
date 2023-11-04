@@ -99,7 +99,7 @@ export const legsItems:Pants[] = [
     legendaryPower: 'Sacrifice deals [300 - 400%] additional damage against enemies affected by Locust Swarm or Grasp of the Dead.'
   },
   {
-    name: 'Demon\s Plate',
+    name: 'Demon\'s Plate',
     class: 'generic',
     quality: 'set',
     equipment: {
