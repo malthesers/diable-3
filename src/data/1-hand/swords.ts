@@ -232,16 +232,6 @@ export const swords:Sword[] = [
     elementalDamage: 'holy'
   },
   {
-    name: 'Born\'s Searing Spite',
-    class: 'generic',
-    quality: 'set',
-    equipment: {
-      slot: '1-hand',
-      type: 'sword'
-    },
-    elementalDamage: 'lightning'
-  },
-  {
     name: 'Little Rogue',
     class: 'generic',
     quality: 'set',
