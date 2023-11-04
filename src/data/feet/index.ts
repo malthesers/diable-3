@@ -137,4 +137,346 @@ export const feetItems:Boots[] = [
     },
     legendaryPower: 'Mystic Ally summons two Mystic Allies that fight by your side. They deal [150 - 200%] increased damage and are able to attack with their active forms longer.'
   },
+  {
+    name: 'Blackthorne\'s Spurs',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Sage\'s Passage',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Captain Crimson\'s Waders',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Cain\'s Travelers',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Asheara\'s Finders',
+    class: 'generic',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Heel of Savages',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Immortal King\'s Stride',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Foundation of the Earth',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Raekor\'s Striders',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Sabaton of the Wastes',
+    class: 'barbarian',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Greaves of Valor',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Sabatons of Akkhan',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Roland\'s Stride',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Foundation of the Light',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Zeal of the Invoker',
+    class: 'crusader',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Hell Walkers',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Marauder\'s Treads',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'The Shadow\'s Heels',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Natalya\'s Bloody Footprints',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Antique Vintage Boots',
+    class: 'demon hunter',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Weaves of Justice',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Eight-Demon Boots',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Uliana\'s Destiny',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Inna\'s Sandals',
+    class: 'monk',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Rathma\'s Ossified Sabatons',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Inarius\'s Perseverance',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Extravagant Shoes',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Pestilence Battle Boots',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Trag\'Oul\'s Stalwart Greaves',
+    class: 'necromancer',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Helltooth Greaves',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Jade Harvester\'s Swiftness',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Arachyr\'s Stride',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Mundunugu\'s Dance',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Zunimasssa\'s Trail',
+    class: 'witch doctor',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Firebird\'s Tarsi',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Striders of Destiny',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Typhon\'s Tarsus',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
+  {
+    name: 'Vyr\'s Swaggering Stance',
+    class: 'wizard',
+    quality: 'set',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
 ]
