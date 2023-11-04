@@ -7,6 +7,7 @@ import { wristsItems } from './wrists';
 import { waistItems } from './waist';
 import { handsItems } from './hands';
 import { torsoItems } from './torso';
+import { neckItems } from './neck';
 import { headItems } from './head';
 import { legsItems } from './legs';
 import { feetItems } from './feet';
@@ -20,7 +21,8 @@ export const allItems:Item[] = [
   ...waistItems,
   ...handsItems,
   ...torsoItems,
+  ...neckItems,
   ...headItems,
   ...legsItems,
-  ...feetItems
+  ...feetItems,
 ]
