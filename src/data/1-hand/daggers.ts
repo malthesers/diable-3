@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Dagger extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '1-hand',
     type: 'dagger'

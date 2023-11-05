@@ -186,6 +186,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
+    legendaryPower: 'Random legendary weapon effect',
   },
   {
     name: 'Jade Talon',
@@ -195,6 +196,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
+    legendaryPower: 'Random legendary weapon effect',
   },
   {
     name: 'Shadow Killer',
@@ -204,5 +206,6 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
+    legendaryPower: 'Random legendary weapon effect',
   },
 ]
