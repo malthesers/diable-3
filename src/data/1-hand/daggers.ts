@@ -110,5 +110,6 @@ export const daggers:Dagger[] = [
       type: 'dagger'
     },
     legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'poison'
   },
 ]
