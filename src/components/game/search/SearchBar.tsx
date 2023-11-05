@@ -3,7 +3,7 @@ import { forwardRef } from 'react'
 
 const SearchBar = forwardRef<HTMLInputElement>(function SearchBar(props, ref) {
   const { answer, known, search, setSearch } = useItems()
-  const wasGuessed = answer?.name === known.name
+  const wasGuessed = answer?.id === known.id
 
   return (
     <label

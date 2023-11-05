@@ -7,7 +7,7 @@ import { useRef } from 'react'
 export default function LegendaryPower({ power }: { power: string | undefined }) {
   const { answer, known, guesses } = useItems()
   const ref = useRef<HTMLDivElement>(null)
-  const wasGuessed = answer?.name === known.name
+  const wasGuessed = answer?.id === known.id
   const legendaryPower = (guesses.length < 9 && !wasGuessed) ? '' : power
   
   return (

@@ -105,7 +105,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     if (item.equipment.type === answer?.equipment.type) known.equipment.type = item.equipment.type
     if (item.quality === answer?.quality) known.quality = item.quality
     if (item.class === answer?.class) known.class = item.class
-    if (item.name === answer?.name) {
+    if (item.id === answer?.id) {
       known.name = item.name
       toggleShowVictory(true)
     } 

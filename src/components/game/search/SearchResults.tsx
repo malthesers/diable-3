@@ -14,7 +14,7 @@ export default function SearchResults({ submitGuess }: SearchResultsProps) {
   const { items, guesses, chosen, search } = useItems()
 
   const remaining:Item[] = items.filter(item =>  {
-    return !guesses.some(guess => guess.name === item.name) && chosen[item.quality as keyof typeof chosen]
+    return !guesses.some(guess => guess.id === item.id) && chosen[item.quality as keyof typeof chosen]
   })
 
   const fuse = new Fuse(remaining, {
@@ -38,7 +38,7 @@ export default function SearchResults({ submitGuess }: SearchResultsProps) {
           <CSSTransition
             timeout={250}
             classNames='search'
-            key={item.name}
+            key={item.id}
             nodeRef={item.ref}
           >
             <div ref={item.ref}>

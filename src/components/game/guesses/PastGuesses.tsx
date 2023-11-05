@@ -18,13 +18,13 @@ export default function PastGuesses() {
     <TransitionGroup className={(1 < search.length ? 'brightness-50 ' : '') + 'flex flex-col gap-2 min-h-[400px] sm:min-h-min duration-200'}>
       { guessesRef.map((item) =>
         <CSSTransition
-          key={item.name}
+          key={item.id}
           timeout={1000}
           classNames='guess'
           nodeRef={item.ref}
         >
           <div ref={item.ref}>
-            <ItemGuess key={item.name} item={item}/>
+            <ItemGuess key={item.id} item={item}/>
           </div>
         </CSSTransition>
       )}

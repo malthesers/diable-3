@@ -5,7 +5,7 @@ import GuessBox from './GuessBox'
 
 export default function ItemGuess({ item }: { item: Item}) {
   const { answer, known } = useItems()
-  const wasGuessed = answer?.name === known.name
+  const wasGuessed = answer?.id === known.id
 
   return (
     <article className={(wasGuessed ? '[&:not(:first-child)]:brightness-50 ' : '') + 'nameplate h-fit'}>

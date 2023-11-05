@@ -11,7 +11,7 @@ import { useItems } from '../context/ItemsProvider'
 export default function Home() {
   const { answer, known, resetGame, surrenderGame } = useItems()
   const { toggleShowInstructions, toggleShowQualities } = useModals()
-  const wasGuessed = answer?.name === known.name
+  const wasGuessed = answer?.id === known.id
 
   return (
     <main>
