@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Staff extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '2-hand',
     type: 'staff'
@@ -180,5 +180,16 @@ export const staves:Staff[] = [
       slot: '2-hand',
       type: 'staff'
     },
+  },
+  {
+    name: 'Mang Song\'s Lesson',
+    class: 'wizard',
+    quality: 'ethereal',
+    equipment: {
+      slot: '2-hand',
+      type: 'staff'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'cold'
   },
 ]
