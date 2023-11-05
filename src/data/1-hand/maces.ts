@@ -147,5 +147,17 @@ export const maces:Mace[] = [
       type: 'mace'
     },
     legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'holy'
+  },
+  {
+    name: 'The Redeemer',
+    class: 'crusader',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'mace'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'holy'
   },
 ]
