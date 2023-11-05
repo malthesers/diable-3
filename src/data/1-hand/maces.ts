@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Mace extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '1-hand',
     type: 'mace'
@@ -137,5 +137,15 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
+  },
+  {
+    name: 'Astreon\'s Iron Ward',
+    class: 'crusader',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'mace'
+    },
+    legendaryPower: 'Random legendary weapon effect',
   },
 ]

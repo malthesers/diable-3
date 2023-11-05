@@ -119,4 +119,15 @@ export const flails:Flail[] = [
       type: 'flail'
     },
   },
+  {
+    name: 'Khalim\'s Will',
+    class: 'crusader',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'flail'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'lightning'
+  },
 ]
