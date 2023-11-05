@@ -178,4 +178,31 @@ export const fistWeapons:FistWeapon[] = [
       type: 'fist weapon'
     },
   },
+  {
+    name: 'Bartuc\'s Cut-Throat',
+    class: 'monk',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
+  {
+    name: 'Jade Talon',
+    class: 'monk',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
+  {
+    name: 'Shadow Killer',
+    class: 'monk',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
 ]
