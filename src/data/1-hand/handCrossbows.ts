@@ -197,4 +197,14 @@ export const handCrossbows:HandCrossbow[] = [
       type: 'hand crossbow'
     }
   },
+  {
+    name: 'Doomslinger',
+    class: 'demon hunter',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+  },
 ]

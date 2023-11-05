@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Crossbow extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '2-hand',
     type: 'crossbow'
@@ -121,5 +121,16 @@ export const crossbows:Crossbow[] = [
       slot: '2-hand',
       type: 'crossbow'
     },
+  },
+  {
+    name: 'Buriza-Do Kyanon',
+    class: 'demon hunter',
+    quality: 'ethereal',
+    equipment: {
+      slot: '2-hand',
+      type: 'crossbow'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'cold'
   },
 ]

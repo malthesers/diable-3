@@ -1,6 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Bow extends Item {
+  class: Classes,
   equipment: {
     slot: '2-hand',
     type: 'bow',
@@ -135,5 +136,15 @@ export const bows:Bow[] = [
       type: 'bow',
     },
     elementalDamage: 'cold'
+  },
+  {
+    name: 'Windforce',
+    class: 'demon hunter',
+    quality: 'ethereal',
+    equipment: {
+      slot: '2-hand',
+      type: 'bow'
+    },
+    legendaryPower: 'Random legendary weapon effect',
   },
 ]
