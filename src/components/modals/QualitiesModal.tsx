@@ -35,7 +35,7 @@ export default function QualitiesModal() {
       <p className='text-base md:text-xl text-center mt-2'>Closing the pop-up will start a new game, if any changes to qualities were made.</p>
       <div className='grid 2xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-4 mt-2'>
         { Object.entries(chosen).map(([quality, active]) => 
-          <div onClick={() => toggleChosen(quality as keyof typeof chosen)} key={quality} className={'grid bg-undefined-icon text-center cursor-pointer shadow-item-inner duration-200 hover:shadow-quality-inner'}>
+          <div onClick={() => toggleChosen(quality as keyof typeof chosen)} key={quality} className={'grid bg-undefined-gradient text-center cursor-pointer shadow-item-inner duration-200 hover:shadow-quality-inner'}>
             <div className={(active ? 'bg-green-600' : 'bg-red-800') + ' bg-opacity-40 grid-center duration-300'}></div>
             <p className='text-sm sm:text-base uppercase p-2 xs:p-4 grid-center'>{quality}</p>
           </div>
