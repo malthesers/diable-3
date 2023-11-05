@@ -13,7 +13,7 @@ import { headItems } from './head';
 import { legsItems } from './legs';
 import { feetItems } from './feet';
 
-export const allItems:Item[] = [
+const arrItems:Item[] = [
   ...shouldersItems,
   ...offHandItems,
   ...oneHandItems,
@@ -28,3 +28,12 @@ export const allItems:Item[] = [
   ...legsItems,
   ...feetItems,
 ]
+
+const allItems:Item[] = arrItems.map((item, index) => {
+  return {
+    ...item,
+    id: index
+  }
+})
+
+export { allItems }

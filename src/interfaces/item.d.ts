@@ -1,4 +1,5 @@
 export interface Item {
+  id?: number,
   name: string,
   class: Classes,
   quality: Qualities,
