@@ -9,7 +9,7 @@ import { useModals } from '../context/ModalsProvider'
 import { useItems } from '../context/ItemsProvider'
 
 export default function Home() {
-  const { answer, known, resetGame, surrenderGame } = useItems()
+  const { answer, known, resetGame, surrenderGame, items } = useItems()
   const { toggleShowInstructions, toggleShowQualities } = useModals()
   const wasGuessed = answer?.id === known.id
 
@@ -24,7 +24,7 @@ export default function Home() {
       <section className='grid md:grid-cols-2 gap-4'>
         <div className='h-fit grid gap-2'>
           <KnownInfo/>
-          { answer && <p className='text-center'>{answer.name}</p>}
+          { answer && <p className='text-center'>{answer.name} of total {items.length} items</p>}
         </div>
         <div className='flex flex-col place-items-center p-1 border-2 border-transparent'>
           <SearchContainer/>

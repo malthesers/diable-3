@@ -16,7 +16,7 @@ export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
         (quality === 'ethereal' ? 'shadow-guess-ethereal' : 'shadow-guess-inner' ) +
         ' w-full h-full bg-opacity-40 grid-center'}
       ></div>
-      <span className='my-auto text-xs sm:text-sm grid-center'>{guess}</span>
+      <span className='my-auto text-xs sm:text-sm grid-center'>{guess === 'necromancer' ? 'necro' : guess}</span>
     </div>
   )
 }

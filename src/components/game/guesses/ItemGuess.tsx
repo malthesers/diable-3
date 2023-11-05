@@ -14,7 +14,7 @@ export default function ItemGuess({ item }: { item: Item}) {
         <GuessBox quality={item.quality} guess={item.quality} answer={answer?.quality}/>
         <GuessBox quality={item.quality} guess={item.equipment.slot} answer={answer?.equipment.slot}/>
         <GuessBox quality={item.quality} guess={item.equipment.type} answer={answer?.equipment.type}/>
-        <GuessBox quality={item.quality} guess={item?.class === 'necromancer' ? 'necro' : item?.class} answer={answer?.class}/>
+        <GuessBox quality={item.quality} guess={item?.class} answer={answer?.class}/>
       </div>
     </article>
   )
