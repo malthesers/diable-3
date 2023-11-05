@@ -31,12 +31,14 @@ const config: Config = {
         'rare': '#FFFF00',
         'legendary': '#BF642F',
         'set': '#00FF00',
+        'ethereal': '#43EBBB',
         'undefined-accent': '#513F2E',
         'common-accent': '#513F2E',
         'magic-accent': '#6091A6',
         'rare-accent': '#9B8E3C',
         'legendary-accent': '#B07B38',
-        'set-accent': '#748E3D'
+        'set-accent': '#748E3D',
+        'ethereal-accent': '#4A9A8C',
       },
       backgroundImage: {
         "undefined-name": "url('/images/nameplates/base.jpg')",
