@@ -22,7 +22,8 @@ const defaultChosen:ChosenQualities = {
   magic: true,
   rare: true,
   legendary: true,
-  set: true
+  set: true,
+  ethereal: true
 }
 
 const ItemsContext = createContext<ItemsContext>({

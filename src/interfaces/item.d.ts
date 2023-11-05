@@ -9,7 +9,7 @@ export interface Item {
 
 type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch doctor' | 'wizard'
 
-type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set'
+type Qualities = 'undefined' | 'base' | 'common' | 'magic' | 'rare' | 'legendary' | 'set' | 'ethereal'
 
 type ElementalDamage = 'physical' | 'arcane' | 'cold' | 'fire' | 'holy' | 'lightning' | 'poison'
 

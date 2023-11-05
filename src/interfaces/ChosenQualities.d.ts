@@ -4,4 +4,5 @@ export interface ChosenQualities {
   rare: boolean,
   legendary: boolean,
   set: boolean,
+  ethereal: boolean,
 }
