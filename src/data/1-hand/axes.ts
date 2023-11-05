@@ -117,7 +117,7 @@ export const axes:Axe[] = [
       slot: '1-hand',
       type: 'axe'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'cold'
   },
 ]

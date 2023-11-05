@@ -146,7 +146,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'holy'
   },
   {
@@ -157,7 +157,7 @@ export const maces:Mace[] = [
       slot: '1-hand',
       type: 'mace'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'holy'
   },
 ]

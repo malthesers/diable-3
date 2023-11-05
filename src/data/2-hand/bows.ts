@@ -145,6 +145,6 @@ export const bows:Bow[] = [
       slot: '2-hand',
       type: 'bow'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
 ]

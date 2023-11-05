@@ -189,7 +189,7 @@ export const staves:Staff[] = [
       slot: '2-hand',
       type: 'staff'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'cold'
   },
 ]

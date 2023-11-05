@@ -86,7 +86,7 @@ export const spears:Spear[] = [
       slot: '1-hand',
       type: 'spear'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'poison'
   },
 ]

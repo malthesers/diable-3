@@ -127,7 +127,7 @@ export const flails:Flail[] = [
       slot: '1-hand',
       type: 'flail'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'lightning'
   },
 ]

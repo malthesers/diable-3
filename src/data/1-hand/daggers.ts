@@ -109,7 +109,7 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'poison'
   },
   {
@@ -120,6 +120,6 @@ export const daggers:Dagger[] = [
       slot: '1-hand',
       type: 'dagger'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
 ]

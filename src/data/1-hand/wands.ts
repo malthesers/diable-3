@@ -137,7 +137,7 @@ export const wands:Wand[] = [
       slot: '1-hand',
       type: 'wand'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
   {
     name: 'The Oculus',
@@ -147,6 +147,6 @@ export const wands:Wand[] = [
       slot: '1-hand',
       type: 'wand'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
 ]

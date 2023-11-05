@@ -159,7 +159,7 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'arcane'
   },
   {
@@ -170,6 +170,6 @@ export const ceremonialKnives:CeremonialKnife[] = [
       slot: '1-hand',
       type: 'ceremonial knife'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
 ]

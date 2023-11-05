@@ -205,6 +205,6 @@ export const handCrossbows:HandCrossbow[] = [
       slot: '1-hand',
       type: 'hand crossbow'
     },
-    legendaryPower: 'Random legendary weapon effect',
+    legendaryPower: 'Random legendary weapon effect.',
   },
 ]

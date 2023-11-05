@@ -340,6 +340,6 @@ export const swords:Sword[] = [
       slot: '1-hand',
       type: 'sword'
     },
-    legendaryPower: 'Random legendary weapon effect'
+    legendaryPower: 'Random legendary weapon effect.'
   },
 ]
