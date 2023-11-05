@@ -1,4 +1,4 @@
-import { Qualities } from "@/src/interfaces/Item"
+import { Qualities } from '@/src/interfaces/Item'
 
 interface ItemGuessProps {
   quality: Qualities,
