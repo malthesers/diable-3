@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Sword extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '2-hand',
     type: 'sword'
@@ -147,5 +147,15 @@ export const swords:Sword[] = [
       slot: '2-hand',
       type: 'sword'
     },
+  },
+  {
+    name: 'The Grandfather',
+    class: 'barbarian',
+    quality: 'ethereal',
+    equipment: {
+      slot: '2-hand',
+      type: 'sword'
+    },
+    legendaryPower: 'Random legendary weapon effect',
   },
 ]

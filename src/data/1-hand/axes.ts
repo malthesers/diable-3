@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Axe extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '1-hand',
     type: 'axe'
@@ -108,5 +108,16 @@ export const axes:Axe[] = [
       slot: '1-hand',
       type: 'axe'
     },
+  },
+  {
+    name: 'Gimmershred',
+    class: 'barbarian',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'axe'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'cold'
   },
 ]

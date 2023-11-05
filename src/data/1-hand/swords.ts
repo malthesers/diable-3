@@ -332,4 +332,14 @@ export const swords:Sword[] = [
       type: 'sword'
     },
   },
+  {
+    name: 'Doombringer',
+    class: 'barbarian',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    legendaryPower: 'Random legendary weapon effect'
+  },
 ]
