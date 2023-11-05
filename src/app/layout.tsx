@@ -12,7 +12,7 @@ const spectral = Spectral({
 
 export const metadata: Metadata = {
   title: 'Diable III',
-  description: 'Diablo III Wordlde ||| Guess the item by its properties!',
+  description: 'Diablo III Wordle ||| Guess the item by its properties!',
 }
 
 export default function RootLayout({

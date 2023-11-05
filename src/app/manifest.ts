@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Diable III',
     short_name: 'Diable III',
-    description: 'Diablo III Wordlde | Guess the item by its properties!',
+    description: 'Diablo III Wordle | Guess the item by its properties!',
     start_url: '/',
     display: 'standalone',
     background_color: '#111218',
