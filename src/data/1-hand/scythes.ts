@@ -48,4 +48,14 @@ export const scythes:Scythe[] = [
       type: 'scythe'
     },
   },
+  {
+    name: 'Soul Harvest',
+    class: 'necromancer',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'scythe'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+  },
 ]

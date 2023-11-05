@@ -1,7 +1,7 @@
 import { Item } from '@/src/interfaces/Item'
 
 interface Wand extends Item {
-  class: 'wizard',
+  class: 'wizard' | 'necromancer',
   equipment: {
     slot: '1-hand',
     type: 'wand'
@@ -128,5 +128,15 @@ export const wands:Wand[] = [
       slot: '1-hand',
       type: 'wand'
     },
+  },
+  {
+    name: 'Blackhand Key',
+    class: 'necromancer',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'wand'
+    },
+    legendaryPower: 'Random legendary weapon effect',
   },
 ]

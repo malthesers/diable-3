@@ -101,4 +101,14 @@ export const daggers:Dagger[] = [
       type: 'dagger'
     },
   },
+  {
+    name: 'Blackbog\'s Sharp',
+    class: 'necromancer',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'dagger'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+  },
 ]
