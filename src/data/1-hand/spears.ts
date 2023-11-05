@@ -1,7 +1,7 @@
-import { Item } from '@/src/interfaces/Item'
+import { Classes, Item } from '@/src/interfaces/Item'
 
 interface Spear extends Item {
-  class: 'generic',
+  class: Classes,
   equipment: {
     slot: '1-hand',
     type: 'spear'
@@ -77,5 +77,16 @@ export const spears:Spear[] = [
       slot: '1-hand',
       type: 'spear'
     },
+  },
+  {
+    name: 'Arioc\'s Needle',
+    class: 'witch doctor',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'spear'
+    },
+    legendaryPower: 'Random legendary weapon effect',
+    elementalDamage: 'poison'
   },
 ]
