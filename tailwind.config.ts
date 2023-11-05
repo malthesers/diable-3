@@ -18,7 +18,8 @@ const config: Config = {
       boxShadow: {
         'item-inner': 'inset 0px 0px 5px 5px rgba(240,222,108,0.25)',
         'quality-inner': 'inset 0px 0px 7px 7px rgba(240,222,108,0.5)',
-        'guess-inner': 'inset 0px 0px 4px 4px #413014'
+        'guess-inner': 'inset 0px 0px 4px 4px #413014',
+        'guess-ethereal': 'inset 0px 0px 4px 4px #0F5753',
       },
       colors: {
         'grey': '#2E2921',
@@ -59,6 +60,8 @@ const config: Config = {
     },
   },
   safelist: [
+    'guess-inner',
+    'guess-ethereal',
     'border-undefined-accent',
     'border-common-accent',
     'border-rare-accent',
