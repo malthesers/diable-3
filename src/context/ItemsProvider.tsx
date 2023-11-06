@@ -37,7 +37,8 @@ const ItemsContext = createContext<ItemsContext>({
   answer: null,
   search: '',
   known: defaultItem,
-  chosen: defaultChosen
+  chosen: defaultChosen,
+  guessed: false
 })
 
 export function useItems() {
@@ -53,6 +54,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   const [search, setSearch] = useState<string>('')
   const [items, setItems] = useState<Item[]>(allItems)
   const [mounted, setMounted] = useState<boolean>(false)
+  const [guessed, setGuessed] = useState<boolean>(false)
 
   function selectAnswer() {
     // Remove items of deselected qualities and pick random item from those
@@ -90,6 +92,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
         equipment: {...answer.equipment},
       })
       toggleShowDefeat(true)
+      setGuessed(false)
     }
   }
 
@@ -108,6 +111,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     if (item.id === answer?.id) {
       known.name = item.name
       toggleShowVictory(true)
+      setGuessed(true)
     } 
   }
 
@@ -125,7 +129,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
   }, [mounted])
 
   return (
-    <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, toggleChosen, setSearch, resetGame, surrenderGame, validateGuess }}>
+    <ItemsContext.Provider value={{ items, answer, known, guesses, search, chosen, guessed, toggleChosen, setSearch, resetGame, surrenderGame, validateGuess }}>
       {children}
     </ItemsContext.Provider>
   )

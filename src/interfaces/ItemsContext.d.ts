@@ -13,4 +13,5 @@ export interface ItemsContext {
   known: Item,
   guesses: Item[],
   items: Item[],
+  guessed: boolean
 }
