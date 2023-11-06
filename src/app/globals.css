@@ -130,3 +130,24 @@ nav a.active::after {
 .fade-exit-active {
   transition: opacity 500ms;
 }
+
+.error-enter {
+  max-height: 0;
+}
+
+.error-exit {
+  max-height: 2rem;
+}
+
+.error-enter-active {
+  max-height: 2rem;
+}
+
+.error-exit-active {
+  max-height: 0;
+}
+
+.error-enter-active,
+.error-exit-active {
+  transition: max-height 500ms;
+}

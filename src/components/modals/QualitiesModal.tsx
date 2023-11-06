@@ -1,20 +1,25 @@
+import { ChosenQualities } from '@/src/interfaces/ChosenQualities';
+import { CSSTransition } from 'react-transition-group';
 import { useModals } from '@/src/context/ModalsProvider';
 import { useItems } from '@/src/context/ItemsProvider';
-import ModalTemplate from './ModalTemplate';
 import { useEffect, useRef } from 'react';
-import { ChosenQualities } from '@/src/interfaces/ChosenQualities';
+import ModalTemplate from './ModalTemplate';
+import useToggle from '@/src/hooks/useToggle';
 
 export default function QualitiesModal() {
   const { showQualities, toggleShowQualities } = useModals()
   const { chosen, toggleChosen, resetGame } = useItems()
+  const [showError, setShowError] = useToggle(false)
   const startChosen = useRef<ChosenQualities>({...chosen})
+  const errorText = useRef<HTMLParagraphElement>(null)
 
   function closeModal() {
     const noChosen = Object.values(chosen).filter(quality => quality).length === 0 ? true : false
     
     if (noChosen) {
-      console.log('nothing chosen')
+      setShowError(true)
     } else {
+      setShowError(false)
       toggleShowQualities(false)
       // Only reset game save chosen qualities if any changes
       if (JSON.stringify(startChosen.current) !== JSON.stringify(chosen)) {
@@ -39,7 +44,8 @@ export default function QualitiesModal() {
     >
       <p className='text-base md:text-xl text-center'>Below you can toggle item qualities, dictating which items will be <span className='text-green-600'>included</span> and <span className='text-red-800'>excluded</span> in the list of possible answers.</p>
       <p className='text-base md:text-xl text-center mt-2'>Closing the pop-up will start a new game, if any changes to qualities were made.</p>
-      <div className='grid 2xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-4 mt-2'>
+      <p className={(showError ? 'text-red-800' : '') + ' text-base md:text-xl text-center mt-2 duration-300'}>At least 1 quality must be chosen.</p>
+      <div className='grid 2xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-4 mt-2 mb-4'>
         { Object.entries(chosen).map(([quality, active]) => 
           <div onClick={() => toggleChosen(quality as keyof typeof chosen)} key={quality} className={'grid bg-undefined-gradient text-center cursor-pointer shadow-item-inner duration-200 hover:shadow-quality-inner'}>
             <div className={(active ? 'bg-green-600' : 'bg-red-800') + ' bg-opacity-40 grid-center duration-300'}></div>
@@ -47,6 +53,15 @@ export default function QualitiesModal() {
           </div>
         )}
       </div>
+      {/* <CSSTransition
+        nodeRef={errorText}
+        in={showError}
+        timeout={500}
+        classNames='error'
+        unmountOnExit
+      >
+        <p ref={errorText} className='text-red-800 text-center uppercase underline underline-offset-2'>At least 1 quality must be chosen</p>
+      </CSSTransition> */}
     </ModalTemplate>
   )
 }
