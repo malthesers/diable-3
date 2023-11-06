@@ -60,6 +60,8 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
     // Remove items of deselected qualities and pick random item from those
     const eligibleItems:Item[] = items.filter(item => chosen[item.quality as keyof typeof chosen])
     setAnswer(eligibleItems[Math.floor(Math.random() * eligibleItems.length)])
+    // const preset:Item = eligibleItems.find(item => item.name === '') || defaultItem
+    // setAnswer(preset)
   }
 
   function toggleChosen(quality: keyof ChosenQualities) {
