@@ -17,9 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Diablo III',
     description: 'Diablo III Wordle | Guess the item by its properties!',
-    images: [{
-      url: 'https://diable-3.vercel.app/'
-    }]
+    url: 'https://diable-3.vercel.app/',
   }
 }
 
