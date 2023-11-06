@@ -343,4 +343,14 @@ export const swords:Sword[] = [
     },
     legendaryPower: 'Random legendary weapon effect.'
   },
+  {
+    name: 'Blackhand Key',
+    class: 'necromancer',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+    legendaryPower: 'Random legendary weapon effect.',
+  },
 ]
