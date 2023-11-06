@@ -26,7 +26,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
     >
       <aside ref={modal} className='fixed z-50 top-0 w-full h-[100dvh] grid p-4'>
         <div onClick={() => closeModal()} className='absolute -z-10 w-full h-full bg-black bg-opacity-50 cursor-pointer'></div>
-        <div className='max-w-xl w-full grid m-auto bg-undefined-gradient bg-center border-bronze border-2'>
+        <div className='max-w-xl w-full max-h-[80%] overflow-scroll grid m-auto bg-undefined-gradient bg-center border-bronze border-2'>
           <div className='grid-center w-full h-full bg-black bg-opacity-70'></div>
           <div className='grid-center p-4 text-white shadow-guess-inner'>
             <p className='text-2xl text-center uppercase mb-2'>{title}</p>
