@@ -5,7 +5,7 @@ import { useItems } from '@/src/context/ItemsProvider'
 import { useRef } from 'react'
 
 export default function LegendaryPower({ power }: { power: string | undefined }) {
-  const { guessed, answer, known, guesses } = useItems()
+  const { guessed, guesses } = useItems()
   const ref = useRef<HTMLDivElement>(null)
   const legendaryPower = (guesses.length < 9 && !guessed) ? '' : power
   

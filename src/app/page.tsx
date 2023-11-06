@@ -9,7 +9,7 @@ import { useModals } from '../context/ModalsProvider'
 import { useItems } from '../context/ItemsProvider'
 
 export default function Home() {
-  const { guessed, answer, known, resetGame, surrenderGame, items } = useItems()
+  const { guessed, answer, resetGame, surrenderGame, items } = useItems()
   const { toggleShowInstructions, toggleShowQualities } = useModals()
 
   return (

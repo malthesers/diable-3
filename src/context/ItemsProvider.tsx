@@ -72,6 +72,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
 
   function resetGame() {
     // Set new answer, empty guesses, clear search and reset known
+    setGuessed(false)
     selectAnswer()
     setGuesses([])
     setSearch('')
@@ -92,7 +93,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
         equipment: {...answer.equipment},
       })
       toggleShowDefeat(true)
-      setGuessed(false)
+      setGuessed(true)
     }
   }
 
