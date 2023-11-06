@@ -5,10 +5,9 @@ import { useItems } from '@/src/context/ItemsProvider'
 import { useRef } from 'react'
 
 export default function LegendaryPower({ power }: { power: string | undefined }) {
-  const { answer, known, guesses } = useItems()
+  const { guessed, answer, known, guesses } = useItems()
   const ref = useRef<HTMLDivElement>(null)
-  const wasGuessed = answer?.id === known.id
-  const legendaryPower = (guesses.length < 9 && !wasGuessed) ? '' : power
+  const legendaryPower = (guesses.length < 9 && !guessed) ? '' : power
   
   return (
     <SwitchTransition mode='out-in'>
@@ -21,7 +20,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
         }
       >
         <div ref={ref}>
-          <p className={(wasGuessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
+          <p className={(guessed ? 'blur-none' : 'blur-sm hover:blur-none') + ' duration-200'}>
             { legendaryPower &&
               <Image
                 src={Bullet}

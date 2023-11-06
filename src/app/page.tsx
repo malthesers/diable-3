@@ -9,15 +9,14 @@ import { useModals } from '../context/ModalsProvider'
 import { useItems } from '../context/ItemsProvider'
 
 export default function Home() {
-  const { answer, known, resetGame, surrenderGame, items } = useItems()
+  const { guessed, answer, known, resetGame, surrenderGame, items } = useItems()
   const { toggleShowInstructions, toggleShowQualities } = useModals()
-  const wasGuessed = answer?.id === known.id
 
   return (
     <main>
       <section className='max-w-md md:max-w-[920px] lg:max-w-none mx-auto flex flex-row flex-wrap place-content-center md:place-content-start gap-2 mb-2'>
         <Button onClick={resetGame} text='New Game'/>
-        <Button onClick={surrenderGame} text='Surrender' className={wasGuessed ? ' brightness-50 pointer-events-none' : ''}/>
+        <Button onClick={surrenderGame} text='Surrender' className={guessed ? ' brightness-50 pointer-events-none' : ''}/>
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
         <Button onClick={() => toggleShowQualities(true)} text='Qualities'/>
       </section>
