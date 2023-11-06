@@ -113,6 +113,17 @@ export const daggers:Dagger[] = [
     elementalDamage: 'poison'
   },
   {
+    name: 'Ghostflame',
+    class: 'witch doctor',
+    quality: 'ethereal',
+    equipment: {
+      slot: '1-hand',
+      type: 'dagger'
+    },
+    legendaryPower: 'Random legendary weapon effect.',
+    elementalDamage: 'arcane'
+  },
+  {
     name: 'Wizardspike',
     class: 'wizard',
     quality: 'ethereal',

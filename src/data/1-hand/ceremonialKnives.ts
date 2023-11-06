@@ -152,17 +152,6 @@ export const ceremonialKnives:CeremonialKnife[] = [
     elementalDamage: 'holy'
   },
   {
-    name: 'Ghostflame',
-    class: 'witch doctor',
-    quality: 'ethereal',
-    equipment: {
-      slot: '1-hand',
-      type: 'ceremonial knife'
-    },
-    legendaryPower: 'Random legendary weapon effect.',
-    elementalDamage: 'arcane'
-  },
-  {
     name: 'The Gidbinn',
     class: 'witch doctor',
     quality: 'ethereal',
