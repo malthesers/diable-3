@@ -10,11 +10,17 @@ export default function QualitiesModal() {
   const startChosen = useRef<ChosenQualities>({...chosen})
 
   function closeModal() {
-    toggleShowQualities(false)
-    // Only reset game save chosen qualities if any changes
-    if (JSON.stringify(startChosen.current) !== JSON.stringify(chosen)) {
-      localStorage.setItem('qualities', JSON.stringify(chosen))
-      resetGame()
+    const noChosen = Object.values(chosen).filter(quality => quality).length === 0 ? true : false
+    
+    if (noChosen) {
+      console.log('nothing chosen')
+    } else {
+      toggleShowQualities(false)
+      // Only reset game save chosen qualities if any changes
+      if (JSON.stringify(startChosen.current) !== JSON.stringify(chosen)) {
+        localStorage.setItem('qualities', JSON.stringify(chosen))
+        resetGame()
+      }
     }
   }
 
