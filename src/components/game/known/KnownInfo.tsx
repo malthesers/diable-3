@@ -24,17 +24,13 @@ export default function KnownInfo() {
             <SwitchTransition mode='out-in'>
               <CSSTransition
                 classNames='fade'
-                key={known.equipment.type}
+                key={src}
                 nodeRef={node}
                 addEndListener={(done: () => void) =>
                   node.current?.addEventListener('transitionend', done, false)
                 }
               >
-                <Image
-                  ref={node}
-                  src={src}
-                  alt={known.name}
-                  width={64}
+                <Image ref={node} src={src} alt={known.name} width={64}
                   height={(['waist', 'neck', 'finger'].includes(known.equipment.slot)) ? 64 : 128}
                 />
               </CSSTransition>
