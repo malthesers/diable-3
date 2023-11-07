@@ -70,4 +70,13 @@ export const polearms:Polearm[] = [
       type: 'polearm'
     },
   },
+  {
+    name: 'Sovereign Infernal Polearm',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'polearm'
+    },
+  },
 ]

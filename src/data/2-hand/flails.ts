@@ -88,4 +88,13 @@ export const flails:Flail[] = [
       type: 'flail'
     },
   },
+  {
+    name: 'Sovereign Grand Flail',
+    class: 'crusader',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'flail'
+    },
+  },
 ]

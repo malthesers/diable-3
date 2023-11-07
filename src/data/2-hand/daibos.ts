@@ -108,4 +108,13 @@ export const daibos:Daibo[] = [
       type: 'daibo'
     },
   },
+  {
+    name: 'Sovereign Whirlwind Staff',
+    class: 'monk',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'daibo'
+    },
+  },
 ]

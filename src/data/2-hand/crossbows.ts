@@ -133,4 +133,13 @@ export const crossbows:Crossbow[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'cold'
   },
+  {
+    name: 'Sovereign Oxybeles',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'crossbow'
+    },
+  },
 ]

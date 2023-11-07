@@ -78,4 +78,13 @@ export const mightyWeapons:MightyWeapon[] = [
       type: 'mighty weapon'
     },
   },
+  {
+    name: 'Sovereign Steppes Smasher',
+    class: 'barbarian',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'mighty weapon'
+    },
+  },
 ]

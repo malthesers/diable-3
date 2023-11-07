@@ -158,4 +158,13 @@ export const swords:Sword[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Kingslayer',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'sword'
+    },
+  },
 ]

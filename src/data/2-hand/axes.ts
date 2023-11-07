@@ -97,4 +97,13 @@ export const axes:Axe[] = [
       type: 'axe'
     },
   },
+  {
+    name: 'Sovereign Fleshrender',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'axe'
+    },
+  },
 ]

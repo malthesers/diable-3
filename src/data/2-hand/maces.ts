@@ -103,4 +103,13 @@ export const maces:Mace[] = [
     legendaryPower: 'Increases damage against elites by [40 - 50%].',
     elementalDamage: 'cold'
   },
+  {
+    name: 'Sovereign Persuader',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'mace'
+    },
+  },
 ]

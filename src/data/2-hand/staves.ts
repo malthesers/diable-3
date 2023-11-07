@@ -192,4 +192,13 @@ export const staves:Staff[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'cold'
   },
+  {
+    name: 'Sovereign Kerikeyon',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'staff'
+    },
+  },
 ]

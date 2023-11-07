@@ -147,4 +147,13 @@ export const bows:Bow[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Doubleshot',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '2-hand',
+      type: 'bow'
+    },
+  },
 ]
