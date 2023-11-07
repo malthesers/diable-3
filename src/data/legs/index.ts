@@ -458,4 +458,13 @@ export const legsItems:Pants[] = [
       type: 'pants'
     },
   },
+  {
+    name: 'Sovereign Ascended Faulds',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'legs',
+      type: 'pants'
+    },
+  },
 ]

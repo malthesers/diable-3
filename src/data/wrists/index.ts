@@ -303,4 +303,13 @@ export const wristsItems:Bracers[] = [
       type: 'bracers'
     },
   },
+  {
+    name: 'Sovereign Ascended Bracers',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+  },
 ]

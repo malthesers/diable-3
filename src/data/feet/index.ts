@@ -479,4 +479,13 @@ export const feetItems:Boots[] = [
       type: 'boots'
     },
   },
+  {
+    name: 'Sovereign Ascended Greaves',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'feet',
+      type: 'boots'
+    },
+  },
 ]

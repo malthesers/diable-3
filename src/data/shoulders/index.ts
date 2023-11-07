@@ -433,4 +433,13 @@ export const shouldersItems:Shoulders[] = [
       type: 'shoulders'
     },
   },
+  {
+    name: 'Sovereign Ascended Pauldrons',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'shoulders',
+      type: 'shoulders'
+    },
+  },
 ]

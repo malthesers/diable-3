@@ -452,4 +452,13 @@ export const handsItems:Gloves[] = [
       type: 'gloves'
     },
   },
+  {
+    name: 'Sovereign Ascended Gauntlets',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'hands',
+      type: 'gloves'
+    },
+  },
 ]
