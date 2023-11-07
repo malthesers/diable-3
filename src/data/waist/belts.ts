@@ -451,4 +451,13 @@ export const belts:Belt[] = [
       type: 'belt'
     },
   },
+  {
+    name: 'Sovereign Ascended Sash',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'waist',
+      type: 'belt'
+    },
+  },
 ]

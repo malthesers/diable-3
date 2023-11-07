@@ -86,4 +86,13 @@ export const cloaks:Cloak[] = [
       type: 'cloak'
     },
   },
+  {
+    name: 'Sovereign Ascended Cloak',
+    class: 'demon hunter',
+    quality: 'rare',
+    equipment: {
+      slot: 'torso',
+      type: 'cloak'
+    },
+  },
 ]

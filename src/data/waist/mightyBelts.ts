@@ -78,4 +78,13 @@ export const mightyBelts:MightyBelt[] = [
       type: 'mighty belt'
     },
   },
+  {
+    name: 'Sovereign Ascended Scourge',
+    class: 'barbarian',
+    quality: 'rare',
+    equipment: {
+      slot: 'waist',
+      type: 'mighty belt'
+    },
+  },
 ]

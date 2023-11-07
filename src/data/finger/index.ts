@@ -449,4 +449,13 @@ export const fingerItems:Ring[] = [
       type: 'ring'
     },
   },
+  {
+    name: 'Sovereign Ring',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'finger',
+      type: 'ring'
+    },
+  },
 ]

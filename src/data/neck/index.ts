@@ -311,4 +311,13 @@ export const neckItems:Amulet[] = [
       type: 'amulet'
     },
   },
+  {
+    name: 'Sovereign Amulet',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'neck',
+      type: 'amulet'
+    },
+  },
 ]

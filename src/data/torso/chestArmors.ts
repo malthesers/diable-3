@@ -451,4 +451,13 @@ export const chestArmors:ChestArmor[] = [
       type: 'chest armor'
     },
   },
+  {
+    name: 'Sovereign Ascended Armor',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'torso',
+      type: 'chest armor'
+    },
+  },
 ]
