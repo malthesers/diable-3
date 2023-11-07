@@ -179,6 +179,15 @@ export const fistWeapons:FistWeapon[] = [
     },
   },
   {
+    name: 'Panther\'s Claw',
+    class: 'monk',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
+  {
     name: 'Bartuc\'s Cut-Throat',
     class: 'monk',
     quality: 'ethereal',
