@@ -90,4 +90,13 @@ export const voodooMasks:VoodooMask[] = [
       type: 'voodoo mask'
     },
   },
+  {
+    name: 'Sovereign Ascended Mask',
+    class: 'witch doctor',
+    quality: 'rare',
+    equipment: {
+      slot: 'head',
+      type: 'voodoo mask'
+    },
+  },
 ]

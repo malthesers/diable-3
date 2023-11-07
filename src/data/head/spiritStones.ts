@@ -124,4 +124,13 @@ export const spiritStones:SpiritStone[] = [
       type: 'spirit stone'
     },
   },
+  {
+    name: 'Sovereign Ascended Stone',
+    class: 'monk',
+    quality: 'rare',
+    equipment: {
+      slot: 'head',
+      type: 'spirit stone'
+    },
+  },
 ]

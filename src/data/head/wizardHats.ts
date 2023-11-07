@@ -80,4 +80,13 @@ export const wizardHats:WizardHat[] = [
     },
     legendaryPower: 'Double the number of enemies your Electrocute jumps to.'
   },
+  {
+    name: 'Sovereign Ascended Headpiece',
+    class: 'wizard',
+    quality: 'rare',
+    equipment: {
+      slot: 'head',
+      type: 'wizard hat'
+    },
+  },
 ]

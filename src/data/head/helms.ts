@@ -506,4 +506,13 @@ export const helms:Helm[] = [
       type: 'helm'
     },
   },
+  {
+    name: 'Sovereign Ascended Crown',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'head',
+      type: 'helm'
+    },
+  },
 ]
