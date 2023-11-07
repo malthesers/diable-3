@@ -139,6 +139,15 @@ export const maces:Mace[] = [
     },
   },
   {
+    name: 'Mace of the Crows',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'mace'
+    },
+  },
+  {
     name: 'Astreon\'s Iron Ward',
     class: 'crusader',
     quality: 'ethereal',
