@@ -111,4 +111,13 @@ export const mightyWeapons:MightyWeapon[] = [
     },
     elementalDamage: 'holy'
   },
+  {
+    name: 'Sovereign Limb Cleaver',
+    class: 'barbarian',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'mighty weapon'
+    },
+  },
 ]

@@ -139,4 +139,13 @@ export const wands:Wand[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Diabolic Wand',
+    class: 'wizard',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'wand'
+    },
+  },
 ]

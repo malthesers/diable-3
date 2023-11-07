@@ -130,4 +130,13 @@ export const flails:Flail[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'lightning'
   },
+  {
+    name: 'Sovereign Grandfather Flail',
+    class: 'crusader',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'flail'
+    },
+  },
 ]

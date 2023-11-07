@@ -133,4 +133,13 @@ export const daggers:Dagger[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Punyal',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'dagger'
+    },
+  },
 ]

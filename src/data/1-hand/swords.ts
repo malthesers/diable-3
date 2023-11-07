@@ -362,4 +362,13 @@ export const swords:Sword[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Tsunami Blade',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
 ]

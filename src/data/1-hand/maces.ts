@@ -169,4 +169,13 @@ export const maces:Mace[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'holy'
   },
+  {
+    name: 'Sovereign Skullsplitter',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'mace'
+    },
+  },
 ]

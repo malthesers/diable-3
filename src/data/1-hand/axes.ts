@@ -120,4 +120,13 @@ export const axes:Axe[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'cold'
   },
+  {
+    name: 'Sovereign Dire Axe',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'axe'
+    },
+  },
 ]

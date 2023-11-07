@@ -58,4 +58,13 @@ export const scythes:Scythe[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Saber',
+    class: 'necromancer',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'scythe'
+    },
+  },
 ]

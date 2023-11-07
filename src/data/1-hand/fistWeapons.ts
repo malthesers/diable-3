@@ -217,4 +217,13 @@ export const fistWeapons:FistWeapon[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Suwaiya',
+    class: 'monk',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'fist weapon'
+    },
+  },
 ]

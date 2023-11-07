@@ -161,4 +161,13 @@ export const ceremonialKnives:CeremonialKnife[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Tecpatl',
+    class: 'witch doctor',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'ceremonial knife'
+    },
+  },
 ]

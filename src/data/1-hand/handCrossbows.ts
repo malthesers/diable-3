@@ -207,4 +207,13 @@ export const handCrossbows:HandCrossbow[] = [
     },
     legendaryPower: 'Random legendary weapon effect.',
   },
+  {
+    name: 'Sovereign Penetrator',
+    class: 'demon hunter',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'hand crossbow'
+    },
+  },
 ]

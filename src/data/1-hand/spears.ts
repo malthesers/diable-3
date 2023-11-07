@@ -89,4 +89,13 @@ export const spears:Spear[] = [
     legendaryPower: 'Random legendary weapon effect.',
     elementalDamage: 'poison'
   },
+  {
+    name: 'Sovereign Disembowler',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: '1-hand',
+      type: 'spear'
+    },
+  },
 ]
