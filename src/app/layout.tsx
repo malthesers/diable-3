@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   openGraph: {
     title: 'Diablo III',
-    description: 'Diablo III Wordle | Guess the item by its properties!',
+    description: 'Guess the item by its properties!',
     url: 'https://diable-3.vercel.app/',
   }
 }
