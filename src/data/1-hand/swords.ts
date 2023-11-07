@@ -334,6 +334,15 @@ export const swords:Sword[] = [
     },
   },
   {
+    name: 'God Butcher',
+    class: 'generic',
+    quality: 'common',
+    equipment: {
+      slot: '1-hand',
+      type: 'sword'
+    },
+  },
+  {
     name: 'Doombringer',
     class: 'barbarian',
     quality: 'ethereal',
