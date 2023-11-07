@@ -9,7 +9,9 @@ import Image from 'next/image'
 export default function KnownInfo() {
   const { answer, known } = useItems()
   const node = useRef<HTMLImageElement>(null)
-  const src = known.equipment.type !== 'something'
+  const knownSlot = known.equipment.slot
+  const knownType = known.equipment.type
+  const src = (knownSlot !== 'unknown' && knownType !== 'something')
   ? `/items/${known.equipment.slot}/${known.equipment.type.replaceAll(' ', '-')}.png`
   : '/items/unknown/something.png'
 
