@@ -11,6 +11,7 @@ const spectral = Spectral({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('http://localhost:3000'),
   title: 'Diable III',
   description: 'Diablo III Wordle | Guess the item by its properties!',
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
