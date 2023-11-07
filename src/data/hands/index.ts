@@ -453,7 +453,7 @@ export const handsItems:Gloves[] = [
     },
   },
   {
-    name: 'Sovereign Ascended Gauntlets',
+    name: 'Sovereign Ascended Gloves',
     class: 'generic',
     quality: 'rare',
     equipment: {
