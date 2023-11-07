@@ -71,7 +71,7 @@ export const axes:Axe[] = [
     },
   },
   {
-    name: 'Kanai\'s Skorn',
+    name: 'Kanai\'s Scorn',
     class: 'generic',
     quality: 'common',
     equipment: {
