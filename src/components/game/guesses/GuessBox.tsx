@@ -8,6 +8,7 @@ interface ItemGuessProps {
 
 export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
   const correct:boolean = guess === answer
+  const values = guess.split(' ')
 
   return (
     <div className={(correct ? 'bg-set-gradient' : 'bg-undefined-gradient') + ' grid h-[52px] bg-center bg-cover'}>
@@ -16,7 +17,11 @@ export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
         (quality === 'ethereal' ? 'shadow-guess-ethereal' : 'shadow-guess-inner' ) +
         ' w-full h-full bg-opacity-40 grid-center'}
       ></div>
-      <span className='my-auto text-xs sm:text-sm grid-center'>{guess === 'necromancer' ? 'necro' : guess}</span>
+      <p className='my-auto text-xs sm:text-sm grid-center'>
+        { values.map(value =>
+          <p>{value === 'necromancer' ? 'necro' : value}</p>
+        )}
+      </p>
     </div>
   )
 }
