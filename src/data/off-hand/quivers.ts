@@ -107,4 +107,13 @@ export const quivers:Quiver[] = [
     },
     legendaryPower: 'Hungering Arrow is guaranteed to pierce and also deals [450 - 600%] increased damage. Hungering Arrow can only pierce up to 4 times.'
   },
+  {
+    name: 'Sovereign Ascended Quiver',
+    class: 'demon hunter',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'quiver'
+    },
+  }
 ]

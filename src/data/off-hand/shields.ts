@@ -135,4 +135,13 @@ export const shields:Shield[] = [
       type: 'shield'
     },
   },
+  {
+    name: 'Sovereign Ascended Shield',
+    class: 'generic',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'shield'
+    },
+  }
 ]

@@ -136,4 +136,13 @@ export const mojos:Mojo[] = [
       type: 'mojo'
     },
   },
+  {
+    name: 'Sovereign Thing That Should Not Be',
+    class: 'witch doctor',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'mojo'
+    },
+  },
 ]

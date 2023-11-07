@@ -138,4 +138,13 @@ export const crusaderShields:CrusaderShield[] = [
       type: 'crusader shield'
     },
   },
+  {
+    name: 'Sovereign Stalwart Guardian',
+    class: 'crusader',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'crusader shield'
+    },
+  },
 ]

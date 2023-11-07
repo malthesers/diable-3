@@ -138,4 +138,13 @@ export const sources:Source[] = [
       type: 'source'
     },
   },
+  {
+    name: 'Sovereign Moschen Spheres',
+    class: 'wizard',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'source'
+    },
+  }
 ]

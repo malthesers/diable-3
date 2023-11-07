@@ -49,4 +49,13 @@ export const phylacteries:Phylactery[] = [
     },
     legendaryPower: 'Your cold skills reduce the movement speed of enemies by 30%. In addition, your movement speed is increased by [8 - 10%] for 5 seconds. Maximum 5 stacks.'
   },
+  {
+    name: 'Sovereign Embalming Vessel',
+    class: 'necromancer',
+    quality: 'rare',
+    equipment: {
+      slot: 'off-hand',
+      type: 'phylactery'
+    },
+  }
 ]
