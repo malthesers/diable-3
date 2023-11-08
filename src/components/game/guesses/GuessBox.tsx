@@ -18,9 +18,8 @@ export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
         ' w-full h-full bg-opacity-40 grid-center'}
       ></div>
       <p className='my-auto text-xs sm:text-sm grid-center'>
-        { values.map(value =>
-          <p>{value === 'necromancer' ? 'necro' : value}</p>
-        )}
+        <p>{values[0]}</p>
+        {values[1] && <span>{values[1]}</span>}
       </p>
     </div>
   )
