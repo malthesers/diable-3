@@ -171,15 +171,6 @@ export const handCrossbows:HandCrossbow[] = [
     elementalDamage: 'holy'
   },
   {
-    name: 'Penetrator',
-    class: 'demon hunter',
-    quality: 'rare',
-    equipment: {
-      slot: '1-hand',
-      type: 'hand crossbow'
-    }
-  },
-  {
     name: 'Hand Crossbow',
     class: 'demon hunter',
     quality: 'magic',
