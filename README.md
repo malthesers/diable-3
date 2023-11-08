@@ -1,12 +1,22 @@
-# <img src="/src/app/icon2.png" alt="diable 3 logo" align="center"> Diable III
-Hellish Wordle-ish based on Diablo III | Guess the item by its properties!
+#  <img src="/src/app/icon2.png" alt="diable 3 logo" align="center"> Diable III
+
+Hellish Wordle-ish based on Diablo III - guess the item by its properties! Hit the button below to try it out!
+
+<p align="center">
+  <a href="https://diable-3.vercel.app/">
+    <img src="/public/docs/new-game-button.png" alt="diable 3 logo" align="center">
+  </a>
+</p>
 
 ## 📋 Instructions
-Search for an item and enter your guess, then view your guess to find correct and incorrect properties.
 
-Repeat the process, narrowing down the possibilities until you find the right item!
+<img src="/public/docs/unguessed.png" alt="default known info" align="right">
 
-Revealed properties appear in the item tooltip. After 10 guesses, a blurred legendary power will also appear, which you may hover over to reveal it.
+Search for an item and enter your guess, then check out the correct and incorrect properties. Repeat the process, narrowing down the possibilities until you find the right item!
+
+Revealed properties appear in the item tooltip, like the one to the right. After 10 guesses, a blurred legendary power will also appear, which you may hover over to reveal it.
+
+At any given time, you can hit the *Surrender* button to give up and see answer alongside your amount of guesses, or simply start fresh with the *New Game* button.
 
 The background of guessed properties will be either green or red to indicate its correctness as displayed below.
 
