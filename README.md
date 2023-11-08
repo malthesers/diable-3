@@ -16,16 +16,24 @@ The background of guessed properties will be either green or red to indicate its
 
 ## 📜 Properties
 
-### ⭐ Qualities 
+This section covers the 4 properties used to narrow down the possible items and eventually guess the answer, those being the *Quality* of the item, its *Slot* and *Type* in terms of equipment, and finally the *Class* restriction placed on the item.
 
-| 🎨 | Name | Description |
-| - | - | - |
-| ⬜ | Common | Includes only the items intended for transmogrification, e.g. *Star Helm* and *Quinquennial Sword* |
-| 🟪 | Magic | Includes only special items like *Rakanishu's Blade* and Darkening of Tristram drops like *The Butcher's Cleaver* |
-| 🟨 | Rare | Includes only the Level 70 craftable items, i.e. *Sovereign* items |
-| 🟧 | Legendary | Includes all, but only the level 70 version of craftables, e.g. *Unbound Bolt* exists but not *Longshot* |
-| 🟩 | Set | Includes all, but only the level 70 version of craftables, e.g. *Sage's Passage* exists but not *Sage's Journey* |
-| 🟦 | Ethereal | Includes all, but item types are treated as their closest D3 equivalents, e.g. *bone knife* is considered a *dagger* |
+### ⭐ Qualities
+
+There is a total of 6 possible qualities, consisting of the 5 base qualities *common*, *magic*, *rare*, *legendary* and *set*, as well as Season 24's *ethereal*.
+
+Additionally, you may open the *Qualities* modal to choose what qualities you wish to include in the pool of items, e.g. only *legendary* and *set* items, leaving out the *common*, *magic*, *rare* and *ethereal* ones.
+
+Below is a table of them, each with a description of their respective items included.
+
+| Nameplate | Name | Description |
+| - | :-: | - |
+| <img src="public/images/nameplates/common.jpg" alt="common nameplate" align="center"> | Common | Includes only the items intended for transmogrification, e.g. *Star Helm* and *Quinquennial Sword* |
+| <img src="public/images/nameplates/magic.jpg" alt="magic nameplate" align="center"> | Magic | Includes only special items like *Rakanishu's Blade* and Darkening of Tristram drops like *The Butcher's Cleaver* |
+| <img src="public/images/nameplates/rare.jpg" alt="rare nameplate" align="center"> | Rare | Includes only the Level 70 craftable items, i.e. *Sovereign* items |
+| <img src="public/images/nameplates/legendary.jpg" alt="legendary nameplate" align="center"> | Legendary | Includes all, but only the level 70 version of craftables, e.g. *Unbound Bolt* exists but not *Longshot* |
+| <img src="public/images/nameplates/set.jpg" alt="set nameplate" align="center"> | Set | Includes all, but only the level 70 version of craftables, e.g. *Sage's Passage* exists but not *Sage's Journey* |
+| <img src="public/images/nameplates/ethereal.jpg" alt="ethereal nameplate" align="center"> | Ethereal | Includes all, but item types are treated as their closest D3 equivalents, e.g. *bone knife* is considered a *dagger* |
 
 ### 🗡️ Equipment
 
