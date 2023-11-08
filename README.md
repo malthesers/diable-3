@@ -12,7 +12,7 @@ Revealed properties appear in the item tooltip. After 10 guesses, a blurred lege
 
 A green background indicates a correct value, and a red background indicates an incorrect value.
 
-## Properties
+## 📜 Properties
 
 ### ⭐ Qualities 
 
@@ -25,9 +25,44 @@ A green background indicates a correct value, and a red background indicates an 
 | 🟩 | Set | Includes all, but only the level 70 version of craftables, e.g. *Sage's Passage* exists but not *Sage's Journey* |
 | 🟦 | Ethereal | Includes all, but item types are treated as their closest D3 equivalents, e.g. *bone knife* is considered a *dagger* |
 
-### Item slot
+### 🗡️ Equipment
 
-### Item type
+Equipment makes up the two inner properties for items, *Slot* and *Type*, where the latter is a subset of the former.
+
+Below is a table detailing each item slot as well as its possible item types.
+
+| Slot | Type |
+| - | - |
+| Head | Helm, Spirit Stone, Voodoo Mask, Wizard Hat |
+| Shoulders | Shoulders |
+| Torso | Chest Armor, Cloak |
+| Wrists | Bracers |
+| Hands | Gloves |
+| Waist | Belt, Mighty Belt |
+| Legs | Pants |
+| Feet | Boots |
+| Neck | Amulet |
+| Finger | Ring |
+| Off-Hand | Shield, Crusader Shield, Mojo, Source, Quiver, Phylactery |
+| One-Handed | Axe, Dagger, Mace, Spear, Sword, Ceremonial Knife, Fist Weapon, Flail, Mighty Weapon, Scythe |
+| Two-Handed | Axe, Mace, Polearm, Staff, Sword, Daibo, Flail, Mighty Weapon, Scythe |
+
+As mentioned in the Qualities subsection, the ethereal item types have been changed, as they do not exist in Diablo 3. Below is another table elaborating the converted item types, excluding *Khalim's Will* and *Soul Harvest* as they already match Diablo 3 item types.
+
+| Type | Ethereal |
+| - | - |
+| Sword | Doombringer, The Grandfather, Blackhand Key |
+| Axe | Gimmershred |
+| Mace | Astreon's Iron Ward, The Redeemer |
+| Crossbow | Buriza-Do Kyanon |
+| Hand Crossbow | Doomslinger |
+| Bow | Windforce |
+| Fist Weapon | Bartuc's Cut-Throat, Jade Talon, Shadow Killer |
+| Dagger | Blackbog's Sharp, Ghostflame, Wizardspike |
+| Spear | Arioc's Needle |
+| Ceremonial Knife | The Gidbinn |
+| Staff | Mang Song's Lesson |
+| Wand | The Oculus |
 
 ### 📚 Classes
 
