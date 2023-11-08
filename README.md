@@ -8,7 +8,11 @@ Repeat the process, narrowing down the possibilities until you find the right it
 
 Revealed properties appear in the item tooltip. After 10 guesses, a blurred legendary power will also appear, which you may hover over to reveal it.
 
-A green background indicates a correct value, and a red background indicates an incorrect value.
+The background of guessed properties will be either green or red to indicate its correctness as displayed below.
+
+| Correct | Incorrect |
+| - | - |
+| <img src="/public/docs/correct.png" alt="correct example" align="center"> | <img src="/public/docs/incorrect.png" alt="incorrect example" align="center"> |
 
 ## 📜 Properties
 
