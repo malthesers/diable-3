@@ -30,6 +30,7 @@ const arrItems:Item[] = [
 ]
 
 const allItems:Item[] = arrItems.map((item, index) => {
+  // Add id to items
   return {
     ...item,
     id: index
