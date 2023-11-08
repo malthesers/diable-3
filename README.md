@@ -10,11 +10,11 @@ Revealed properties appear in the item tooltip. After 10 guesses, a blurred lege
 
 ## ⭐ Qualities 
 
-| Colour | Name | Description |
+| 🎨 | Name | Description |
 | - | - | - |
-| ⬜ | Common |  |
-| 🟪 | Magic |  |
-| 🟨 | Rare |  |
-| 🟧 | Legendary |  |
-| 🟩 | Set |  |
-| 🟦 | Ethereal |  |
+| ⬜ | Common | Includes only the items intended for transmogrification, e.g. *Star Helm* and *Quinquennial Sword* |
+| 🟪 | Magic | Includes only special items like *Rakanishu's Blade* and Darkening of Tristram drops like *The Butcher's Cleaver* |
+| 🟨 | Rare | Includes only the Level 70 craftable items, i.e. *Sovereign* items |
+| 🟧 | Legendary | Includes all, but only the level 70 version of craftables, e.g. *Unbound Bolt* exists but not *Longshot* |
+| 🟩 | Set | Includes all, but only the level 70 version of craftables, e.g. *Sage's Passage* exists but not *Sage's Journey* |
+| 🟦 | Ethereal | Includes all, but item types are treated as their closest D3 equivalents, e.g. *bone knife* is considered a *dagger* |
