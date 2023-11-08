@@ -3,6 +3,7 @@ import { useState } from 'react';
 export default function useToggle(defaultValue: boolean): [boolean, (value?:boolean) => void] {
   const [value, setValue] = useState(defaultValue)
 
+  // Set boolean to true or false if passed as parameter, otherwise toggle
   function toggleValue(value?: boolean) {
     setValue((currentValue) =>
       typeof value === 'boolean' ? value : !currentValue
