@@ -3,5 +3,5 @@ import { Item } from '@/src/interfaces/Item';
 
 interface ItemRecord extends Item {
   chosen: ChosenQualities,
-  guesses: Number,
+  guesses: number,
 }

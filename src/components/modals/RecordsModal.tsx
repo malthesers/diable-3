@@ -18,7 +18,7 @@ export default function RecordsModal() {
       },
       legendaryPower: 'Reduce the cooldown of Vengeance by [50 - 65%].',
       elementalDamage: 'holy',
-      guesses: 13,
+      guesses: 132,
       chosen: {
         common: true,
         magic: true,
