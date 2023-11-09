@@ -10,7 +10,7 @@ export default function SearchContainer() {
 
   function submitGuess(item:Item) {
     if (ref.current) ref.current.focus()
-    console.log(item)
+    delete item.ref
     validateGuess(item)
     setSearch('')
   }
