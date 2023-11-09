@@ -41,7 +41,7 @@ export default function QualitiesModal() {
       title='Qualities'
     >
       <p className='text-base md:text-xl text-center'>Below you can toggle item qualities, dictating which items will be <span className='text-green-600'>included</span> and <span className='text-red-800'>excluded</span> in the list of possible answers.</p>
-      <p className='text-base md:text-xl text-center mt-2'>Closing the pop-up will start a new game, if any changes to qualities were made.</p>
+      <p className='text-base md:text-xl text-center mt-2'>Closing the pop-up will start a new game if any changes to qualities were made.</p>
       <p className={(showError ? 'text-red-500 animate-pulse' : '') + ' text-base md:text-xl text-center mt-2 duration-300'}>At least 1 quality must be chosen.</p>
       <div className='grid 2xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-4 mt-2 mb-4'>
         { Object.entries(chosen).map(([quality, active]) => 
