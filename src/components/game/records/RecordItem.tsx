@@ -8,9 +8,9 @@ interface RecordItemProps {
 
 export default function RecordItem({ record }: RecordItemProps) {
   return (
-    <article className=''>
-      <ItemNameplate item={record} />
-      <div className='nameplate mx-auto grid grid-cols-7'>
+    <article className='!text-base grid sm:grid-cols-2'>
+      <ItemNameplate item={record} records={true}/>
+      <div className='nameplate sm:w-full mx-auto grid grid-cols-7'>
         <div className='grid'>
           <div className='w-full h-full bg-opacity-40 shadow-guess-inner grid-center'></div>
           <p className='uppercase m-auto grid-center'>{record.guesses}</p>
