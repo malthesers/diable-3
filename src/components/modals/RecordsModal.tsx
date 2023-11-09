@@ -2,52 +2,11 @@ import { useModals } from '@/src/context/ModalsProvider';
 import { ItemRecord } from '@/src/interfaces/ItemRecord';
 import ModalTemplate from './ModalTemplate';
 import RecordItem from '../game/records/RecordItem';
+import { useRecords } from '@/src/context/RecordsProvider';
 
 export default function RecordsModal() {
   const { showRecords, toggleShowRecords } = useModals()
-
-  const records:ItemRecord[] = [
-    {
-      id: 1,
-      name: 'Dawn',
-      class: 'demon hunter',
-      quality: 'legendary',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      },
-      legendaryPower: 'Reduce the cooldown of Vengeance by [50 - 65%].',
-      elementalDamage: 'holy',
-      guesses: 999,
-      chosen: {
-        common: true,
-        magic: true,
-        rare: true,
-        legendary: true,
-        set: true,
-        ethereal: true
-      }
-    },
-    {
-      id: 2,
-      name: 'Thunderfury, Blessed Blade of the Windseeker',
-      class: 'demon hunter',
-      quality: 'ethereal',
-      equipment: {
-        slot: '1-hand',
-        type: 'hand crossbow'
-      },
-      guesses: 1,
-      chosen: {
-        common: false,
-        magic: false,
-        rare: false,
-        legendary: true,
-        set: true,
-        ethereal: true
-      }
-    },
-  ]
+  const { records } = useRecords()
 
   return (
     <ModalTemplate showModal={showRecords} closeModal={() => toggleShowRecords(false)} title='Records'>

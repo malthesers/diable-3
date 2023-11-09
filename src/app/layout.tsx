@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Spectral } from 'next/font/google'
+import RecordsProvider from '../context/RecordsProvider'
 import ModalsProvider from '../context/ModalsProvider'
 import ItemsProvider from '../context/ItemsProvider'
 import Header from '../components/layout/Header'
@@ -29,7 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header/>
         <ModalsProvider>
           <ItemsProvider>
-            {children}
+            <RecordsProvider>
+              {children}
+            </RecordsProvider>
           </ItemsProvider>
         </ModalsProvider>
       </body>
