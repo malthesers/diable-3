@@ -8,13 +8,13 @@ interface RecordItemProps {
 
 export default function RecordItem({ record }: RecordItemProps) {
   return (
-    <div key={record.name}>
+    <article>
       <ItemNameplate item={record} />
-      <div className='grid grid-cols-6'>
+      <div className='nameplate mx-auto grid grid-cols-6'>
         { Object.entries(record.chosen).map(([quality, chosen]) => 
           <QualityBox key={quality} quality={quality} chosen={chosen}/>
         )}
       </div>
-    </div>
+    </article>
   )
 }
