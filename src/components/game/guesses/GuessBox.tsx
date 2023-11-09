@@ -18,8 +18,8 @@ export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
         ' w-full h-full bg-opacity-40 grid-center'}
       ></div>
       <p className='my-auto text-xs sm:text-sm grid-center'>
-        <p>{values[0]}</p>
-        {values[1] && <span>{values[1]}</span>}
+        <span className='block'>{values[0]}</span>
+        {values[1] && <span className='block'>{values[1]}</span>}
       </p>
     </div>
   )
