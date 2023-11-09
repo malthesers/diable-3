@@ -12,9 +12,9 @@ export default function RecordsModal() {
       <div className='text-base sm:text-xl text-center space-y-2'>
         <p>Below is a list of your fastest victories including the guessed item, the amount of guesses and the included qualities.</p>
         <div className='grid gap-2'>
-          { records.map(record =>
+          { records.length > 0 ? records.map(record =>
             <RecordItem key={record.id} record={record}/>
-          )}
+          ) : <p>No records yet...</p>} 
         </div>
       </div>
     </ModalTemplate>

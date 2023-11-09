@@ -1,6 +1,6 @@
 import { ItemRecord } from "./ItemRecord";
 
 export interface RecordsContext {
-  setRecords: (value:ItemRecord) => void,
+  updateRecords: (value:ItemRecord) => void,
   records: ItemRecord[]
 }
