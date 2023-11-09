@@ -8,7 +8,8 @@ interface ItemGuessProps {
 
 export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
   const correct:boolean = guess === answer
-  const values = guess.split(' ')
+  const shortened = guess === 'necromancer' ? 'necro mancer' : guess
+  const values = shortened.split(' ')
 
   return (
     <div className={(correct ? 'bg-set-gradient' : 'bg-undefined-gradient') + ' grid h-[52px] bg-center bg-cover'}>
