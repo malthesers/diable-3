@@ -1,6 +1,6 @@
-import { ItemRecord } from "@/src/interfaces/ItemRecord";
-import ItemNameplate from "../ItemNameplate";
-import QualityBox from "./QualityBox";
+import { ItemRecord } from '@/src/interfaces/ItemRecord';
+import ItemNameplate from '../ItemNameplate';
+import QualityBox from './QualityBox';
 
 interface RecordItemProps {
   record: ItemRecord
