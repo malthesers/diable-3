@@ -3,6 +3,7 @@
 import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
 import { RecordsContext } from '../interfaces/RecordsContext'
 import { ItemRecord } from '../interfaces/ItemRecord'
+import useToggle from '../hooks/useToggle'
 
 const RecordsContext = createContext<RecordsContext>({
   updateRecords: (value:ItemRecord) => {},
@@ -15,6 +16,7 @@ export function useRecords() {
 
 export default function RecordsProvider({ children }: { children: ReactNode }) {
   const [records, setRecords] = useState<ItemRecord[]>([])
+  const [mounted, setMounted] = useToggle(false)
 
   function updateRecords(record: ItemRecord) {
     setRecords([
@@ -24,12 +26,16 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
-
+    if (localStorage.getItem('diable3-records')) {
+      setRecords(JSON.parse(localStorage.getItem('diable3-records') as string))
+    }
+    setMounted(true)
   }, [])
 
   useEffect(() => {
-    // localStorage.setItem('diable3-records', JSON.stringify(records))
-    console.log(records)
+    if (mounted) {
+      localStorage.setItem('diable3-records', JSON.stringify(records))
+    }
   }, [records])
 
   return (
