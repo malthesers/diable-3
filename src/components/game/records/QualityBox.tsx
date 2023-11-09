@@ -9,7 +9,7 @@ export default function QualityBox({ quality, chosen }: QualityBoxProps) {
   return (
     <div className={(chosen ? 'bg-set-gradient' : 'bg-undefined-gradient') + ' grid'}>
       <div className={(chosen ? 'bg-green-600' : 'bg-red-800') + ' w-full h-full bg-opacity-40 shadow-guess-inner grid-center'}></div>
-      <p className='uppercase grid-center'>{initial}</p>
+      <span className='uppercase m-auto grid-center'>{initial}</span>
     </div>
   )
 }
