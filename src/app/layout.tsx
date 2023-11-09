@@ -28,13 +28,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang='en'>
       <body className={spectral.className}>
         <Header/>
-        <ModalsProvider>
-          <ItemsProvider>
-            <RecordsProvider>
-              {children}
-            </RecordsProvider>
-          </ItemsProvider>
-        </ModalsProvider>
+        <RecordsProvider> 
+          <ModalsProvider>
+            <ItemsProvider>
+                {children}
+            </ItemsProvider>
+          </ModalsProvider>
+        </RecordsProvider>
       </body>
     </html>
   )

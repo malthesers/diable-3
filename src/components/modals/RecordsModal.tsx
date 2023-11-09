@@ -1,5 +1,4 @@
 import { useModals } from '@/src/context/ModalsProvider';
-import { ItemRecord } from '@/src/interfaces/ItemRecord';
 import ModalTemplate from './ModalTemplate';
 import RecordItem from '../game/records/RecordItem';
 import { useRecords } from '@/src/context/RecordsProvider';

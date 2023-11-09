@@ -3,6 +3,7 @@
 import { ReactNode, createContext, useContext, useState, useEffect } from 'react'
 import { ChosenQualities } from '../interfaces/ChosenQualities'
 import { ItemsContext } from '../interfaces/ItemsContext'
+import { useRecords } from './RecordsProvider'
 import { useModals } from './ModalsProvider'
 import { Item } from '@/src/interfaces/Item'
 import { allItems } from '@/src/data'
@@ -47,6 +48,7 @@ export function useItems() {
 
 export default function ItemsProvider({ children }: { children: ReactNode }) {
   const { toggleShowVictory, toggleShowDefeat } = useModals()
+  const { updateRecords } = useRecords()
   const [chosen, setChosen] = useState<ChosenQualities>(defaultChosen)
   const [known, setKnown] = useState<Item>({...defaultItem})
   const [answer, setAnswer] = useState<Item | null>(null)
@@ -116,6 +118,11 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       known.name = item.name
       toggleShowVictory(true)
       setGuessed(true)
+      updateRecords({
+        ...item,
+        guesses: guesses.length + 1,
+        chosen: chosen
+      })
     } 
   }
 
