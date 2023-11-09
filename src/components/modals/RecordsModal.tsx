@@ -8,6 +8,7 @@ export default function RecordsModal() {
 
   const records:ItemRecord[] = [
     {
+      id: 1,
       name: 'Dawn',
       class: 'demon hunter',
       quality: 'legendary',
@@ -18,7 +19,7 @@ export default function RecordsModal() {
       legendaryPower: 'Reduce the cooldown of Vengeance by [50 - 65%].',
       elementalDamage: 'holy',
       guesses: 13,
-      qualities: {
+      chosen: {
         common: true,
         magic: true,
         rare: true,
@@ -33,7 +34,7 @@ export default function RecordsModal() {
     <ModalTemplate showModal={showRecords} closeModal={() => toggleShowRecords(false)} title='Records'>
       <div className='text-lg sm:text-xl text-center space-y-2'>
         { records.map(record =>
-          <RecordItem record={record}/>
+          <RecordItem key={record.id} record={record}/>
         )}
       </div>
     </ModalTemplate>
