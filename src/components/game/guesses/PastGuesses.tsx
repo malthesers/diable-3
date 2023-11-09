@@ -1,13 +1,13 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
-import { ItemRef } from '@/src/interfaces/ItemRef'
+import { Item } from '@/src/interfaces/Item'
 import { createRef } from 'react'
 import ItemGuess from './ItemGuess'
 
 export default function PastGuesses() {
   const { guesses, search } = useItems()
 
-  const guessesRef:ItemRef[] = guesses.map((item) => {
+  const guessesRef:Item[] = guesses.map((item) => {
     return {
       ...item,
       ref: createRef()

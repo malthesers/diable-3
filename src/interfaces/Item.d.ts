@@ -5,7 +5,8 @@ export interface Item {
   quality: Qualities,
   equipment: Unknown | Head | Shoulders | Torso | Wrists | Hands | Waist | Legs | Feet | Neck | Finger | OffHand | TwoHand | OneHand,
   legendaryPower?: string
-  elementalDamage?: ElementalDamage
+  elementalDamage?: ElementalDamage,
+  ref?: RefObject<HTMLDivElement>
 }
 
 type Classes = 'anonymous' | 'generic' | 'barbarian' | 'crusader' | 'demon hunter' | 'monk' | 'necromancer' | 'witch doctor' | 'wizard'

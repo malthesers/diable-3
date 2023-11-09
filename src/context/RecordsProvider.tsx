@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, createContext, useContext, useState } from 'react'
+import { ReactNode, createContext, useContext, useEffect, useState } from 'react'
 import { RecordsContext } from '../interfaces/RecordsContext'
 import { ItemRecord } from '../interfaces/ItemRecord'
 
@@ -22,6 +22,15 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
       record
     ])
   }
+
+  useEffect(() => {
+
+  }, [])
+
+  useEffect(() => {
+    // localStorage.setItem('diable3-records', JSON.stringify(records))
+    console.log(records)
+  }, [records])
 
   return (
     <RecordsContext.Provider value={{ records, updateRecords }}>

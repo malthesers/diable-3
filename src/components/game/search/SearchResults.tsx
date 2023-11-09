@@ -1,6 +1,5 @@
 import { CSSTransition, TransitionGroup } from 'react-transition-group'
 import { useItems } from '@/src/context/ItemsProvider'
-import { ItemRef } from '@/src/interfaces/ItemRef'
 import { Item } from '@/src/interfaces/Item'
 import { createRef } from 'react'
 import ItemSearch from './ItemSearch'
@@ -22,7 +21,7 @@ export default function SearchResults({ submitGuess }: SearchResultsProps) {
     threshold: 0.3
   })
 
-  const results:ItemRef[] = fuse.search(search, {
+  const results:Item[] = fuse.search(search, {
     limit: 10,
   }).map((result) => {
     return {

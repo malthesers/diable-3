@@ -121,7 +121,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       updateRecords({
         ...item,
         guesses: guesses.length + 1,
-        chosen: chosen
+        chosen: chosen,
       })
     } 
   }
