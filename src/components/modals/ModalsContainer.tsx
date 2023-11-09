@@ -1,5 +1,6 @@
 import InstructionsModal from './InstructionsModal';
 import QualitiesModal from './QualitiesModal';
+import RecordsModal from './RecordsModal';
 import VictoryModal from './VictoryModal';
 import DefeatModal from './DefeatModal';
 import { useEffect, useState } from 'react'
@@ -17,6 +18,7 @@ export default function ModalsContainer() {
       <>
         <DefeatModal/>
         <VictoryModal/>
+        <RecordsModal/>
         <QualitiesModal/>
         <InstructionsModal/>
       </>, document.body

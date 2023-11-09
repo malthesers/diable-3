@@ -10,7 +10,7 @@ import { useItems } from '../context/ItemsProvider'
 
 export default function Home() {
   const { guessed, guesses, answer, resetGame, surrenderGame, items } = useItems()
-  const { toggleShowInstructions, toggleShowQualities } = useModals()
+  const { toggleShowInstructions, toggleShowQualities, toggleShowRecords } = useModals()
 
   return (
     <main>
@@ -19,6 +19,7 @@ export default function Home() {
         <Button onClick={surrenderGame} text='Surrender' className={guessed ? ' brightness-50 pointer-events-none' : ''}/>
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
         <Button onClick={() => toggleShowQualities(true)} text='Qualities'/>
+        <Button onClick={() => toggleShowRecords(true)} text='Records'/>
       </section>
       <section className='grid md:grid-cols-2 gap-4'>
         <div className='h-fit grid gap-2'>
