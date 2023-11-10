@@ -11,9 +11,9 @@ import { CSSTransition, SwitchTransition } from 'react-transition-group'
 import { useRef } from 'react'
 
 export default function Home() {
-  const { guessed, guesses, answer, resetGame, surrenderGame, items } = useItems()
+  const { guessed, answer, resetGame, surrenderGame, items } = useItems()
   const { toggleShowInstructions, toggleShowQualities, toggleShowRecords } = useModals()
-  const node = useRef<HTMLDivElement>(null)
+  const node = useRef<HTMLButtonElement>(null)
 
   function handleGame() {
     if (guessed) {
@@ -36,9 +36,7 @@ export default function Home() {
               node.current?.addEventListener('transitionend', done, false)
             }
           >
-            <div ref={node}>
-              <Button onClick={handleGame} text={guessed ? 'New Game' : 'Surrender'}/>
-            </div>
+            <Button ref={node} onClick={handleGame} text={guessed ? 'New Game' : 'Surrender'}/>
           </CSSTransition>
         </SwitchTransition>
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>

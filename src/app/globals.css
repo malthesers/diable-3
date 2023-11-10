@@ -21,7 +21,7 @@
   }
 
   button {
-    @apply bg-[url('/images/button.png')] duration-200;
+    @apply bg-[url('/images/button.png')];
   }
 }
 
@@ -69,13 +69,6 @@
 .button-enter-active,
 .button-exit-active {
   transition: opacity 500ms;
-}
-
-.button-enter > button,
-.button-exit > button,
-.button-enter-active > button,
-.button-exit-active > button {
-  transition: color 0ms, filter 0ms;
 }
 
 .search-enter {

@@ -1,16 +1,21 @@
+import { forwardRef } from 'react'
+
 interface ButtonProps {
   onClick: () => void,
   className?: string,
   text: string,
 }
 
-export default function Button({ onClick, className, text} : ButtonProps) {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ onClick, className, text} : ButtonProps, ref) => {
   return (
     <button
+      ref={ref}
       onClick={onClick}
-      className={(className ? className : '') + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase hover:text-gold-light hover:brightness-125'}
+      className={(className ? className : '') + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase duration-200 hover:text-gold-light hover:brightness-125'}
     >
       {text}
     </button>
   )
-}
+})
+
+export default Button
