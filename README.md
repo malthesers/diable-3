@@ -1,6 +1,6 @@
 #  <img src="/src/app/icon2.png" alt="diable 3 logo" align="center"> Diable III
 
-Hellish Wordle-ish based on Diablo III - guess the item by its properties! Hit the button below to try it out!
+Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties! Hit the button below to try it out!
 
 <p align="center">
   <a href="https://diable-3.vercel.app/">
