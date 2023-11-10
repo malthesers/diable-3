@@ -29,7 +29,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
         <div className='max-w-xl w-full max-h-[80%] overflow-scroll grid m-auto bg-undefined-gradient bg-center border-bronze border-2'>
           <div className='grid-center w-full h-full bg-black bg-opacity-70'></div>
           <div className={(title === 'Records' ? 'py-4 sm:p-4' : 'p-4') + ' grid-center text-white shadow-guess-inner'}>
-            <p className='text-2xl text-center uppercase mb-2'>{title}</p>
+            <p className={(title === 'Records' ? 'px-4' : '') + ' text-2xl text-center uppercase mb-2'}>{title}</p>
             <>{children}</>
             <div className='flex flex-wrap place-content-center gap-4 mt-4'>
               { button && <Button onClick={button.onClick} text={button.text}/>}
