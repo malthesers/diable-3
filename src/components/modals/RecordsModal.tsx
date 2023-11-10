@@ -24,22 +24,21 @@ export default function RecordsModal() {
     >
       <div className='text-base sm:text-xl text-center space-y-2'>
         <p className='px-4'>Below is a list of your fastest victories including the guessed item, the amount of guesses and the included qualities.</p>
-          
           <SwitchTransition mode='out-in'>
             <CSSTransition
               classNames='records'
               nodeRef={recordsNode}
               key={displayRecords}
-              timeout={700}
               addEndListener={(done: () => void) =>
                 recordsNode.current?.addEventListener('transitionend', done, false)
               }
             >
-              <div ref={recordsNode} className='grid gap-2 pt-4 overflow-hidden'>
-                {records.length === 0 && <p>No records yet...</p>}
-                {records.length !== 0 && records.map(record =>
-                  <RecordItem key={record.id} record={record}/>
-                )} 
+              <div ref={recordsNode} className='grid grid-rows-[1fr] gap-2'>
+                <div className='overflow-hidden grid gap-2'>
+                  {records.length !== 0 && records.map(record =>
+                    <RecordItem key={record.id} record={record}/>
+                  )} 
+                </div>
               </div>
             </CSSTransition>
           </SwitchTransition>

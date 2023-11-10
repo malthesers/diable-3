@@ -135,22 +135,22 @@
 }
 
 .records-box-enter {
-  max-height: 0;
+  grid-template-rows: 0fr;
 }
 
 .records-exit {
-  max-height: 40rem;
+  grid-template-rows: 1fr;
 }
 
 .records-enter-active {
-  max-height: 40rem;
+  grid-template-rows: 1fr;
 }
 
 .records-exit-active {
-  max-height: 0;
+  grid-template-rows: 0fr;
 }
 
 .records-enter-active,
 .records-exit-active {
-  transition: max-height 700ms ease-in-out;
+  transition: grid-template-rows 1000ms ease;
 }
