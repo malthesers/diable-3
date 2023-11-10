@@ -6,7 +6,7 @@ interface ButtonProps {
   text: string,
 }
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ onClick, className, text} : ButtonProps, ref) => {
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button({ onClick, className, text} : ButtonProps, ref) {
   return (
     <button
       ref={ref}
