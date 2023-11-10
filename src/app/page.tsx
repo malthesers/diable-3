@@ -46,7 +46,7 @@ export default function Home() {
       <section className='grid md:grid-cols-2 gap-4'>
         <div className='h-fit grid gap-2'>
           <KnownInfo/>
-          { answer && <p className='text-center'>{answer.name} of total {items.length} items</p>}
+          {/* { answer && <p className='text-center'>{answer.name} of total {items.length} items</p>} */}
         </div>
         <div className='flex flex-col place-items-center p-1 border-2 border-transparent'>
           <SearchContainer/>
