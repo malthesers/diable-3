@@ -1,9 +1,9 @@
-import { useModals } from '@/src/context/ModalsProvider';
-import ModalTemplate from './ModalTemplate';
-import RecordItem from '../game/records/RecordItem';
-import { useRecords } from '@/src/context/RecordsProvider';
 import { CSSTransition, SwitchTransition } from 'react-transition-group';
+import { useRecords } from '@/src/context/RecordsProvider';
+import { useModals } from '@/src/context/ModalsProvider';
 import { useRef } from 'react';
+import RecordItem from '../game/records/RecordItem';
+import ModalTemplate from './ModalTemplate';
 
 export default function RecordsModal() {
   const { showRecords, toggleShowRecords } = useModals()
@@ -18,6 +18,7 @@ export default function RecordsModal() {
       title='Records'
       button={{
         onClick: clearRecords,
+        className: records.length === 0 ? 'pointer-events-none brightness-50' : '',
         text: 'Clear'
       }}
     >
