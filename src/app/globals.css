@@ -22,6 +22,7 @@
 
   button {
     @apply bg-[url('/images/button.png')];
+    transition: color 200ms, filter 200ms;
   }
 }
 
@@ -45,6 +46,31 @@
 }
 
 /* --- Transitions --- */
+
+.button-enter {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-exit {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.button-enter-active {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.button-exit-active {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.button-enter-active,
+.button-exit-active {
+  transition: opacity 500ms;
+}
 
 .search-enter {
   opacity: 0;

@@ -15,8 +15,6 @@ export default function Home() {
   const { toggleShowInstructions, toggleShowQualities, toggleShowRecords } = useModals()
   const node = useRef<HTMLDivElement>(null)
 
-  const value = guessed ? 'New Game' : 'Surrender'
-
   function handleGame() {
     if (guessed) {
       resetGame()
@@ -30,15 +28,16 @@ export default function Home() {
       <section className='max-w-md md:max-w-[920px] lg:max-w-none mx-auto flex flex-row flex-wrap place-content-center md:place-content-start gap-2 mb-2'>
         <SwitchTransition mode='out-in'>
           <CSSTransition
-            classNames='fade'
-            key={value}
+            classNames='button'
+            key={guessed ? 'New Game' : 'Surrender'}
+            timeout={500}
             nodeRef={node}
             addEndListener={(done: () => void) =>
               node.current?.addEventListener('transitionend', done, false)
             }
           >
             <div ref={node}>
-              <Button onClick={handleGame} text={value} className=''/>
+              <Button onClick={handleGame} text={guessed ? 'New Game' : 'Surrender'}/>
             </div>
           </CSSTransition>
         </SwitchTransition>

@@ -8,7 +8,7 @@ export default function Button({ onClick, className, text} : ButtonProps) {
   return (
     <button
       onClick={onClick}
-      className={className + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase duration-200 hover:text-gold-light hover:brightness-125'}
+      className={(className ? className : '') + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase hover:text-gold-light hover:brightness-125'}
     >
       {text}
     </button>
