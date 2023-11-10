@@ -41,8 +41,6 @@ export default function Home() {
             </div>
           </CSSTransition>
         </SwitchTransition>
-        {/* <Button onClick={resetGame} text='New Game' className={guesses.length === 0 && !guessed ? ' brightness-50 pointer-events-none' : ''}/>
-        <Button onClick={surrenderGame} text='Surrender' className={guessed ? ' brightness-50 pointer-events-none' : ''}/> */}
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
         <Button onClick={() => toggleShowQualities(true)} text='Qualities'/>
         <Button onClick={() => toggleShowRecords(true)} text='Records'/>
