@@ -7,6 +7,7 @@ import useToggle from '../hooks/useToggle'
 
 const RecordsContext = createContext<RecordsContext>({
   updateRecords: (value:ItemRecord) => {},
+  clearRecords: () => {},
   records: []
 })
 
@@ -26,6 +27,10 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
     setRecords(slicedRecords)
   }
 
+  function clearRecords() {
+    setRecords([])
+  }
+
   useEffect(() => {
     if (localStorage.getItem('diable3-records')) {
       setRecords(JSON.parse(localStorage.getItem('diable3-records') as string))
@@ -40,7 +45,7 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
   }, [records])
 
   return (
-    <RecordsContext.Provider value={{ records, updateRecords }}>
+    <RecordsContext.Provider value={{ records, updateRecords, clearRecords }}>
       {children}
     </RecordsContext.Provider>
   )
