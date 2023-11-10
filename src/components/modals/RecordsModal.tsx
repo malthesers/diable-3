@@ -22,26 +22,27 @@ export default function RecordsModal() {
         text: 'Clear'
       }}
     >
-      <div className='text-base sm:text-xl text-center space-y-2'>
-        <p className='px-4'>Below is a list of your fastest victories including the guessed item, the amount of guesses and the included qualities.</p>
-          <SwitchTransition mode='out-in'>
-            <CSSTransition
-              classNames='records'
-              nodeRef={recordsNode}
-              key={displayRecords}
-              addEndListener={(done: () => void) =>
-                recordsNode.current?.addEventListener('transitionend', done, false)
-              }
-            >
-              <div ref={recordsNode} className='grid grid-rows-[1fr] gap-2'>
-                <div className='overflow-hidden grid gap-2'>
-                  {records.length !== 0 && records.map(record =>
-                    <RecordItem key={record.id} record={record}/>
-                  )} 
-                </div>
+      <div className='text-base sm:text-xl text-center'>
+        <p className='px-4'>Below is a list of your fastest wins including the guessed item, the amount of guesses and the included qualities.</p>
+        <p className={(records.length === 0 ? 'opacity-100 max-h-6' : 'opacity-0 max-h-0') + ' mt-3 duration-200 delay-1000'}>No records yet...</p>
+        <SwitchTransition mode='out-in'>
+          <CSSTransition
+            classNames='records'
+            nodeRef={recordsNode}
+            key={displayRecords}
+            addEndListener={(done: () => void) =>
+              recordsNode.current?.addEventListener('transitionend', done, false)
+            }
+          >
+            <div ref={recordsNode} className='grid grid-rows-[1fr] gap-2'>
+              <div className='overflow-hidden grid gap-2'>
+                {records.length !== 0 && records.map(record =>
+                  <RecordItem key={record.id} record={record}/>
+                )} 
               </div>
-            </CSSTransition>
-          </SwitchTransition>
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
       </div>
     </ModalTemplate>
   )
