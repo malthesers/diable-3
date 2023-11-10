@@ -38,11 +38,11 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
     setMounted(true)
   }, [])
 
-  useEffect(() => {
-    if (mounted) {
-      localStorage.setItem('diable3-records', JSON.stringify(records))
-    }
-  }, [records])
+  // useEffect(() => {
+  //   if (mounted) {
+  //     localStorage.setItem('diable3-records', JSON.stringify(records))
+  //   }
+  // }, [records])
 
   return (
     <RecordsContext.Provider value={{ records, updateRecords, clearRecords }}>
