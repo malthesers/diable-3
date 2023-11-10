@@ -7,16 +7,43 @@ import KnownInfo from '@/src/components/game/known/KnownInfo'
 import Button from '@/src/components/layout/Button'
 import { useModals } from '../context/ModalsProvider'
 import { useItems } from '../context/ItemsProvider'
+import { CSSTransition, SwitchTransition } from 'react-transition-group'
+import { useRef } from 'react'
 
 export default function Home() {
   const { guessed, guesses, answer, resetGame, surrenderGame, items } = useItems()
   const { toggleShowInstructions, toggleShowQualities, toggleShowRecords } = useModals()
+  const node = useRef<HTMLDivElement>(null)
+
+  const value = guessed ? 'New Game' : 'Surrender'
+
+  function handleGame() {
+    if (guessed) {
+      resetGame()
+    } else if (!guessed) {
+      surrenderGame()
+    }
+  }
 
   return (
     <main>
       <section className='max-w-md md:max-w-[920px] lg:max-w-none mx-auto flex flex-row flex-wrap place-content-center md:place-content-start gap-2 mb-2'>
-        <Button onClick={resetGame} text='New Game' className={guesses.length === 0 && !guessed ? ' brightness-50 pointer-events-none' : ''}/>
-        <Button onClick={surrenderGame} text='Surrender' className={guessed ? ' brightness-50 pointer-events-none' : ''}/>
+        <SwitchTransition mode='out-in'>
+          <CSSTransition
+            classNames='fade'
+            key={value}
+            nodeRef={node}
+            addEndListener={(done: () => void) =>
+              node.current?.addEventListener('transitionend', done, false)
+            }
+          >
+            <div ref={node}>
+              <Button onClick={handleGame} text={value} className=''/>
+            </div>
+          </CSSTransition>
+        </SwitchTransition>
+        {/* <Button onClick={resetGame} text='New Game' className={guesses.length === 0 && !guessed ? ' brightness-50 pointer-events-none' : ''}/>
+        <Button onClick={surrenderGame} text='Surrender' className={guessed ? ' brightness-50 pointer-events-none' : ''}/> */}
         <Button onClick={() => toggleShowInstructions(true)} text='How To'/>
         <Button onClick={() => toggleShowQualities(true)} text='Qualities'/>
         <Button onClick={() => toggleShowRecords(true)} text='Records'/>
