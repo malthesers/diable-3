@@ -4,6 +4,7 @@ import { Spectral } from 'next/font/google'
 import RecordsProvider from '../context/RecordsProvider'
 import ModalsProvider from '../context/ModalsProvider'
 import ItemsProvider from '../context/ItemsProvider'
+import Background from '../components/layout/Background'
 import Header from '../components/layout/Header'
 
 const spectral = Spectral({
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang='en'>
       <body className={spectral.className}>
+        <Background/>
         <Header/>
         <RecordsProvider> 
           <ModalsProvider>
