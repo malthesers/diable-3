@@ -2,7 +2,7 @@ import { useItems } from '@/src/context/ItemsProvider'
 import { forwardRef } from 'react'
 
 const SearchBar = forwardRef<HTMLInputElement>(function SearchBar(props, ref) {
-  const { guessed, answer, known, search, setSearch } = useItems()
+  const { guessed, search, setSearch } = useItems()
 
   return (
     <label
