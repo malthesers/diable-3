@@ -13,7 +13,7 @@
   }
 
   body {
-    @apply bg-[url('/images/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed text-white min-h-[100dvh];
+    @apply text-white min-h-[100dvh];
   }
 
   main {
