@@ -9,7 +9,7 @@ export default function SearchContainer() {
   const ref = useRef<HTMLInputElement | null>(null)
 
   function submitGuess(item:Item) {
-    if (ref.current) ref.current.focus()
+    if (ref.current && screen.width > 669) ref.current.focus()
     delete item.ref
     validateGuess(item)
     setSearch('')
