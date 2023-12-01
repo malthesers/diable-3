@@ -7,11 +7,11 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Diablo III Wordle | Guess the item by its properties!',
     start_url: '/',
     display: 'standalone',
-    display_override: ["window-controls-overlay"],
+    display_override: ['window-controls-overlay'],
     background_color: '#111218',
     theme_color: '#111218',
     lang: 'en',
-    categories: ["entertainment", "games"],
+    categories: ['entertainment', 'games'],
     icons: [
       {
         src: '/icon1.png',
@@ -36,34 +36,34 @@ export default function manifest(): MetadataRoute.Manifest {
     ],
     screenshots: [
       {
-        src: "/screenshots/mobile1.jpg",
-        type: "image/png",
-        sizes: "1170x1900",
+        src: '/screenshots/mobile1.jpg',
+        type: 'image/png',
+        sizes: '1170x1900',
       },
       {
-        src: "/screenshots/mobile2.jpg",
-        type: "image/png",
-        sizes: "1170x1900",
+        src: '/screenshots/mobile2.jpg',
+        type: 'image/png',
+        sizes: '1170x1900',
       },
       {
-        src: "/screenshots/mobile3.jpg",
-        type: "image/png",
-        sizes: "1170x1900",
+        src: '/screenshots/mobile3.jpg',
+        type: 'image/png',
+        sizes: '1170x1900',
       },
       {
-        src: "/screenshots/desktop1.jpg",
-        type: "image/png",
-        sizes: "1074x620",
+        src: '/screenshots/desktop1.jpg',
+        type: 'image/png',
+        sizes: '1074x620',
       },
       {
-        src: "/screenshots/desktop2.jpg",
-        type: "image/png",
-        sizes: "1074x620",
+        src: '/screenshots/desktop2.jpg',
+        type: 'image/png',
+        sizes: '1074x620',
       },
       {
-        src: "/screenshots/desktop3.jpg",
-        type: "image/png",
-        sizes: "1074x620",
+        src: '/screenshots/desktop3.jpg',
+        type: 'image/png',
+        sizes: '1074x620',
       }
     ]
   }
