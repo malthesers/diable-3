@@ -50,7 +50,7 @@ export const cloaks:Cloak[] = [
     legendaryPower: 'Enemy missiles sometimes pass through you harmlessly.'
   },
   {
-    name: 'The Cloak of Garwulf',
+    name: 'The Cloak of the Garwulf',
     class: 'demon hunter',
     quality: 'legendary',
     equipment: {
