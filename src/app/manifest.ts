@@ -7,8 +7,11 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Diablo III Wordle | Guess the item by its properties!',
     start_url: '/',
     display: 'standalone',
+    display_override: ["window-controls-overlay"],
     background_color: '#111218',
     theme_color: '#111218',
+    lang: 'en',
+    categories: ["entertainment", "games"],
     icons: [
       {
         'src': '/icon1.png',
