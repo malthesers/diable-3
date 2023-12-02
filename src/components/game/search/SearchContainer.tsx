@@ -1,3 +1,4 @@
+import { useModals } from '@/src/context/ModalsProvider'
 import { useItems } from '@/src/context/ItemsProvider'
 import { Item } from '@/src/interfaces/Item'
 import { useEffect, useRef } from 'react'
@@ -6,6 +7,7 @@ import SearchBar from './SearchBar'
 
 export default function SearchContainer() {
   const { answer, guessed, validateGuess, setSearch } = useItems()
+  const { isOpen } = useModals()
   const ref = useRef<HTMLInputElement | null>(null)
 
   function focusInput() {
@@ -20,9 +22,15 @@ export default function SearchContainer() {
   }
 
   useEffect(() => {
+    if (!isOpen) focusInput()
+  }, [isOpen])
+
+  // Focus if answer is changed, i.e. new game started
+  useEffect(() => {
     focusInput()
   }, [answer])
 
+  // Clear input field when surrendering, preventing guessing after reveal
   useEffect(() => {
     if (guessed) setSearch('')
   }, [guessed])
