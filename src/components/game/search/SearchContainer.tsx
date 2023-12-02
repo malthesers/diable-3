@@ -21,6 +21,7 @@ export default function SearchContainer() {
     focusInput()
   }
 
+  // Focus if modal is closed
   useEffect(() => {
     if (!isOpen) focusInput()
   }, [isOpen])

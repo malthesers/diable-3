@@ -19,10 +19,6 @@
   main {
     @apply max-w-[59rem] mx-auto py-8 sm:py-20;
   }
-
-  button {
-    @apply bg-[url('/images/button.png')];
-  }
 }
 
 @layer components {
