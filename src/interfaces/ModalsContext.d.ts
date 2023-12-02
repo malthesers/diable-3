@@ -9,4 +9,5 @@ export interface ModalsContext {
   showRecords: boolean,
   showVictory: boolean,
   showDefeat: boolean,
+  isOpen: boolean
 }

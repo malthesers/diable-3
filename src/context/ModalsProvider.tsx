@@ -15,6 +15,7 @@ const ModalsContext = createContext<ModalsContext>({
   showRecords: false,
   showVictory: false,
   showDefeat: false,
+  isOpen: false
 })
 
 export function useModals() {
@@ -28,9 +29,10 @@ export default function ModalsProvider({ children }: { children: ReactNode }) {
   const [showVictory, toggleShowVictory] = useToggle(false)
   const [showDefeat, toggleShowDefeat] = useToggle(false)
 
+  const isOpen: boolean = [showInstructions, showQualities, showRecords, showVictory, showDefeat].includes(true)
 
   return (
-    <ModalsContext.Provider value={{ showInstructions, toggleShowInstructions, showQualities, toggleShowQualities, showRecords, toggleShowRecords, showVictory, toggleShowVictory, showDefeat, toggleShowDefeat }}>
+    <ModalsContext.Provider value={{ showInstructions, toggleShowInstructions, showQualities, toggleShowQualities, showRecords, toggleShowRecords, showVictory, toggleShowVictory, showDefeat, toggleShowDefeat, isOpen }}>
       {children}
     </ModalsContext.Provider>
   )
