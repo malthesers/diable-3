@@ -37,7 +37,7 @@ export default function RecordsModal() {
             <div ref={recordsNode} className='grid grid-rows-[1fr] gap-2'>
               <div className='overflow-hidden grid gap-2'>
                 {records.length !== 0 && records.map(record =>
-                  <RecordItem key={record.id} record={record}/>
+                  <RecordItem key={record.timestamp} record={record}/>
                 )} 
               </div>
             </div>
