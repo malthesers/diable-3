@@ -11,7 +11,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button({ onCl
     <button
       ref={ref}
       onClick={onClick}
-      className={(className ? className : '') + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase duration-200 hover:text-gold-light hover:brightness-125'}
+      className={(className ? className : '') + ' w-36 xs:w-44 aspect-[159/41] bg-cover bg-center text-sm xs:text-base text-gold uppercase outline-none duration-200 hover:text-gold-light hover:brightness-125 focus-visible:text-gold-light focus-visible:brightness-125'}
     >
       {text}
     </button>
