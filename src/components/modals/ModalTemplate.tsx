@@ -1,5 +1,5 @@
 import { CSSTransition } from 'react-transition-group';
-import { ReactNode, useRef } from 'react';
+import { ReactNode, useEffect, useRef } from 'react';
 import Button from '../layout/Button';
 
 interface ModalProps {
@@ -16,6 +16,11 @@ interface ModalProps {
 
 export default function ModalTemplate({ closeModal, showModal, children, title, button }: ModalProps) {
   const modal = useRef<HTMLElement>(null)
+
+  // Focus modals when opened to allow proceeding with keyboard
+  useEffect(() => {
+    if (modal.current && showModal) modal.current.focus()
+  }, [showModal])
   
   return (
     <CSSTransition
@@ -25,7 +30,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
       classNames='fade'
       unmountOnExit
     >
-      <aside ref={modal} className='fixed z-50 top-0 w-full h-[100dvh] grid p-4'>
+      <aside ref={modal} tabIndex={0} className='fixed z-50 top-0 w-full h-[100dvh] grid p-4'>
         <div onClick={() => closeModal()} className='absolute -z-10 w-full h-full bg-black bg-opacity-50 cursor-pointer'></div>
         <div className='max-w-xl w-full max-h-[80%] overflow-scroll grid m-auto bg-undefined-gradient bg-center border-bronze border-2'>
           <div className='grid-center w-full h-full bg-black bg-opacity-70'></div>
