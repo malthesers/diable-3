@@ -7,9 +7,10 @@ import Fuse from 'fuse.js'
 
 interface SearchResultsProps {
   submitGuess: (item:Item) => void,
+  focusInput: () => void,
 }
 
-export default function SearchResults({ submitGuess }: SearchResultsProps) {
+export default function SearchResults({ submitGuess, focusInput }: SearchResultsProps) {
   const { items, guesses, chosen, search } = useItems()
 
   const remaining:Item[] = items.filter(item =>  {
@@ -41,7 +42,7 @@ export default function SearchResults({ submitGuess }: SearchResultsProps) {
             nodeRef={item.ref}
           >
             <div ref={item.ref}>
-              <ItemSearch submitGuess={submitGuess} item={item}/>
+              <ItemSearch submitGuess={submitGuess} focusInput={focusInput} item={item}/>
             </div>
           </CSSTransition>
         ))}

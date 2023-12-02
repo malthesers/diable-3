@@ -26,7 +26,7 @@ export default function SearchContainer() {
   return (
     <div className='relative mb-2'>
       <SearchBar ref={ref} />
-      <SearchResults submitGuess={submitGuess}/>
+      <SearchResults submitGuess={submitGuess} focusInput={focusInput}/>
     </div>
   )
 }
