@@ -45,10 +45,10 @@ export default function QualitiesModal() {
       <p className={(showError ? 'text-red-500 animate-pulse' : '') + ' text-base md:text-xl text-center mt-2 duration-300'}>At least 1 quality must be chosen.</p>
       <div className='grid 2xs:grid-cols-2 sm:grid-cols-3 gap-2 xs:gap-4 mt-2 mb-4'>
         { Object.entries(chosen).map(([quality, active]) => 
-          <div onClick={() => toggleChosen(quality as keyof typeof chosen)} key={quality} className={'grid bg-undefined-gradient text-center cursor-pointer shadow-item-inner duration-200 hover:shadow-quality-inner'}>
-            <div className={(active ? 'bg-green-600' : 'bg-red-800') + ' bg-opacity-40 grid-center duration-300'}></div>
+          <button onClick={() => toggleChosen(quality as keyof typeof chosen)} key={quality} className='grid bg-undefined-gradient shadow-item-inner outline-none duration-200 hover:shadow-quality-inner focus-visible:shadow-quality-inner'>
+            <div className={(active ? 'bg-green-600' : 'bg-red-800') + ' h-full bg-opacity-40 grid-center duration-300'}></div>
             <p className='text-sm sm:text-base uppercase p-2 xs:p-4 grid-center'>{quality}</p>
-          </div>
+          </button>
         )}
       </div>
     </ModalTemplate>
