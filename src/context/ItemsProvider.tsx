@@ -120,6 +120,7 @@ export default function ItemsProvider({ children }: { children: ReactNode }) {
       setGuessed(true)
       updateRecords({
         ...item,
+        timestamp: Date.now(),
         guesses: guesses.length + 1,
         chosen: chosen,
       })
