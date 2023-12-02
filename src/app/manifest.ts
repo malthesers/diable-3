@@ -1,6 +1,15 @@
 import { MetadataRoute } from 'next'
+
+interface Manifest extends MetadataRoute.Manifest {
+  screenshots?: {
+    src: string;
+    type?: string;
+    sizes?: string;
+    form_factor?: 'narrow' | 'wide'
+  }[]
+}
  
-export default function manifest(): MetadataRoute.Manifest {
+export default function manifest(): Manifest {
   return {
     name: 'Diable III',
     short_name: 'Diable III',
@@ -39,31 +48,37 @@ export default function manifest(): MetadataRoute.Manifest {
         src: '/screenshots/mobile1.jpg',
         type: 'image/png',
         sizes: '1170x1900',
+        form_factor: 'narrow'
       },
       {
         src: '/screenshots/mobile2.jpg',
         type: 'image/png',
         sizes: '1170x1900',
+        form_factor: 'narrow'
       },
       {
         src: '/screenshots/mobile3.jpg',
         type: 'image/png',
         sizes: '1170x1900',
+        form_factor: 'narrow'
       },
       {
         src: '/screenshots/desktop1.jpg',
         type: 'image/png',
         sizes: '1074x620',
+        form_factor: 'wide'
       },
       {
         src: '/screenshots/desktop2.jpg',
         type: 'image/png',
         sizes: '1074x620',
+        form_factor: 'wide'
       },
       {
         src: '/screenshots/desktop3.jpg',
         type: 'image/png',
         sizes: '1074x620',
+        form_factor: 'wide'
       }
     ]
   }
