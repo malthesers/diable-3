@@ -5,7 +5,7 @@ import SearchResults from './SearchResults'
 import SearchBar from './SearchBar'
 
 export default function SearchContainer() {
-  const { answer, validateGuess, setSearch } = useItems()
+  const { answer, guessed, validateGuess, setSearch } = useItems()
   const ref = useRef<HTMLInputElement | null>(null)
 
   function focusInput() {
@@ -22,6 +22,10 @@ export default function SearchContainer() {
   useEffect(() => {
     focusInput()
   }, [answer])
+
+  useEffect(() => {
+    if (guessed) setSearch('')
+  }, [guessed])
 
   return (
     <div className='relative mb-2'>
