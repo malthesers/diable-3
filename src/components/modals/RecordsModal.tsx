@@ -30,7 +30,7 @@ export default function RecordsModal() {
             classNames='records'
             nodeRef={recordsNode}
             key={displayRecords}
-            addEndListener={(done: () => void) =>
+            addEndListener={(done) =>
               recordsNode.current?.addEventListener('transitionend', done, false)
             }
           >
