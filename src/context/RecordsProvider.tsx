@@ -20,6 +20,7 @@ export default function RecordsProvider({ children }: { children: ReactNode }) {
   const [mounted, setMounted] = useToggle(false)
 
   function updateRecords(record: ItemRecord) {
+    // Added new record, sort by guesses and cut to 10 best
     const newRecords = [...records, record]
     const sortedRecords = newRecords.sort((rec1, rec2) => rec1.guesses - rec2.guesses)
     const slicedRecords = sortedRecords.slice(0, 10)
