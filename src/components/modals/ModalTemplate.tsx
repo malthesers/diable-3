@@ -10,6 +10,7 @@ interface ModalProps {
   button?: {
     onClick: () => void,
     className?: string,
+    disabled?: boolean,
     text: string
   }
 }
@@ -38,7 +39,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
             <p className={(title === 'Records' ? 'px-4' : '') + ' text-2xl text-center uppercase mb-2'}>{title}</p>
             <>{children}</>
             <div className='flex flex-wrap place-content-center gap-4 mt-4'>
-              { button && <Button onClick={button.onClick} className={button.className} text={button.text}/>}
+              { button && <Button onClick={button.onClick} className={button.className} disabled={button.disabled || false} text={button.text}/>}
               <Button onClick={() => closeModal()} text='Close'/>
             </div>
           </div>
