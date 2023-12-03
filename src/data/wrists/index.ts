@@ -258,6 +258,86 @@ export const wristsItems:Bracers[] = [
     legendaryPower: 'Health globes restore [25 - 30%] of your primary resource. This effect cannot occur more than once every 2 seconds.'
   },
   {
+    name: 'Sanguinary Vambraces',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Chance on being hit to deal 1000% of your Thorns damage to nearby enemies.'
+  },
+  {
+    name: 'Skular\'s Salvation',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Increase the damage of Ancient Spear by [150 - 200%]. If your Ancient Spear - Boulder Toss hits 5 or fewer enemies, the damage is increased by 100%.'
+  },
+  {
+    name: 'Spirit Guards',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Your Spirit Generators reduce your damage taken by [45 - 60%] for 3 seconds.'
+  },
+  {
+    name: 'Strongarm Bracers',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Enemies hit by knockbacks suffer [20 - 30%] increased damage for 6 seconds.'
+  },
+  {
+    name: 'Trag\'Oul Coils',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Spike Traps gain the Scatter rune, are deployed twice as fast, and deal [150 - 200%] increased damage.'
+  },
+  {
+    name: 'Vambraces of Sescheron',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Your primary skills heal you for [5.0 - 6.0%] of your missing Life.'
+  },
+  {
+    name: 'Warzechian Armguards',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Every time you destroy a wreckable object, you gain a short burst of speed.'
+  },
+  {
+    name: 'Wraps of Clarity',
+    class: 'generic',
+    quality: 'legendary',
+    equipment: {
+      slot: 'wrists',
+      type: 'bracers'
+    },
+    legendaryPower: 'Your Hatred Generators reduce your damage taken by [40 - 50%] for 5 seconds.'
+  },
+  {
     name: 'Shackles of the Invoker',
     class: 'crusader',
     quality: 'set',
