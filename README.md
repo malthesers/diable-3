@@ -86,7 +86,7 @@ As mentioned in the Qualities subsection, the ethereal item types have been chan
 
 ### 📚 Classes
 
-All 7 classes are included, those being the base 5, *Barbarian*, *Demon Hunter*, *Monk*, *Witch Doctor* and *Wizard*, as well as the *Crusader* from *Reaper of Souls* and the *Necromancer* from the DLC *Rise of the Necromancer*.
+All 7 classes are included, those being the original 5, *Barbarian*, *Demon Hunter*, *Monk*, *Witch Doctor* and *Wizard*, as well as the *Crusader* from *Reaper of Souls* and the *Necromancer* from the DLC *Rise of the Necromancer*.
 
 Additionally *Generic* is included for items that are not class-specific, even if the item is intended for a specific class, e.g. *Wraps of Clarity* is treated as *Generic* despite its legendary power only working for *Demon Hunters*.
 
