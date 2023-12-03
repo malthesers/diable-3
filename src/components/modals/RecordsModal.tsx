@@ -19,6 +19,7 @@ export default function RecordsModal() {
       button={{
         onClick: clearRecords,
         className: records.length === 0 ? 'pointer-events-none brightness-50' : '',
+        disabled: records.length === 0,
         text: 'Clear'
       }}
     >
