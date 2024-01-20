@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
   title: 'Diable III',
   description: 'Diablo III Wordle | Guess the item by its properties!',
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  viewport: 'width=device-width, initial-scale=1',
   openGraph: {
     title: 'Diablo III',
     description: 'Guess the item by its properties!',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={spectral.className}>
+      <body className={spectral.className + ' touch-manipulation'}>
         <Background/>
         <Header/>
         <RecordsProvider> 
