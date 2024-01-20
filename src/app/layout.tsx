@@ -16,7 +16,12 @@ export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3000'),
   title: 'Diable III',
   description: 'Diablo III Wordle | Guess the item by its properties!',
+  keywords: ['diablo', 'diablo 3', 'game', 'wordle'],
   viewport: 'width=device-width, initial-scale=1',
+  themeColor: "#111218",
+  colorScheme: 'dark',
+  authors: { name: 'Malthesers (Malthe Kusk Lauritsen)', url: 'https://malthesers.github.io/'},
+  creator: 'Malthesers',
   openGraph: {
     title: 'Diablo III',
     description: 'Guess the item by its properties!',
