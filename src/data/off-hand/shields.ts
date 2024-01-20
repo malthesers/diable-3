@@ -37,7 +37,7 @@ export const shields:Shield[] = [
       slot: 'off-hand',
       type: 'shield'
     },
-    legendaryPower: 'Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by [100 - 125]%, stacking up to 5 times.'
+    legendaryPower: 'Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by [100 - 125]%, stacking up to 5 times for 5 seconds.'
   },
   {
     name: 'Eberli Charo',

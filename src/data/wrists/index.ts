@@ -17,7 +17,7 @@ export const wristsItems:Bracers[] = [
       slot: 'wrists',
       type: 'bracers'
     },
-    legendaryPower: 'Blessed Shield damage is increased by [400 - 500%] for the first enemy it hits.'
+    legendaryPower: 'Blessed Shield damage is increased by [400 - 500%] for the first enemy it hits. Additionally, this bonus continues and is reduced by 50% for each subsequent non-Shattering Throw target.'
   },
   {
     name: 'Ancient Parthan Defenders',

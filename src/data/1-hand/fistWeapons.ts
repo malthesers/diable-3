@@ -57,7 +57,7 @@ export const fistWeapons:FistWeapon[] = [
       slot: '1-hand',
       type: 'fist weapon'
     },
-    legendaryPower: 'Increase the damage of Wave of Light by 150%. When the initial impact of your Wave of Light hits 3 or fewer enemies, the damage is increased by [200 - 250%].'
+    legendaryPower: 'When the initial impact of your Wave of Light hits 5 or fewer enemies, the damage is increased by [200 - 250%].'
   },
   {
     name: 'Lion\'s Claw',

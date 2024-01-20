@@ -17,7 +17,7 @@ export const shouldersItems:Shoulders[] = [
       slot: 'shoulders',
       type: 'shoulders'
     },
-    legendaryPower: 'Corpse Lance damage is increased by [25 - 30%] for 3 seconds when you consume a corpse. Max 20 stacks.'
+    legendaryPower: 'Corpse Lance damage is increased by [50 - 75%] for 3 seconds when you consume a corpse. Max 20 stacks.'
   },
   {
     name: 'Corruption',

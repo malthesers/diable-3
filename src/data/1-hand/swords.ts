@@ -199,7 +199,7 @@ export const swords:Sword[] = [
       slot: '1-hand',
       type: 'sword'
     },
-    legendaryPower: 'Energy Twister damage is increased by [125 - 150%] for each Energy Twister you have out up to a maximum of 5. The Raging Storm rune is automatically applied to Energy Twister and allows the tornado to merge with 3 additional Energy Twisters.'
+    legendaryPower: 'Energy Twister damage is increased by [125 - 150%] for each Energy Twister you have out up to a maximum of 3. The Raging Storm rune is automatically applied to Energy Twister and allows the tornado to merge with 3 additional Energy Twisters.'
   },
   {
     name: 'Thunderfury, Blessed Blade of the Windseeker',

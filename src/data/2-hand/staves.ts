@@ -91,7 +91,7 @@ export const staves:Staff[] = [
       slot: '2-hand',
       type: 'staff'
     },
-    legendaryPower: 'Lesser enemies are now lured to your Meteor impact areas. Meteors deal [40 - 50%] increased damage on consecutive hits to the same target. This stacks up to 10 times.',
+    legendaryPower: 'Lesser enemies are now lured to your Meteor impact areas. Meteors deal [40 - 50%] increased damage on consecutive hits to the same target. This stacks up to 3 times.',
     elementalDamage: 'fire'
   },
   {

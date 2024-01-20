@@ -17,7 +17,7 @@ export const scythes:Scythe[] = [
       slot: '2-hand',
       type: 'scythe'
     },
-    legendaryPower: 'Death Nova deals [300 - 400%] increased damage for every enemy within 25 yards, up to 25 enemies.',
+    legendaryPower: 'Death Nova deals [300 - 400%] increased damage for every enemy within 25 yards, up to 10 enemies.',
   },
   {
     name: 'Maltorius\' Petrified Spike',

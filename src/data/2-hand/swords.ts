@@ -26,7 +26,7 @@ export const swords:Sword[] = [
       slot: '2-hand',
       type: 'sword'
     },
-    legendaryPower: 'Two Condemned enemies also trigger Condemn\'s explosion and the damage of Condemn is increased by [600 - 800%].'
+    legendaryPower: 'Condemned enemies also trigger Condemn\'s explosion and the damage of Condemn is increased by [600 - 800%].'
   },
   {
     name: 'Blood Brother',

@@ -48,7 +48,7 @@ export const handsItems:Gloves[] = [
       slot: 'hands',
       type: 'gloves'
     },
-    legendaryPower: 'When an exploded corpse damages at least one enemy, your Corpse Explosion deals [150 - 200%] increased damage for 6 seconds, stacking up to 5 times.',
+    legendaryPower: 'When an exploded corpse damages at least one enemy, your Corpse Explosion deals [150 - 200%] increased damage for 6 seconds, stacking up to 4 times.',
   },
   {
     name: 'Magefist',
