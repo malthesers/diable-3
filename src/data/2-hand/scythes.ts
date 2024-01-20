@@ -20,7 +20,7 @@ export const scythes:Scythe[] = [
     legendaryPower: 'Death Nova deals [300 - 400%] increased damage for every enemy within 25 yards, up to 25 enemies.',
   },
   {
-    name: 'Bloodtide Blade',
+    name: 'Maltorius\' Petrified Spike',
     class: 'necromancer',
     quality: 'legendary',
     equipment: {
