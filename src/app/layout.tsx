@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'Diable III',
   description: 'Diablo III Wordle | Guess the item by its properties!',
   keywords: ['diablo', 'diablo 3', 'game', 'wordle'],
-  viewport: 'width=device-width, initial-scale=1',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
   themeColor: '#111218',
   colorScheme: 'dark',
   authors: { name: 'Malthesers (Malthe Kusk Lauritsen)', url: 'https://malthesers.github.io/'},
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={spectral.className + ' touch-manipulation'}>
+      <body className={spectral.className}>
         <Background/>
         <Header/>
         <RecordsProvider> 

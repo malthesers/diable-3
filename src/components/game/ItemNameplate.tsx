@@ -13,7 +13,7 @@ export default function ItemNameplate({ item, hover = false, records = false }: 
 
   return (
     <p className={(hover ? hoverClasses : '') + (records ? ' sm:w-full' : '') + ` bg-${item.quality}-name` + ' nameplate mx-auto aspect-[350/40] bg-no-repeat bg-cover bg-center grid'}>
-      <KnownValue value={item.name} className={textColor + (records ? 'text-base/0 sm:px-4' : 'text-base/4 md:text-lg/4 sm:px-12') + ' px-6 text-center leading-none uppercase place-self-center duration-500'}/>
+      <KnownValue value={item.name} className={textColor + (records ? 'text-sm/4 sm:text-base/0 sm:px-4' : 'text-sm/4 sm:text-base/4 md:text-lg/4 sm:px-12') + ' px-6 text-center leading-none uppercase place-self-center duration-500'}/>
     </p>
   )
 }
