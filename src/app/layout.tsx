@@ -1,5 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Spectral } from 'next/font/google'
 import RecordsProvider from '../context/RecordsProvider'
 import ModalsProvider from '../context/ModalsProvider'
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </ItemsProvider>
           </ModalsProvider>
         </RecordsProvider>
+        <SpeedInsights/>
       </body>
     </html>
   )
