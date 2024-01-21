@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: 'Diable III',
   description: 'Diablo III Wordle | Guess the item by its properties!',
   keywords: ['diablo', 'diablo 3', 'game', 'wordle'],
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   themeColor: '#111218',
   colorScheme: 'dark',
   authors: { name: 'Malthesers (Malthe Kusk Lauritsen)', url: 'https://malthesers.github.io/'},
