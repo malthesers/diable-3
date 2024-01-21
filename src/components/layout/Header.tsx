@@ -7,9 +7,9 @@ import KofiIcon from '@/public/kofi-icon.svg'
 
 export default function Header() {
   return (
-    <header className='w-full bg-black bg-opacity-20 p-3 font-semibold'>
+    <header className='w-full bg-black bg-opacity-20 p-3'>
       <div className='max-w-5xl mx-auto flex justify-between items-center'>
-        <Link href='/' className='text-xl after:'>Diable III</Link>
+        <Link href='/' className='text-xl font-semibold'>Diable III</Link>
         <nav className='flex gap-2'>
           <Link href='https://ko-fi.com/malthesers' rel='noopener noreferrer' target='_blank'>
             <Image
