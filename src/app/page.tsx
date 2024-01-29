@@ -24,7 +24,7 @@ export default function Home() {
   }
 
   return (
-    <main>
+    <main className='max-w-[59rem] mx-auto py-8 sm:py-20'>
       <section className='max-w-md md:max-w-[920px] lg:max-w-none mx-auto flex flex-row flex-wrap place-content-center md:place-content-start gap-2 mb-2'>
         <SwitchTransition mode='out-in'>
           <CSSTransition

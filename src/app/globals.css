@@ -15,10 +15,6 @@
   body {
     @apply text-white min-h-dvh;
   }
-
-  main {
-    @apply max-w-[59rem] mx-auto py-8 sm:py-20;
-  }
 }
 
 @layer components {
