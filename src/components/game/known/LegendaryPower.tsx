@@ -25,7 +25,7 @@ export default function LegendaryPower({ power }: { power: string | undefined })
               <Image
                 src={Bullet}
                 alt='Legendary power bullet'
-                className='inline-block w-4 h-4 mb-1 mr-1'
+                className='inline-block size-4 mb-1 mr-1'
               />
             }
             <span className='text-legendary normal-case'>

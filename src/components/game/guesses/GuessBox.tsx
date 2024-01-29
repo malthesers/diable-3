@@ -16,7 +16,7 @@ export default function GuessBox({ quality, guess, answer }: ItemGuessProps) {
       <div className={
         (correct ? 'bg-green-600 ' : 'bg-red-800 ') + 
         (quality === 'ethereal' ? 'shadow-guess-ethereal' : 'shadow-guess-inner' ) +
-        ' w-full h-full bg-opacity-40 grid-center'}
+        ' size-full bg-opacity-40 grid-center'}
       ></div>
       <p className='my-auto text-xs sm:text-sm grid-center'>
         <span className='block'>{values[0]}</span>
