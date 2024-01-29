@@ -13,7 +13,7 @@
   }
 
   body {
-    @apply text-white min-h-[100dvh];
+    @apply text-white min-h-dvh;
   }
 
   main {

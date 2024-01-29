@@ -30,7 +30,7 @@ export default function ModalTemplate({ closeModal, showModal, children, title, 
       classNames='fade'
       unmountOnExit
     >
-      <aside ref={modal} tabIndex={0} className='fixed z-50 top-0 w-full h-[100dvh] grid p-4'>
+      <aside ref={modal} tabIndex={0} className='fixed z-50 top-0 w-full h-dvh grid p-4'>
         <div onClick={() => closeModal()} className='absolute -z-10 size-full bg-black bg-opacity-50 cursor-pointer'></div>
         <div className='max-w-xl w-full max-h-[80%] overflow-scroll grid m-auto bg-undefined-gradient bg-center bg-contain border-bronze border-2'>
           <div className='grid-center size-full bg-black bg-opacity-70'></div>
