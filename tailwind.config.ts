@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { PluginAPI } from 'tailwindcss/types/config'
 
 const config: Config = {
   content: [
@@ -42,6 +43,7 @@ const config: Config = {
         'ethereal-accent': '#4A9A8C',
       },
       backgroundImage: {
+        "icon-gradient": "-webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0))",
         "undefined-name": "url('/images/nameplates/base.jpg')",
         "common-name": "url('/images/nameplates/common.jpg')",
         "magic-name": "url('/images/nameplates/magic.jpg')",
@@ -91,6 +93,20 @@ const config: Config = {
     'bg-set-gradient',
     'bg-ethereal-gradient'
   ],
-  plugins: [],
+  plugins: [
+    ({ addUtilities }: PluginAPI) => {
+      addUtilities({
+        '.nameplate': {
+           '@apply w-[280px] xs:w-[350px] sm:w-[420px] lg:w-[455px]': {}
+        },
+        '.grid-center': {
+          'grid-column-start': '1',
+          'grid-column-end': '1',
+          'grid-row-start': '1',
+          'grid-row-end': '1',
+        }
+      })
+    }
+  ],
 }
 export default config

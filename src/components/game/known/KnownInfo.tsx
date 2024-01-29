@@ -20,7 +20,7 @@ export default function KnownInfo() {
       <ItemNameplate item={known}/>
       <div className='grid grid-cols-[4rem_auto] border-grey border-2 gap-4 p-2'>
         <div className={`bg-${known.quality}-gradient border-${known.quality}-accent` + ' h-32 border rounded duration-500'}>
-          <div className='h-full grid place-content-center icon-gradient'>
+          <div className='h-full grid place-content-center bg-icon-gradient'>
             <SwitchTransition mode='out-in'>
               <CSSTransition
                 classNames='fade'

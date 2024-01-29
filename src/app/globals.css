@@ -17,25 +17,6 @@
   }
 }
 
-@layer components {
-  .nameplate {
-    @apply w-[280px] xs:w-[350px] sm:w-[420px] lg:w-[455px];
-  }
-}
-
-@layer utilities {
-  .icon-gradient {
-    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
-  }
-
-  .grid-center {
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-  }
-}
-
 /* --- Transitions --- */
 
 .button-enter {
