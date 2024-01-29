@@ -1,4 +1,4 @@
-# <img src="/public/docs/title-card.png" alt="Diable III" align="center">
+<h1 align="center"><img src="/public/docs/title-card.png" alt="Diable III"></h1>
 
 <p align="center">Hellish Wordle-ish guessing game based on Diablo III - guess the item by its properties!</p>
 
