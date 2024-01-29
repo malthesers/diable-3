@@ -23,7 +23,7 @@ export default function VictoryModal() {
         text: 'New Game'
       }}
     >
-      <p className='text-xl text-center'>
+      <p className='text-xl text-center text-pretty'>
         <span>You guessed</span>
         <span className={`text-${answer?.quality}`}> {`[${answer?.name}]`} </span>
         <span>

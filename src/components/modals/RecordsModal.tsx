@@ -23,7 +23,7 @@ export default function RecordsModal() {
       }}
     >
       <div className='text-base sm:text-xl text-center'>
-        <p className='px-4'>Below is a list of your fastest wins including the guessed item, the amount of guesses and the included qualities.</p>
+        <p className='px-4 text-pretty'>Below is a list of your fastest wins including the guessed item, the amount of guesses and the included qualities.</p>
         <p className={(records.length === 0 ? 'opacity-100 max-h-6' : 'opacity-0 max-h-0') + ' mt-3 duration-200 delay-1000'}>No records yet...</p>
         <SwitchTransition mode='out-in'>
           <CSSTransition

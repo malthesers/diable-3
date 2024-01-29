@@ -22,7 +22,7 @@ export default function DefeatModal() {
         text: 'New Game'
       }}
     >
-      <p className='text-xl text-center'>
+      <p className='text-xl text-center text-pretty'>
         <span>You failed to guess</span>
         <span className={`text-${answer?.quality}`}> {`[${answer?.name}]`} </span>
         <span>
