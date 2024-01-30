@@ -2,7 +2,7 @@
   "name": "diable-3",
   "description": "Diablo III Wordle | Guess the item by its properties!",
   "author": "Malthesers (Malthe Kusk Lauritsen)",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
